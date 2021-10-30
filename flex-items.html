@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arr.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>K | flex</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
+</style>
+<body>
+    <!-- main navigation -->
+    <nav>
+        <ul class="main-nav">
+            <li class="mn-but"><a href="us.html">usful sh</a></li>
+            <li class="mn-but"><a href="navbars.html">nav bars</a></li>
+            <li class="mn-but"><a href="flexbox.html">flexbox</a></li>
+        </ul>
+        <a href="index.html">
+            <span class="material-icons index-hov">info</span>
+        </a>
+    </nav>
+
+    <header>
+        <h2>kool app i made.</h2>
+    </header>
+
+    <div>
+        <a href="index.html"><h1>Flexbox</h1></a>
+
+        <!-- container | items -->
+
+        <div class="main-nav" class="">
+            <a href="flex-cont.html" class="fnt-sml">Container</a><span> | </span>
+            <a class="act active2">Items</a>
+        </div>
+
+        <div class="content">
+
+            <!-- main buttons -->
+    
+            <div>
+                <button id="or" class="hov">order</button>
+                <button id="fg" class="hov">flex-grow</button>
+                <button id="as" class="hov">flex-shrink</button>
+            </div>
+    
+            <!-- ORDER -->
+    
+            <div id="order" class="none">
+    
+                <!-- "?" menu -->
+    
+                <div id="drop-all" class="" >
+                    <div class="dropdown">
+                        <img src="img/info.png" alt="">
+                        <div class="drop-content">
+                            <div id="o1">1 . 3 . 5 . 2 . 4</div>
+                            <div id="o2">5 . 4 . 3 . 2 . 1</div>
+                            <div id="o3">1 . 5 . 2 . 4 . 3</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- ilustration -->
+        
+                <div id="container" class="container center c1 shad-cont">
+                    <div id="sq1" class="inside io1 shad-ins green-grad">1</div>
+                    <div id="sq2" class="inside io2 shad-ins">2</div>
+                    <div id="sq3" class="inside io3 shad-ins">3</div>
+                    <div id="sq4" class="inside io4 shad-ins">4</div>
+                    <div id="sq5" class="inside io5 shad-ins">5</div>
+                </div>
+                <h3 id="signature" class="order-info"></h3>
+            </div>
+            
+            <!-- FLEX-GROW -->
+    
+            <div id="grow" class="none">
+
+                <!-- "?" menu -->
+    
+                <div id="drop-all" class="" >
+                    <div class="dropdown">
+                        <img src="img/info.png" alt="">
+                        <div class="drop-content">
+                            <input type="range" min="1" max="11" value="6" class="slider" id="slider"> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ilustration -->
+        
+                <div id="container2" class="container center c1 shad-cont">
+                    <div class="inside fg1 shad-ins og">a</div>
+                    <div id="fg2" class="inside fg2 shad-ins og">b</div>
+                    <div class="inside fg1 shad-ins og">c</div>
+                </div> 
+                <h3 id="signature3"></h3>  
+                <h3 id="signature2" class="order-info"></h3>
+
+            </div>
+
+            <!-- FLEX-SHRINK -->
+    
+            <div id="shrink" class="none">
+
+                <!-- "?" menu -->
+    
+                <div id="drop-all" class="" >
+                    <div class="dropdown">
+                        <img src="img/info.png" alt="">
+                        <div class="drop-content">
+                            <input type="range" min="1" max="11" value="6" class="slider" id="slider2"> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ilustration -->
+        
+                <div id="container2" class="container2 center c1 shad-cont">
+                    <div class="inside fs1 shad-ins og">a</div>
+                    <div id="fs" class="inside fs2 shad-ins og">b</div>
+                    <div class="inside fs1 shad-ins og">c</div>
+                </div> 
+                <h3 id="signature4"></h3>  
+                <h3 id="signature5" class="order-info "></h3>
+
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <script src="app_items.js"></script>
+
+</body>
+</html>

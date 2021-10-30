@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arr.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navbars.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>K | nav</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
+</style>
+<body>
+    <!-- main navigation -->
+    <nav>
+        <ul class="main-nav">
+            <li class="mn-but"><a href="us.html">usful sh</a></li>
+            <li class="mn-but"><a class="active" href="">nav bars</a></li>
+            <li class="mn-but"><a href="flexbox.html">flexbox</a></li>
+        </ul>
+        <a href="index.html">
+            <span class="material-icons">info</span>
+        </a>
+    </nav>
+    
+    <!-- header -->
+    <header>
+        <p class="index"><b>here, experimenting with navigation bars.</b></p>
+    </header>
+
+    <!-- main -->
+    <main>  
+        <section class="sec-main">
+            <h2>List of Links</h2>
+            <!-- V1 -->
+            <ul class="nav-style">
+                <li class="left h1"><a href="">Home</a></li>
+                <li class="left h1"><a href="">News</a></li>
+                <li class="left h1"><a href="">Contact</a></li>
+                <li class="right h1"><a href="">About</a></li>
+            </ul>
+            <!-- V2 -->
+            <ul class="nav-style">
+                <li class="left h2"><a href="">Home</a></li>
+                <li class="left h2"><a href="">News</a></li>
+                <li class="left h2"><a href="">Contact</a></li>
+                <li class="right h2"><a href="">About</a></li>
+            </ul>
+        </section>
+        
+        <!-- DROPBAR -->
+        <section class="sec-main">
+            <h2>Dropdown</h2>
+            <p class="description">dropdown menu is on <code>display:none</code>,<br> hovering container for "dm" changes that <br>to <code>display:block</code> </p>
+
+            <nav class="dropdown">
+                <button class="dropdown-bt">menu</button>
+                <div class="dropdown-content">
+                    <a href="">Home</a>
+                    <a href="">News</a>
+                    <a href="">Contact</a>
+                </div>
+            </nav>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+</html>

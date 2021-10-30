@@ -1,0 +1,140 @@
+
+:root {
+    text-align: center;
+    font-size: 1rem;
+    --m-back: rgb(243, 243, 243);
+}
+
+
+/* SHARED COMPONENTS */
+
+header, main, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.in-bl, form {display: inline-block;}
+
+h1 {
+    padding-left: 3rem;
+    font-family: 'Permanent Marker', cursive;
+    float: left
+}
+
+h3 {
+    text-transform: uppercase; 
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: teal;
+}
+
+.code-wrap, .form-type {    
+    border: 0.1rem dotted rgb(170, 170, 170);
+    border-radius: 0.9rem;
+}
+
+.code-wrap {
+    display: inline-block;
+    padding: 0.4rem;
+}
+
+code {
+    background-color: rgb(243, 228, 201);
+    display: inline-block;
+    padding: 0.4rem;
+    min-width: 2rem;
+}
+
+/* HEADER */
+
+.clear {clear:left}
+
+header {height: 6rem;}
+
+.css {
+    width: 2.5rem;
+    padding-right: 2rem;
+}
+
+.html {
+    width: 3.5rem;
+    padding-right: 0.8rem;
+}
+
+.css, .html {
+    position: relative;
+    top: 1.1rem;
+    float: right;
+}
+
+/* MAIN NAVIGATION, NOTEZ, CHAR */
+
+span.material-icons::after {content: "";}
+span::after {content: " - ";}
+
+/* FORMS */
+
+.form-type {
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border: dotted 0.1rem;
+}
+
+p.descrip {
+    min-width: 80%;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.in-but {
+    padding: 0.4rem 0.8rem;
+    background-color: rgb(52, 202, 202);
+    border: none;
+    border-radius: 1rem;
+    color: whitesmoke;
+    text-shadow: 0.05rem 0.05rem 0.1rem rgb(50, 62, 70);
+    font-size: 1rem;
+}
+
+.in-but:hover {
+    background-color: rgb(68, 226, 226);
+}
+
+.in-but:active {
+    background-color: rgb(160, 252, 252);
+}
+
+form {vertical-align: top;}
+h4.txt {text-align: center;}
+[type=color] {border: none;}
+[for=fname] {font-size: 0.8rem;}
+
+[name=fname] {
+    margin: 0.4rem; 
+    text-align: center;
+    color: slategrey;
+}
+
+/* POSITIONING */
+
+.txt-cen {text-align: center;}
+
+.sec-pos-sec {
+    width: 20%; 
+    text-align: justify; 
+    margin: 0.4rem;
+    vertical-align: top;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+

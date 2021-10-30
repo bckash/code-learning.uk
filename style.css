@@ -1,0 +1,100 @@
+
+:root {
+    font-size: 1rem;
+    text-align: center;
+    --hover: rgb(105, 64, 2);
+    --focus: rgb(151, 92, 3);
+    --m-back: rgb(243, 243, 243);
+}
+
+header {
+    height: 6rem;
+    overflow: hidden;
+}
+
+p.index {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.1rem;
+    max-width:26rem;
+    font-weight: bold;
+}
+
+
+.main-page {
+    background-color: var(--m-back);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec-main {
+    background-color: var(--m-back);
+    padding: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+/* MAIN NAVIGATION */
+
+/* big buttons */
+
+nav, header {font-family: 'Source Sans Pro', sans-serif;}
+
+
+ul.main-nav {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 2rem;
+    padding: 0rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+li.mn-but {display: inline-block;}
+/* stays vertical */
+
+li.mn-but a {
+    display: inline-block;
+    padding: 1rem 1.8rem;
+}
+
+
+li.mn-but a, li.mn-but a:hover, li.mn-but a:visited {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+li.mn-but a:hover, a.material-icons:hover  {
+    background-color: var(--hover);
+}
+
+li.mn-but a:focus {background-color: var(--focus);}
+
+.active {
+    color:rgb(248, 166, 136) !important;
+}
+
+.active:hover {
+    background-color: black !important;
+    cursor: default;
+}
+
+/* info button */
+
+.material-icons {
+    vertical-align: middle;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+a span.material-icons {color: black;}
+a span.material-icons:hover {color: var(--hover);}
+
+
+/* footer */
+
+footer {
+    color:darkgrey ;
+    margin: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+}

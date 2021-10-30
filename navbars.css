@@ -1,0 +1,112 @@
+:root {
+    text-align: center;
+    --m-back: rgb(243, 243, 243);
+}
+
+/* MAIN */
+
+header, main {font-family: 'Montserrat', sans-serif;}
+
+header {
+    height: 6rem;
+    overflow: hidden;
+}
+
+
+code {background-color: rgb(245, 222, 214);}
+
+p.description {
+    font-size: 0.8rem;
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+ul.nav-style {
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    width: 30rem;
+    margin: auto;
+    background-color: cornflowerblue;
+    margin-bottom: 2rem;
+}
+
+ul.nav-style a {
+    display: inline-block;
+    padding: 1rem 0.8rem;
+}
+
+/* text format */
+
+ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(240, 236, 230);
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem rgb(0, 0, 0);
+}
+
+
+.left {float: left;}
+.right {float: right;}
+
+/* V1 STYLE NAVBAR */
+
+li.h1:hover {
+    background-color: rgb(90, 132, 209);
+}
+
+/* V2 STYLE NAVBAR */
+
+li.h2 a:hover {
+    background-color: cornflowerblue;
+    color: rgb(230, 204, 103);
+}
+
+/* DROPDOWN */
+/* hovering the main container for button  */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-bt, .dropdown-content {width: 10rem}
+div.dropdown-content:first-child {
+    border: 0.1rem solid;
+}
+
+.dropdown-bt, .dropdown-content {
+    background-color: rgb(206, 52, 198);
+    padding: 0.8rem 1rem;
+    border: none;
+}
+
+.dropdown-bt {
+    margin-bottom: 0.1rem;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+div.dropdown-content a {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    display: block;
+    font-size: 0.8rem;
+}
+
+div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;}

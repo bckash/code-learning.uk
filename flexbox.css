@@ -1,0 +1,315 @@
+
+
+/* FUNDAMENTALZ ---------------*/
+
+html {
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+.bb {border: black solid 0.01rem;}
+
+h1 {
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-decoration: none;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+span {padding: 0 0.5rem;}
+span.material-icons {padding: 0;}
+
+i {font-size: smaller;}
+
+q {
+    color: floralwhite;
+    background-color: darkslategrey;
+}
+
+h1, h1:link, h1:hover, h1:visited {color: rgb(91, 25, 129);}
+
+.content {
+    padding: 1rem;
+    border: 0.05rem dotted burlywood;
+    width: 70%;
+    margin: auto; 
+    height: 21rem;
+    background-color: rgb(253, 244, 245);
+    border-radius: 60px;
+}
+
+
+/* MAIN NAV -------------------------------------------------*/
+
+div.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 0.2rem;
+    padding-top: 0.2rem;
+}
+
+.act {
+    font-weight: bold;
+}
+
+.act:link, .act:hover, .act:visited, .active2 {
+    color: rgb(87, 19, 150);
+    cursor: default;
+}
+
+a, a:link {
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+}
+
+.fnt-sml {font-size: 1rem;}
+.fnt-sml:hover {font-size: 1.5rem;}
+
+
+/* BIG BUTTONS -------------------------------------------------*/
+
+button {
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin: 0rem 0.1rem 1rem 0.1rem;
+    padding: 0.1rem 0.5rem;
+    outline: none;
+    border: rgb(202, 202, 202) solid 0.05rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.act2 {
+    background-color: rgb(180, 45, 180);
+    color: rgb(255, 217, 159);
+}
+
+.hov:hover {
+    background-color: rgba(255, 246, 235, 0.75);
+    cursor: pointer;
+}
+
+/* "?" DROPDOWN MENU -------------------------------------------------*/
+
+#drop-all {height:3rem;}
+
+#info {
+    text-align: justify;
+    width: 200px;
+    color: rgb(85, 85, 85);
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: solid rgb(91, 25, 129) 15px;
+}
+
+.drop-content-intro, .drop-content {display: none;}
+
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+.drop-content div {
+    margin-top: 0.2rem;
+    border: rgb(202, 202, 202) solid 0.05rem;
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    z-index: 1;
+}
+
+.none {display: none;}
+
+.dropdown:hover .drop-content, .dropdown:hover .drop-content-intro {display: block;}
+
+.drop-content div:hover {
+    background-color: rgb(253, 215, 148);
+    cursor: default;
+}
+
+.slaid-para {
+    color: rgb(145, 145, 145);
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+/* FLEX ILUSTRATION -------------------------------------------------*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orchid;
+    margin: auto;
+}
+
+.container2 {
+    display: flex;
+    background-color: orchid;
+    margin: auto;
+}
+
+.c1 {    
+    margin-top: 2rem;;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    width: 26rem;
+}
+
+.c2 {    
+    margin-top: 2rem;;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    width: 14rem;
+    height: 10rem;
+}
+
+/* flex positions ----------------*/
+
+.center {justify-content: center;}
+.space-evenly {justify-content: space-evenly ;}
+.space-between {justify-content: space-between;}
+
+.center2 {align-items:  center;}
+.flex-end {align-items: flex-end;}
+.flex-start {align-items: flex-start;}
+
+.center3 {align-content: center;}
+.space-between {align-content: space-between;}
+.space-around {align-content: space-around;}
+
+
+/* lil squares ----------------*/
+
+.inside, .inside2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    background-color: orange;
+    border: solid 0.04rem rgb(172, 95, 23);
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.inside {
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+.inside2 {
+    border-radius: 0.5rem;
+    margin: 4px;
+}
+
+.og {
+    color: rgb(102, 44, 2);
+    background: rgb(255,212,133);
+    background: linear-gradient(180deg, rgba(255,212,133,1) 0%, rgba(223,130,36,1) 65%);
+}
+
+/* C) justify ------*/
+
+.i1 {height: 2rem;}
+
+/* C) align-content ------*/
+
+.i2 {height: 3rem; margin-left: 1.35rem; line-height: 2.5rem;}
+.i3 {height: 5rem; line-height: 4.5rem;}
+.i4 {height: 4rem; line-height: 3.6rem;}
+
+/* C) align-content ------*/
+
+.iac1, .iac2, .iac3 {
+    height: 25px;
+    line-height: 20px;
+}
+
+.iac1 {width: 30px}
+.iac2 {width: 80px}
+.iac3 {width: 60px}
+
+/* I) order ------*/
+
+.io1, .io2, .io3, .io4, .io5 {
+    height: 30px;
+    width: 50px; 
+}
+
+.io1 {
+    color: rgb(110, 117, 2);
+    background: rgb(241,252,94);
+    background: linear-gradient(180deg, rgba(241,252,94,1) 0%, rgba(209,200,0,1) 65%);
+}
+.io2 {
+    color: rgb(67, 94, 4);
+    background: rgb(206,238,114);
+    background: linear-gradient(180deg, rgba(206,238,114,1) 0%, rgba(161,193,12,1) 65%);
+}
+.io3 {
+    color: rgb(13, 114, 10);
+    background: rgb(160,238,114);
+    background: linear-gradient(180deg, rgba(160,238,114,1) 0%, rgba(58,193,12,1) 65%);
+}
+.io4 {
+    color: rgb(17, 59, 9);
+    background: rgb(83,172,31);
+    background: linear-gradient(180deg, rgba(83,172,31,1) 0%, rgba(10,124,42,1) 65%);
+}
+.io5 {
+    color: rgb(12, 36, 7);
+    background: rgb(64,125,33);
+    background: linear-gradient(180deg, rgba(64,125,33,1) 0%, rgba(25,70,7,1) 65%);
+}
+
+.order1 {order: 1;}
+.order2 {order: 2;}
+.order3 {order: 3;}
+.order4 {order: 4;}
+.order5 {order: 5;}
+
+.order-info {
+    color: rgb(91, 25, 129);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+    width: 300px;
+    margin: auto;
+}
+
+
+/* I) flex-gow/shrink ------*/
+
+.fg1, .fg2, .fs1, .fs2 {
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.fg1 {width: 20px; height: 2rem;}
+.fg2 {width: 20px; height: 2rem;}
+
+.fg1 {flex-grow: 1} 
+.fg2 {flex-grow: 6}
+
+.fs1 {flex: 0 1 100px; height: 2rem;} 
+.fs2 {flex: 0 6 500px; height: 2rem;}
+
+
+/* shaddows ----------------*/
+
+.shad-ins {
+    -webkit-box-shadow: 2px 28px 38px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 28px 38px -5px rgba(0,0,0,0.75);
+    box-shadow: 2px 28px 38px -5px rgba(0,0,0,0.75);
+}
+
+.shad-cont {
+    -webkit-box-shadow: inset 7px 10px 22px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 7px 10px 22px -15px rgba(0,0,0,0.75);
+    box-shadow: inset 7px 10px 22px -15px rgba(0,0,0,0.75);
+}
+
+
+

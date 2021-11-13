@@ -62,7 +62,7 @@ h1.intro {
 
     padding: unset;
     float: none;
-    display: block;
+    display: inline-block;
     position: relative;
     top: 1.7rem;
     letter-spacing: 0.3rem;
@@ -172,6 +172,8 @@ ul.main-nav {
     background-color: black;
     color: blanchedalmond;
     border-radius: 2rem;
+
+    box-shadow: 1px 5px 30px rgba(2, 21, 71, 0.651);
 }
 
 li.mn-but {display: inline-block;}

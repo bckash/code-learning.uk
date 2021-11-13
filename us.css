@@ -11,12 +11,6 @@
 
 .in-bl, form {display: inline-block;}
 
-h1 {
-    padding-left: 3rem;
-    font-family: 'Permanent Marker', cursive;
-    float: left;
-}
-
 .code-wrap, .form-type {    
     border: 0.1rem dotted rgb(170, 170, 170);
     border-radius: 0.9rem;

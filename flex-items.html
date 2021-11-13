@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="flex-items.css">
     <link rel="stylesheet" type="text/css" href="flexbox.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>K | flex</title>
@@ -15,29 +16,46 @@
     @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
 </style>
 <body>
+
+    <!-- LOGO................. -->
+    <h1 class="intro">learning curve</h1>
+
     <!-- main navigation -->
     <nav>
         <ul class="main-nav">
-            <li class="mn-but"><a href="us.html">usful sh</a></li>
-            <li class="mn-but"><a href="navbars.html">nav bars</a></li>
-            <li class="mn-but"><a href="flexbox.html">flexbox</a></li>
+            <li class="mn-but hover-left">
+                <a href="us.html">usful sh</a>
+            </li>
+            <li class="mn-but">
+                <a href="navbars.html">nav bars</a>
+            </li>
+            <li class="mn-but hover-right">
+                <a class="active">flexbox</a>
+            </li>
         </ul>
         <a href="index.html">
             <span class="material-icons index-hov">info</span>
         </a>
     </nav>
 
+    <!-- INFO FIELD .......................-->
     <header>
-        <h2>kool app i made.</h2>
+        <span class="blue-rec"></span>
+        <h2 class="blue-rec-h2">kool app i made
+            <span class="dot">:</span>
+        </h2>
+        <h2 class="blue-rec-h2-mask"></h2>
     </header>
 
+    <!-- FLEXBOX APP.................... -->
     <div>
-        <a href="index.html"><h1>Flexbox</h1></a>
+        <a href="flexbox.html"><h1>Flexbox</h1></a>
 
         <!-- container | items -->
 
         <div class="main-nav" class="">
-            <a href="flex-cont.html" class="fnt-sml">Container</a><span> | </span>
+            <a href="flex-cont.html" class="fnt-sml">Container</a>
+            <span>&nbsp|&nbsp</span>
             <a class="act active2">Items</a>
         </div>
 

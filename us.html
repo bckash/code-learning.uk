@@ -12,26 +12,31 @@
 </head>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Permanent+Marker&family=Roboto+Mono:wght@100&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
 </style>
 
 <body>
-    <!-- main navigation -->
+    <!-- LOGO..................... -->
+    <h1 class="intro">learning curve</h1>
+
+    <!-- NAVI.................... -->
     <nav>
         <ul class="main-nav">
-            <li class="mn-but"><a class="active" href="us.html">usful sh</a></li>
+            <li class="mn-but hover-left"><a class="active">usful sh</a></li>
             <li class="mn-but"><a href="navbars.html">nav bars</a></li>
-            <li class="mn-but"><a href="flexbox.html">flexbox</a></li>
+            <li class="mn-but hover-right"><a href="flexbox.html">flexbox</a></li>
         </ul>
         <a href="index.html">
             <span class="material-icons">info</span>
         </a>
     </nav>
 
-    <!-- header -->
+    <!-- INFO FIELD .......................-->
     <header>
-        <p class="index">this section contains some useful shit<br> (from front-page web developer perspective, that is).</p>
+        <span class="blue-rec"></span>
+        <p class="blue-rec-h2">this section contains some useful sh <span class="dot">_</span></p>
+        <!-- <h2 class="blue-rec-h2-mask"></h2> -->
+        
     
         <!-- <section class="">      
             <h1>SOME<br>USEFUL SH</h1>
@@ -43,7 +48,7 @@
     <main>
         <!-- NOTES -->
             <section class="sec-main">
-                    <h3 class="">notez:</h3>
+                    <h2 class="">Notez:</h2>
                     <p>
                         <code>vertical align</code> doesn't work with <code>float</code> 
                     </p>
@@ -93,7 +98,7 @@
 
         <!-- CHARACTER -->
         <section class="sec-main clear">
-            <h3 class="">character:</h3>
+            <h2 class="">Character:</h2>
             <p class="code-wrap">
                 <code>*</code><span></span>all elements
             </p>
@@ -116,7 +121,7 @@
 
         <!-- FORMS -->
         <section class="sec-main">
-            <h3>forms:</h3>
+            <h2>Forms:</h2>
             <p class="descrip"><code>input type=</code> 
             </p>
             <!-- button -->
@@ -177,9 +182,12 @@
 
         <!-- POSITIONING -->
         <section class="sec-main">
-            <h3><a href="https://www.internetingishard.com/html-and-css/advanced-positioning/" target="_blank">position:</a></h3>
+            <h2>Position:</h2>
             <p class="descrip">position elements using specific coordinates (opposed to the more semantic options in flexbox and floats).</p>
-            <img src="img/pos.png" width="90%"><br>
+            <figure>
+                <img src="img/pos.png" width="90%"><br>
+                <figcaption><span>source: <a href="https://www.internetingishard.com/html-and-css/advanced-positioning/" target="_blank"><img src="img/inh-logo.svg"></a></span></figcaption>
+            </figure>    
                 <section class="in-bl sec-pos-sec">
                     <p class="txt-cen">Default value</p>
                 </section>
@@ -198,7 +206,7 @@
             
     <!-- FOOTER -->
     <footer>
-        for educational purpuses<br>
+        educational intent<br>
         KashaKasz<br>
         &#169 2021
     </footer>

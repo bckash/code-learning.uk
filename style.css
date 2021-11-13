@@ -1,43 +1,167 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 :root {
     font-size: 1rem;
     text-align: center;
-    --hover: rgb(105, 64, 2);
-    --focus: rgb(151, 92, 3);
-    --m-back: rgb(243, 243, 243);
+    --hover: rgb(8, 42, 94);
+    --focus: rgb(11, 36, 73);
+    --blue: rgb(46, 57, 221);
+    --m-back: rgba(243, 243, 243, 0.712);
+}
+
+HTML {
+    background: url(img/dragon2.png) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-width: 300px;
+}
+
+body {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
+    border-bottom: 1px black solid;
     height: 6rem;
     overflow: hidden;
 }
 
+main {font-family: 'Montserrat', sans-serif;}
+h2 {font-weight: normal;}
+
+code {
+    border-bottom: .1rem solid white;
+    background-color: rgb(243, 228, 201);
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    min-width: 2rem;
+}
+
 p.index {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 1rem;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    font-size: .9rem;
+    max-width:26rem;
+
+}
+
+/* LOGO animation....................... */
+
+h1.intro {
+
+    padding: unset;
+    float: none;
+    display: block;
+    position: relative;
+    top: 1.7rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.5rem;
+    margin: 0.2rem;
+
+    background: #99ADF1;
+    background: -webkit-linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
+    background: -moz-linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
+    background: linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation-name: text-shad;
+    animation-duration: .5s;
+
+    }
+
+@keyframes text-shad {
+        40% {text-shadow: -8px 0px 0px rgba(168, 6, 101, 0.336);}
+    }
+
+/* h2 span, p.index {
+    text-align: justify;
+    padding-left: 0.9rem ;
+    border-left: 0.8rem solid var(--blue);
+} */
+
+/* DOT + animation................................ */
+
+.dot {
+    color: var(--blue);
+    vertical-align: baseline;
+    font-size: 1.5rem;
+
+    animation-name: dot;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+span.dot::after {content: none;}
+
+@keyframes dot {
+    0% {opacity: 0;}
+    15% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+/* INFO FIELD + animation..................... */
+
+/* BLUE SQUARE */
+
+span.blue-rec {
+    position: relative;
     vertical-align: middle;
     display: inline-block;
-    font-size: 1.1rem;
-    max-width:26rem;
-    font-weight: bold;
+    background-color: var(--blue);
+    width:1rem;
+    height: 2rem;
+
+    animation-name: blue-rec;
+    animation-duration: .15s;
+    animation-direction:alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes blue-rec {
+    from {right:0; background-color: white; }
+    to {right:10rem; background-color: var(--blue);}
+}
+
+/* TEXT FIELD */
+
+.blue-rec-h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: hidden;
+
+    animation-name: text-move;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-move {
+    from {visibility:visible; }
+    to {visibility: visible; }
 }
 
 
-.main-page {
-    background-color: var(--m-back);
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.sec-main {
-    background-color: var(--m-back);
-    padding: 0.4rem;
-    margin-bottom: 0.4rem;
-}
-
-/* MAIN NAVIGATION */
+/* NAVIGATION.............................. */
 
 /* big buttons */
 
-nav, header {font-family: 'Source Sans Pro', sans-serif;}
-
+nav {font-family: 'Source Sans Pro', sans-serif;}
 
 ul.main-nav {
     display: inline-block;
@@ -47,34 +171,44 @@ ul.main-nav {
     text-transform: uppercase;
     background-color: black;
     color: blanchedalmond;
+    border-radius: 2rem;
 }
 
 li.mn-but {display: inline-block;}
-/* stays vertical */
 
 li.mn-but a {
     display: inline-block;
     padding: 1rem 1.8rem;
 }
 
+/* hovers for buttons */
 
 li.mn-but a, li.mn-but a:hover, li.mn-but a:visited {
     text-decoration: none;
-    color: blanchedalmond;
+    color: rgb(255, 235, 205);
 }
 
 li.mn-but a:hover, a.material-icons:hover  {
-    background-color: var(--hover);
+    background: var(--hover);
+    background: linear-gradient(180deg, rgba(8,42,94,1) 30%, rgba(0,0,0,1) 80%, rgba(243,243,243,1) 243%);
+}
+
+.hover-left a:hover, .hover-left a:focus {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.hover-right a:hover, .hover-right a:focus {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 li.mn-but a:focus {background-color: var(--focus);}
 
-.active {
-    color:rgb(248, 166, 136) !important;
-}
+.active {color:rgb(153, 173, 241) !important;}
 
 .active:hover {
-    background-color: black !important;
+    background: black !important;
     cursor: default;
 }
 
@@ -90,11 +224,53 @@ a span.material-icons {color: black;}
 a span.material-icons:hover {color: var(--hover);}
 
 
-/* footer */
+/* MAIN................................... */
+
+.sec-main {
+    background-color: var(--m-back);
+    padding: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+/* FOOTER.................................. */
 
 footer {
-    color:darkgrey ;
-    margin: 2rem;
+    color:rgb(216, 216, 216) ;
+    margin-top: 4rem;
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
 }
+
+.hb {border: 1px solid black;}
+
+
+/* media q.................................... */
+
+
+@media only screen and (max-width: 540px) {
+    a span.material-icons {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    a.material-icons {text-decoration: none;}
+    ul.main-nav {margin-left: 0px;}
+    h1.intro {letter-spacing: .2rem;}
+  }
+
+@media only screen and (max-width: 470px) {
+    li.mn-but a {padding: 0.4rem 1rem;}
+    .sec-main {padding: 1rem;}
+    h1.intro {letter-spacing: .1rem;}
+  }
+
+@media only screen and (max-width: 360px) {
+    h1.intro {letter-spacing: 0;}
+    li.mn-but a {
+        font-size: .9rem;
+        padding: 0.3rem .7rem;
+    }
+
+
+  }

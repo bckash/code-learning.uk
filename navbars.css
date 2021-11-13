@@ -3,21 +3,55 @@
     --m-back: rgb(243, 243, 243);
 }
 
-/* MAIN */
+/*  INFO FIELD animation........................ */
 
-header, main {font-family: 'Montserrat', sans-serif;}
+.blue-rec-h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: hidden;
 
-header {
-    height: 6rem;
-    overflow: hidden;
+    animation-name: text-move;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes text-move {
+    from {visibility:visible; }
+    to {visibility: visible; }
+}
+
+.blue-rec-h2-mask {
+    position: relative;
+    bottom: 4.5rem;
+    left: 16rem;
+    background-color: rgb(255, 255, 255);
+    width:21rem;
+    height: 3rem;
+
+    animation-name: mask-move;
+    animation-delay: .2s;
+    animation-duration: .10s;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes mask-move {
+    from{left: 23rem;}
+    to{left:40rem; }
+}
+
+/* MAIN...................................... */
 
 code {background-color: rgb(245, 222, 214);}
 
 p.description {
     font-size: 0.8rem;
-    width: 20rem;
+    max-width: 20rem;
     margin: auto;
     margin-bottom: 2rem;
 }
@@ -30,7 +64,7 @@ ul.nav-style {
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    width: 30rem;
+    max-width: 30rem;
     margin: auto;
     background-color: cornflowerblue;
     margin-bottom: 2rem;
@@ -43,14 +77,13 @@ ul.nav-style a {
 
 /* text format */
 
-ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a{
+ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
     font-size: 1rem;
     text-transform: uppercase;
     color: rgb(240, 236, 230);
     font-weight: bold;
     text-shadow: 0.1rem 0.1rem rgb(0, 0, 0);
 }
-
 
 .left {float: left;}
 .right {float: right;}
@@ -110,3 +143,25 @@ div.dropdown-content a {
 }
 
 div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;}
+
+/* media Q ............................... */
+
+@media only screen and (max-width: 500px) {
+    p.blue-rec-h2 {
+        width: 200px;
+    }
+  }
+
+@media only screen and (max-width: 420px) {
+    ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
+        font-size: 0.7rem;
+    }
+
+    section ul.nav-style a {padding: 0.6rem;}
+}

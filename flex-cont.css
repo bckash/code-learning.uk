@@ -1,0 +1,14 @@
+
+header span.blue-rec {
+    animation-name: none;
+}
+
+h2.blue-rec-h2 {
+    animation-name: none;
+    visibility: visible;
+}
+
+.blue-rec-h2-mask {
+    display: none;
+}
+

@@ -5,6 +5,9 @@
 html {
     text-align: center;
     font-family: 'Baloo 2', cursive;
+    background: url(img/dragon3.png) no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
 }
 
 .bb {border: black solid 0.01rem;}
@@ -18,7 +21,49 @@ h1 {
     margin-bottom: 0rem;
 }
 
-span {padding: 0 0.5rem;}
+.blue-rec-h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: hidden;
+
+    animation-name: text-move;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-move {
+    from {visibility:visible; }
+    to {visibility: visible; }
+}
+
+.blue-rec-h2-mask {
+    position: relative;
+    bottom: 5.2rem;
+    left: 17rem;
+    background-color: rgb(255, 255, 255);
+    width:20rem;
+    height: 3rem;
+
+    animation-name: mask-move;
+    animation-delay: .2s;
+    animation-duration: .15s;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes mask-move {
+    from{left: 23rem;}
+    to{left:40rem; }
+}
+
+header span.blue-rec {background-color: rgb(91, 25, 129);}
+
+/* span {padding: 0 0.5rem;} */
 span.material-icons {padding: 0;}
 
 i {font-size: smaller;}
@@ -48,7 +93,7 @@ div.main-nav {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-top: 0.2rem;
     padding-top: 0.2rem;
 }
@@ -67,7 +112,9 @@ a, a:link {
     text-decoration: none;
 }
 
-.fnt-sml {font-size: 1rem;}
+.fnt-sml {
+    font-size: 1rem;
+}
 .fnt-sml:hover {font-size: 1.5rem;}
 
 
@@ -156,7 +203,7 @@ button {
     margin-top: 2rem;;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    width: 26rem;
+    max-width: 26rem;
 }
 
 .c2 {    
@@ -274,7 +321,7 @@ button {
     font-weight: normal;
     font-style: italic;
     font-size: 0.9rem;
-    width: 300px;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -311,5 +358,34 @@ button {
     box-shadow: inset 7px 10px 22px -15px rgba(0,0,0,0.75);
 }
 
+/*  mdia Q.................................... */
 
+@media only screen and (max-width: 600px) {
+    div button {font-size: 1rem;}
+}
 
+@media only screen and (max-width: 525px) {
+   .io1, .io2, .io3, .io4, .io5 {width: 2rem;}
+}
+
+@media only screen and (max-width: 500px) {
+    .content {
+        min-width: 230px;
+        height: 25rem;
+    }
+
+    div .i1 {width: 2rem;}
+}
+
+@media only screen and (max-width: 425px) {
+    #drop-all {height: 5rem;}
+}
+
+@media only screen and (max-width: 400px) {
+    h2.blue-rec-h2, .dot {font-size: 1.2rem;}
+    .io1, .io2, .io3, .io4, .io5 {width: 1.6rem;}
+}
+
+@media only screen and (max-width: 360px) {
+    div button {border-radius: 1rem;}
+}

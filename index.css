@@ -1,17 +1,70 @@
 
+html {
+    background: none;
+    height: 100%;
+}
+
+body {height: 99%;}
+
+main {
+    overflow: hidden;
+    position: relative;
+    height: 55%;
+}
+
+
+
+/* MASK*/
+
+.blue-rec-h2-mask {
+    position: relative;
+    bottom:  4.5rem;
+    left: 22rem;
+    background-color: rgb(255, 255, 255);
+    width:8rem;
+    height: 2rem;
+
+    animation-name: mask-move;
+    animation-delay: .2s;
+    animation-duration: .15s;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes mask-move {
+    from{left: 23rem;}
+    to{left:40rem; }
+}
+
+/* photo part....................... */
+
 .kasha {
+    display: inline-block;
     border: white 0.7rem solid;
     border-radius: 50%;
-    width: 30%;
-    height: auto;
+    width: 22rem;
 }
 
-.kasz {
-    width: 10rem;
+.intro-index {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.pad-top-bot {
+    padding: 15% 0;
+    background-clip: content-box;
+    box-sizing: border-box;
+
+}
+
+/* small info button.................... */
 
 a span.index-hov, a span.index-hov:hover {
-    color: rgb(0,97,233);
+    color: var(--blue);
     animation-name: fade;
     animation-duration: 2s;
     cursor: default;
@@ -19,5 +72,16 @@ a span.index-hov, a span.index-hov:hover {
 
 @keyframes fade {
     from {color: rgb(0, 0, 0);}
-    to {color: rgb(0,97,233);}
+    to {color: var(--blue)}
   }
+
+/* media Q ...................................... */
+
+@media only screen and (max-width: 470px) {
+    .kasha {width: 100%;}
+    .pad-top-bot {padding: 0;}
+}
+
+@media only screen and (max-width: 400px) {
+    h2.blue-rec-h2 {font-size: 1.2rem;}
+}

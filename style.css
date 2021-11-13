@@ -60,15 +60,15 @@ p.index {
 
 h1.intro {
 
-    padding: unset;
+    line-height: 1rem;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     float: none;
-    display: inline-block;
-    position: relative;
-    top: 1.7rem;
+    display: block;
     letter-spacing: 0.3rem;
     font-family: 'Bungee Inline', cursive;
     font-size: 1.5rem;
-    margin: 0.2rem;
 
     background: #99ADF1;
     background: -webkit-linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
@@ -166,6 +166,7 @@ nav {font-family: 'Source Sans Pro', sans-serif;}
 ul.main-nav {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
+    margin-top: 0px;
     margin-left: 2rem;
     padding: 0rem;
     text-transform: uppercase;

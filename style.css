@@ -12,11 +12,11 @@
     --hover: rgb(8, 42, 94);
     --focus: rgb(11, 36, 73);
     --blue: rgb(46, 57, 221);
-    --m-back: rgba(243, 243, 243, 0.712);
+    --m-back: rgba(229, 238, 252, 0.671);
 }
 
 HTML {
-    background: url(img/dragon2.png) no-repeat;
+    background: url(img/dragon_blue.png) no-repeat;
     background-attachment: fixed;
     background-position: center;
     min-width: 300px;

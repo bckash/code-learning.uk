@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arr.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <title>animation</title>
+</head>
+<body>
+
+    <!-- NAVI...................... -->
+    <nav>
+        <h1 class="intro">learning curve</h1>
+        <ul class="main-nav">
+
+            <!-- dropdown -->
+            <li class="dropdown-us hover-left">
+                <a class="mn-but2 active">usful sh</a>
+                <div class="dropdown-holder-us">
+                    <a href="inline.html" class="d-content-us-shad">v align</a>
+                    <a href="centre-study.html" class="d-content-us">centre</a>
+                    <a href="position.html" class="d-content-us">rel / abs</a>
+                    <a class="d-content-us us-active">animation</a>
+                    <a href="us.html" class="d-content-us">chunks</a>
+                </div>
+            </li>
+
+            <!-- rest -->
+            <li class="mn-but">
+                <a href="navbars.html">nav bars</a>
+            </li>
+            <li class="mn-but hover-right">
+                <a href="flexbox.html">flexbox</a>
+            </li>
+        </ul>
+
+        <!-- info icon -->
+        <a href="index.html">
+            <span class="material-icons">info</span>
+        </a>
+    </nav>
+
+    <!-- INFO FIELD .......................-->
+    <header class="">
+        <span class="blue-rec"></span>
+        <h2 class="blue-rec-h2">animation
+            <span class="dot">_</span>
+        </h2>
+
+        <!-- <p class="index">this here is a basic sum up, of what resulted from my codind experience so far. </p> -->
+
+    </header>
+
+    <main>
+    <!-- CODE.................... -->
+    <article class="timing">
+
+        <img src="img/stamp.png" alt="" class="stamp">
+
+        <div class="marg-bot">
+            <span class="head-notes hn-fix"></span>
+        </div>
+        
+        <p class="timing-opis">basics</p><br>
+
+        <code>animation-name: ;</code><br>
+        <code>animation-duration: ;</code><br>
+        <code>animation-delay: ;</code><br>
+        <code>animation-iteration-count: ;</code><br>
+        <span class="divider"></span>
+        <code>@keyframes name {
+            from {}
+            to {}
+          }</code><br>
+        <code>@keyframes name {
+            0%   {}
+            50%  {}
+          }</code><br>   
+    </article>
+    
+    <!-- SPEED CONTROL COLORS............... -->
+    <article class="timing">
+
+        <!-- opis -->
+        <div class="marg-bot">
+            <span class="head-notes">speed control</span>
+        </div>
+        
+        <p class="timing-opis">on color animation</p><br>
+
+        <code class="mq-fix2">animation-timing-function:</code><BR>
+        
+
+        <!-- squeares  -->
+        <div>
+            <code>ease</code><br>
+            <div class="anim4"></div>
+        </div>
+
+        <div>    
+            <code>linear</code><br>
+            <div class="anim5"></div>
+        </div>
+
+        <div>
+            <code>ease-in</code><br>
+            <div class="anim6"></div>
+        </div>
+
+        <div class="mq-break"></div>
+
+        <div class="mq-fix-1">
+            <code>ease-out</code><br>
+            <div class="anim7"></div>
+        </div>
+
+        <div>
+            <code>e-in-out</code><br>
+            <div class="anim8"></div>
+        </div>
+
+    </article>
+    
+    <!-- SPEED CONTROL 2............... -->
+    <article class="timing">
+
+        <!-- opis   -->
+        <div class="marg-bot">
+            <span class="head-notes">speed control</span>
+        </div>
+
+        <p class="timing-opis">on width animation</p><br>
+
+        <code>animation-timing-function:</code><BR>
+
+        <!-- squares 2   -->
+        <section class="e2">
+            <div class="one-ex">
+                <div class="e2-text">
+                    <code>ease</code>
+                    <p class="">slow start - fast - slow end</p>
+                </div>
+                <div class="s-envelope">
+                    <div class="e20"></div>
+                </div>              
+            </div>
+
+            <div class="one-ex">
+                <div class="e2-text">
+                    <code>linear</code>
+                    <p class="">same speed</p>
+                </div>
+                <div class="s-envelope">
+                    <div class="e21"></div>
+                </div>              
+            </div>
+
+            <div class="one-ex">
+                <div class="e2-text">
+                    <code>ease-in</code>
+                    <p class="">slow start</p>
+                </div>
+                <div class="s-envelope">
+                    <div class="e22"></div>
+                </div>              
+            </div>
+
+            <div class=" one-ex">
+                <div class="e2-text">
+                    <code>ease-out</code>
+                    <p class="">slow end</p>
+                </div>
+                <div class="s-envelope">
+                    <div class="e23"></div>
+                </div>              
+            </div>
+
+            <div class="one-ex">
+                <div class="e2-text">
+                    <code>ease-in-out</code>
+                    <p class="">slow start & end</p>
+                </div>
+                <div class="s-envelope">
+                    <div class="e24"></div>
+                </div>              
+            </div>
+
+            <div class="one-ex">
+                <div class="e2-text">
+                    <code>cubic-bezier</code>
+                    <p class="">custom (n,n,n,n)</p>
+                </div>
+                <div class="s-envelope">
+                    <div class="e25"></div>
+                </div>              
+            </div>
+
+        </section>
+    </article>
+
+    <!-- SMOOTH LOOPING.................. -->
+    <article class="timing">
+
+        <!-- opis   -->
+        <div class="marg-bot">
+            <span class="head-notes">smooth looping</span>
+        </div>
+
+        <p class="timing-opis"></p><br>
+
+        <code>animation-direction:alternate</code><BR>
+
+        <section class="e3">
+            <div class="e30"></div>
+        </section>
+    </article>
+
+    <!-- RATAIN STYLE.............................  -->
+    <article class="timing">
+
+        <!-- headder   -->
+        <div class="marg-bot">
+            <span class="head-notes">retaining style</span>
+        </div>
+
+        <p class="timing-opis">from:</p><br>
+
+        <!-- forwards   -->
+        <section class="hb">
+            <code class="fm">forwards</code>
+            <p class="fm-p"> <b>last</b> keyframe </p>
+            <section class="e4">
+                <div class="e41"></div>
+            </section>
+        </section>
+            
+        <!-- backwards   -->
+        <section class="hb">
+            <code class="fm">backwards</code>
+            <p class="fm-p"><b>first</b> keyframe </p>
+            <section class="e4">
+                <div class="e42"></div>
+            </section>
+        </section>
+
+    </article>
+    </main>
+
+</body>
+</html>

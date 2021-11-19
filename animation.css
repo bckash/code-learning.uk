@@ -1,0 +1,445 @@
+
+
+
+
+h1.anima {
+    color: var(--back);
+    text-transform: uppercase;
+    text-shadow: saddlebrown 1px 1px 1px;
+}
+
+article.timing span.head-notes {
+    display: block;
+    margin-bottom: 1rem;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+}
+
+article.timing div.marg-bot span.hn-fix {
+    display: inline-block;
+    width: 60px;
+}
+
+article.timing div {
+    display: inline-block;
+    margin: .5rem;
+}
+
+.stamp {
+    opacity: 0.5;
+    position: absolute;
+    width: 120px;
+    top: -10%;
+}
+
+.timing {
+    position: relative;
+    background-color: var(--m-back);
+    padding: 1rem;
+    padding-top: 6px;
+    margin-bottom: 1rem;
+}
+
+article.timing div p {
+    font-size: 80%;
+}
+
+.timing-opis {
+    margin: 0 auto;
+    width: 70%;
+    font-style: italic;
+}
+
+span.divider {
+    display: block;
+    margin: 2rem auto;
+    display: block;
+    border-top: black 1px dotted;
+    width: 30%
+}
+
+.hb {border: 1px dotted black;}
+
+/* CODE.................................. */
+
+
+
+
+/*  property description................... */
+
+
+.value, .opis {
+    margin: .5rem;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.value {
+    text-align: right;
+    font-weight: bold;
+    width: 40%;
+}
+
+.opis {
+    padding-left: 1rem;
+    width:40%;
+    text-align: left;
+}
+
+/*  SQUARES 1..................... */
+
+article.timing div.mq-break {display: none;}
+
+.anim5, .anim6, .anim7, .anim4, .anim8 {
+    margin: 0 auto;
+    width: 5rem;
+    height: 5rem;
+}
+
+.anim4, .anim5, .anim6, .anim7, .anim8 {
+    background-color: cornflowerblue;
+    animation-name: a3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.anim5 {animation-timing-function: linear;}
+.anim6 {animation-timing-function: ease-in;}
+.anim7 {animation-timing-function: ease-out;}
+.anim7 {animation-timing-function: ease-in-out;}
+
+
+/*  keyframes  1......................... */
+
+@keyframes a1 {
+    from {background-color: rgb(255, 255, 255);}
+    to {background-color: cornflowerblue}
+  }
+
+@keyframes a2 {
+    0%   {background-color: cornflowerblue;}
+    25%  {background-color: rgb(255, 196, 0);}
+    50%  {background-color: rgb(85, 9, 94);}
+    100% {background-color: cornflowerblue}
+  }
+
+  @keyframes a3 {
+    0%   {background-color: rgb(240, 46, 39);}
+    10%  {background-color: rgb(212, 108, 23);}
+    20%  {background-color: rgb(26, 190, 21);}
+    30% {background-color: rgb(24, 190, 113)}
+    40%   {background-color: rgb(27, 128, 175);}
+    50%  {background-color: rgb(24, 96, 163);}
+    60%  {background-color: rgb(187, 26, 236);}
+    70% {background-color: rgb(197, 19, 117)}
+    80%  {background-color: rgb(121, 15, 112);}
+    90% {background-color: rgb(87, 7, 18)}
+    100% {background-color: rgb(3, 0, 0)}
+  }
+
+/* SQUARES 2....................... */
+
+/* opis */
+
+section.e2 div {
+    margin-left: .5rem;
+    text-align: left;
+}
+
+div.e2-text p {margin: .2rem 0}
+
+.s-envelope {
+    margin: 0;
+    width:50%
+}
+
+.one-ex {width: 90%;}
+
+section.e2 .e2-text {
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* squares */
+
+.e20, .e21, .e22, .e23, .e24, .e25 {
+    vertical-align: middle;
+    display: inline-block;
+    background-color: cornflowerblue;
+    width: 5rem;
+    height: 3rem;
+}
+
+.e20, .e21, .e22, .e23, .e24, .e25 {
+    background-color: cornflowerblue;
+    animation-name: width-anima;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.e21 {animation-timing-function: linear;}
+.e22 {animation-timing-function: ease-in;}
+.e23 {animation-timing-function: ease-out;}
+.e24 {animation-timing-function: ease-in-out;}
+.e25 {animation-timing-function: cubic-bezier(.57,-0.2,1,.39);}
+
+/* keyframes 2............................. */
+
+@keyframes width-anima {
+    from {width: 0rem;}
+    to {width: 20rem;}
+  }
+
+
+/* REVERSE / ALTERNATE....................... */
+
+.e3 {
+    margin-left: 5rem;
+    text-align: left;
+}
+
+.e30 {
+    display: inline-block;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    background-color: plum;
+    border-radius: 3rem;
+
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moving {
+    from {background-color: plum; left: 0rem;}
+    to {background-color: purple; left: 30rem;}
+  }
+
+
+/* FILL MODE....................... */
+
+section.hb {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.e4 {
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.fm-p {display: inline-block;}
+
+.fm-p::before {
+    background-color: unset;
+    content: " | ";
+}
+
+.e41, .e42 {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(53, 112, 190);
+
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.e41 {animation-fill-mode: forwards}
+.e42 {animation-fill-mode: backwards}
+
+
+@keyframes rotate {
+    from {
+        background-color: rgb(53, 112, 190); 
+        transform: rotate(0);
+        left: 0;
+    }
+    to {
+        background-color: purple; 
+        transform: rotate(360deg);
+        left: 30rem;
+    }
+  }
+
+/* media Q.................................. */
+
+/* 720............. */
+
+@media only screen and (max-width: 720px) {
+    .e41, .e42 {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    @keyframes rotate {
+        from {
+            background-color: rgb(53, 112, 190); 
+            transform: rotate(0);
+            left: 0;
+        }
+        to {
+            background-color: purple; 
+            transform: rotate(360deg);
+            left: 25rem;
+        }
+    }
+
+    .e30 {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    @keyframes moving {
+        from {background-color: plum; left: 0rem;}
+        to {background-color: purple; left: 25rem;}
+    }
+}
+
+/* 630............. */
+
+@media only screen and (max-width: 630px) {
+    
+    .anim5, .anim6, .anim7, .anim4, .anim8 {
+        margin: 0 auto;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    article.timing code.mq-fix2 {margin-bottom: 1.3rem;}
+
+    .e4, .e3 {padding-left: 1rem;}
+    .e3 {margin-left: 1rem;}
+
+    @keyframes width-anima {
+        from {width: 0rem;}
+        to {width: 15rem;}
+    }
+}
+
+/* 560............. */
+
+@media only screen and (max-width: 560px) {
+        article.timing div.mq-break {
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+
+    @keyframes rotate {
+        from {
+            background-color: rgb(53, 112, 190); 
+            transform: rotate(0);
+            left: 0;
+        }
+        to {
+            background-color: purple; 
+            transform: rotate(360deg);
+            left: 20rem;
+        }
+      }
+
+    @keyframes moving {
+        from {background-color: plum; left: 0rem;}
+        to {background-color: purple; left: 20rem;}
+    }
+}
+
+/* 480............. */
+
+@media only screen and (max-width: 480px) {
+    @keyframes rotate {
+        from {
+            background-color: rgb(53, 112, 190); 
+            transform: rotate(0);
+            left: 0;
+        }
+        to {
+            background-color: purple; 
+            transform: rotate(360deg);
+            left: 15rem;
+        }
+    }
+
+    @keyframes moving {
+        from {background-color: plum; left: 0rem;}
+        to {background-color: purple; left: 15rem;}
+    }
+
+    @keyframes width-anima {
+        from {width: 0rem;}
+        to {width: 10rem;}
+    }
+
+}
+
+/* 410............. */
+
+@media only screen and (max-width: 410px) {
+    article.timing {font-size: .9rem;}
+}
+
+/* 400............. */
+
+@media only screen and (max-width: 400px) {
+
+    .e41, .e42 {animation-duration: 2s;}
+
+    .e41, .e42 {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    @keyframes rotate {
+        from {
+            background-color: rgb(53, 112, 190); 
+            transform: rotate(0);
+            left: 0;
+        }
+        to {
+            background-color: purple; 
+            transform: rotate(360deg);
+            left: 10rem;
+        }
+    }
+
+    .e30 {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    @keyframes moving {
+        from {background-color: plum; left: 0rem;}
+        to {background-color: purple; left: 10rem;}
+    }
+    
+    .e20, .e21, .e22, .e23, .e24, .e25 {
+        animation-duration: 2s;
+    }
+}
+
+/* 330............. */
+
+@media only screen and (max-width: 330px) {
+    article.timing {font-size: 0.7rem;}
+
+    .e20, .e21, .e22, .e23, .e24, .e25 {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    @keyframes width-anima {
+        from {width: 0rem;}
+        to {width: 8rem;}
+    }
+}

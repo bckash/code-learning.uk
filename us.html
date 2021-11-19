@@ -11,19 +11,29 @@
     <title>K | code</title>
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
-</style>
-
 <body>
 
     <!-- NAVI.................... -->
     <nav>
         <h1 class="intro">learning curve</h1>
         <ul class="main-nav">
-            <li class="mn-but hover-left"><a class="active">usful sh</a></li>
-            <li class="mn-but"><a href="navbars.html">nav bars</a></li>
-            <li class="mn-but hover-right"><a href="flexbox.html">flexbox</a></li>
+            <li class="dropdown-us hover-left">
+                <a class="mn-but2 active">usful sh</a>
+                <div class="dropdown-holder-us">
+                    <a href="inline.html" class="d-content-us-shad">v align</a>
+                    <a href="centre-study.html" class="d-content-us">centre</a>
+                    <a href="position.html" class="d-content-us">rel / abs</a>
+                    <a href="animation.html" class="d-content-us">animation</a>
+                    <a class="d-content-us us-active">chunks</a>
+                </div>
+            </li>
+
+            <li class="mn-but">
+                <a href="navbars.html">nav bars</a>
+            </li>
+            <li class="mn-but hover-right">
+                <a href="flexbox.html">flexbox</a>
+            </li>
         </ul>
         <a href="index.html">
             <span class="material-icons">info</span>
@@ -47,57 +57,63 @@
     <main>
         <!-- NOTES -->
             <section class="sec-main">
-                    <h2 class="">Notez:</h2>
-                    <p>
-                        <code>vertical align</code> doesn't work with <code>float</code> 
-                    </p>
-                    <p>
-                        whe using <code>float</code> use <code>clear</code> to avoid surrounding  by the element next to floating1  
-                    </p>
-                    <p>
-                        <code>%</code> is reffering to the value of parent element 
-                    </p>
-                    <p>
-                        <code>[atribute=value]</code> css for atribute with value. more about <a target="_blank" href="https://www.w3schools.com/cssref/css_selectors.asp">selectors</a>
-                    </p>
-                    <p>
-                        difference: <code>&ltbutton&gt</code> allows content inside, <code>input type="button"</code> doesn't
-                    </p>
-                    <p>
-                        <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</code> - responsive tag
-                    </p>
-                    <p>
-                        <code>width</code> set to 100% - makes the image responsive
-                    </p>
-                    <p>
-                        using <code>vw</code> for size unit - makes the font responsive
-                    </p>
-                    <p>
-                        <code>vh</code> relative to sie of the vieport.
-                    </p>
-                    <p>
-                        <code>@media</code> media queries for  responsive design
-                    </p>
-                    <p>
-                        <code>:root</code> selector (pseudo class) - overrides <code>html</code> (type selector)
-                    </p>
-                    <p>
-                        var(--name, value) : CSS variables
-                    </p>
-                    <p>
-                        <code>body::-webkit-scrollbar</code> for styling main scrollbar
-                    </p>
-                    <p>
-                        <a href="https://youtu.be/Qhaz36TZG5Y?t=344" target="_blank">ratio hack</a>
-                    </p>
-                    <p>
-                        <a href="https://youtu.be/Qhaz36TZG5Y?t=498" target="_blank">counter for elements in css</a>
-                    </p>
+
+                <div class="marg-bot">
+                    <span class="head-notes">notez</span>
+                </div>
+                
+                <p>
+                    <code>vertical align</code> doesn't work with <code>float</code> 
+                </p>
+                <p>
+                    whe using <code>float</code> use <code>clear</code> to avoid surrounding  by the element next to floating1  
+                </p>
+                <p>
+                    <code>%</code> is reffering to the value of parent element 
+                </p>
+                <p>
+                    <code>[atribute=value]</code> css for atribute with value. more about <a target="_blank" href="https://www.w3schools.com/cssref/css_selectors.asp">selectors</a>
+                </p>
+                <p>
+                    difference: <code>&ltbutton&gt</code> allows content inside, <code>input type="button"</code> doesn't
+                </p>
+                <p>
+                    <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</code> - responsive tag
+                </p>
+                <p>
+                    <code>width</code> set to 100% - makes the image responsive
+                </p>
+                <p>
+                    using <code>vw</code> for size unit - makes the font responsive
+                </p>
+                <p>
+                    <code>vh</code> relative to sie of the vieport.
+                </p>
+                <p>
+                    <code>@media</code> media queries for  responsive design
+                </p>
+                <p>
+                    <code>:root</code> selector (pseudo class) - overrides <code>html</code> (type selector)
+                </p>
+                <p>
+                    var(--name, value) : CSS variables
+                </p>
+                <p>
+                    <code>body::-webkit-scrollbar</code> for styling main scrollbar
+                </p>
+                <p>
+                    <a href="https://youtu.be/Qhaz36TZG5Y?t=344" target="_blank">ratio hack</a>
+                </p>
+                <p>
+                    <a href="https://youtu.be/Qhaz36TZG5Y?t=498" target="_blank">counter for elements in css</a>
+                </p>   
             </section>
 
         <!-- CHARACTER -->
         <section class="sec-main clear">
-            <h2 class="">Character:</h2>
+            <div class="marg-bot">
+                    <span class="head-notes">character</span>
+                </div>
             <p class="code-wrap">
                 <code>*</code><span></span>all elements
             </p>
@@ -120,7 +136,9 @@
 
         <!-- FORMS -->
         <section class="sec-main">
-            <h2>Forms:</h2>
+            <div class="marg-bot">
+                <span class="head-notes">formz</span>
+            </div>
             <p class="descrip"><code>input type=</code> 
             </p>
             <!-- button -->
@@ -180,8 +198,12 @@
         </section>
 
         <!-- POSITIONING -->
-        <section class="sec-main">
-            <h2>Position:</h2>
+        <!-- <section class="sec-main">
+
+            <div class="marg-bot">
+                <span class="head-notes">position</span>
+            </div>
+            
             <p class="descrip">position elements using specific coordinates (opposed to the more semantic options in flexbox and floats).</p>
             <figure>
                 <img src="img/pos.png" width="90%"><br>
@@ -199,7 +221,7 @@
                 <section class="in-bl sec-pos-sec">
                     <p>element is removed from the normal flow of the page, and the coordinate system is relative to the entire browser window.</p>
                 </section>
-        </section>
+        </section> -->
         
     </main>
             

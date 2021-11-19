@@ -1,0 +1,124 @@
+
+
+html {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/* the inside.................... */
+
+section {margin-bottom: 2rem;}
+
+article.centre p.notes {
+    padding: 0.5rem;
+    width: 60%;
+    max-width: 20rem;
+    display: inline-block;
+    background-color: white;
+    border: 1px dotted black;
+    margin-bottom: 3rem;
+}
+
+.child-sec {
+    display: inline-block;
+    width: 20rem;
+}
+
+.child-sec h3 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.known-width {
+    vertical-align: top;
+    padding: 0 1rem 1rem 1rem;
+    display: inline-block;
+    background-color: var(--sect-back);
+}
+
+.known-width h4 {
+    font-weight: normal;
+
+}
+
+span.head-notes {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: .8rem;
+}
+
+/* parent child test........................ */
+
+.child {
+    border: firebrick 1px solid;
+    width: 10rem;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -10rem;
+}
+
+.parent {
+    position: relative;
+    border: forestgreen 1px solid;
+    width: 20rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+
+
+/* notes........................ */
+
+
+
+section.notes {
+    margin-top: 1rem;
+    border: none;
+    margin: 0 2rem;
+}
+
+
+article.centre ul, section.notes ul {
+    padding-left: 0;
+    list-style-type: none;
+    padding: .5rem
+}
+
+article.centre li, section.notes ul {
+    background-color: rgb(255, 242, 224);
+    line-height: 1.6rem;
+    max-width: 30rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.hb {
+    border: black 1px dotted;
+}
+
+article.centre code, section.notes code {
+    border: none;
+}
+
+/*  */
+
+@media only screen and (max-width: 350px) {
+    main article.centre p.notes, main article.centre section.known-width {
+        font-size: .9rem;
+
+    }
+
+    section.child-sec {
+        display: block;
+        padding-bottom: 1rem;
+        width: unset;
+    }
+
+
+}

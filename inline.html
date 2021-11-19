@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arr.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="inline.css">
+    <title>K | vertical align</title>
+</head>
+<body>
+
+        <!-- NAVI...................... -->
+        <nav>
+            <h1 class="intro">learning curve</h1>
+            <ul class="main-nav">
+    
+                <!-- dropdown menu -->
+                <li class="dropdown-us hover-left">
+                    <a class="mn-but2 active">usful sh</a>
+                    <div class="dropdown-holder-us">
+                        <a class="us-active d-content-us-shad">v align</a>
+                        <a href="centre-study.html" class="d-content-us">centre</a>
+                        <a href="position.html" class="d-content-us">rel / abs</a>
+                        <a href="animation.html" class="d-content-us">animation</a>
+                        <a href="us.html" class="d-content-us">chunks</a>
+                    </div>
+                </li>
+    
+                <!-- rest -->
+                <li class="mn-but">
+                    <a href="navbars.html">nav bars</a>
+                </li>
+                <li class="mn-but hover-right">
+                    <a href="flexbox.html">flexbox</a>
+                </li>
+            </ul>
+    
+            <!-- info icon -->
+            <a href="index.html">
+                <span class="material-icons">info</span>
+            </a>
+        </nav>
+    
+        <!-- INFO FIELD .......................-->
+        <header class="">
+            <span class="blue-rec"></span>
+            <h2 class="blue-rec-h2">vertical align
+                <span class="dot">_</span>
+            </h2>
+   
+        </header>
+
+    <!-- MAIN .......................-->
+    <main class="va">
+
+        <a href="https://christopheraue.net/design/vertical-align" target="_blank">
+            <span class="source-link">source</span>
+        </a>
+
+        <article class="inline"> 
+            <!-- line box picture 1.................... -->
+            <section>
+
+                <div class="atr-start">
+
+                    <p class="notes"><code> vertical-align</code> aligns (tops, bottoms, baselines of) inline elements - to the <strong class="col-purp">line box</strong> values.</p><br>
+
+                    <section class="lb-mq">
+                        <figure class="s-example">
+                            <div class="line-ex"></div>
+                            <div class="line-up"></div>
+                            <span class="baseline-ex">baseline</span>
+                            <span class="sub-ex">sub</span>
+                            <span class="super-ex">super</span>
+                            <span class="ex1">+50%</span>
+                            <span class="ex2">-50%</span>
+                            <div class="line-bottom"></div>
+                        </figure>
+                        <figcaption>pict.1. elements inside the line box</figcaption>
+                    </section>
+                    
+                    
+                    
+                </div>
+    
+                <!-- line box note -->
+                <p class="notes">every line (containing inline elements) has a <strong class="col-purp">line box</strong> enclosing all its elements. It runs from the top most element to the bottom edge.</p><br>
+    
+                <!-- line box picture 2......................... -->
+                <section class="lb-mq">
+                    <figure class="s-example">
+                        <div class="line-up2"></div>
+                        <div class="line-ex2"></div>
+                        <span class="col-grey">b</span>
+                        <span class="ex2-1">one</span>
+                        <span class="ex2-11">1</span>
+                        <span class="ex2-2">two</span>
+                        <span class="ex2-22">2</span>
+                        <span class="ex2-3">three</span>
+                        <div class="line-bottom2"></div>
+                    </figure>
+                    <figcaption>pict.2. this can happen inside line box</figcaption>
+                </section>
+                
+                
+    
+            </section>
+    
+            <!-- where is baseline ?    -->
+            <section>
+                <h3 class="col-blue">where is baseline?</h3>
+                <!-- table     -->
+                <table>
+                    <tr>
+                        <td class="head-cell">line box:</td>
+                        <td>
+                            variable - placed where it needs to fulfill all other conditions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-cell">inline:</td>
+                        <td>
+                           the line, the characters are sitting on. 
+                        </td>
+                    </tr>
+                    <tr class="border-bot">
+                        <td class="head-cell">inline-block:</td>
+                        <td>
+                            depends on whether the element has in-flow content [picture left]; has in-flow content and <code>overflow: hidden;</code> [middle]; or has no content [right]. Baseline marked by <span class="col-blue"><b>blue</b>.</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+    
+            <!-- pict.3 squarez    -->
+
+            <section>
+                <figure class="s-example">
+                    <div class="box-ex">C</div>
+                    <div class="box-ex ov-hidd">C</div>
+                    <div class="box-ex"></div>
+                    <div class="baseline2"></div>
+                </figure>
+                <figcaption class="fig3-fix">pict.3. squares with same padding and marging, vertically baseline aligned  </figcaption>
+            </section>
+            
+    
+            <!-- VA : middle    -->
+            <section>
+                <h3>v-a: middle</h3>
+                <p class="notes"><b>middle:</b> The midpoint between the element’s top and bottom edge is aligned to the line box’s baseline plus half of the x-height.</p>
+                <div class="space"></div>
+            </section>
+    
+            <!-- moving baseline -->
+            <section>
+                <h3>moving baseline</h3>
+                <p class="notes">The position of the line box’s baseline is affected by all elements in that line. When baseline moves, elements attached to it move also.</p>
+                <div class="space"></div>
+                <p class="notes">Any difficulties with VA could be solved by locating the baseline, and edges of the line box & aligned elements </p>
+            </section>
+            
+        </article>
+    </main>
+
+    <footer>VA<br>kashakash<br>2021</footer>
+
+
+</body>
+</html>

@@ -6,17 +6,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
+
 :root {
     font-size: 1rem;
     text-align: center;
     --hover: rgb(8, 42, 94);
     --focus: rgb(11, 36, 73);
     --blue: rgb(46, 57, 221);
-    --m-back: rgba(229, 238, 252, 0.671);
+    --m-back: rgba(165, 208, 211, 0.144);
+    --active: rgb(153, 173, 241);
+    --sect-back: rgba(182, 212, 212, 0.781);
+    --sect-back-head: rgb(117, 170, 170);
+    --d-cont-color: rgb(139, 139, 139);
+    --d-cont-back: rgb(58, 58, 58);
 }
 
 HTML {
-    background: url(img/dragon_blue.png) no-repeat;
+    background: url(img/paint_opa.png) no-repeat;
     background-attachment: fixed;
     background-position: center;
     min-width: 300px;
@@ -35,11 +42,12 @@ header {
 }
 
 main {font-family: 'Montserrat', sans-serif;}
+
 h2 {font-weight: normal;}
 
 code {
     border-bottom: .1rem solid white;
-    background-color: rgb(243, 228, 201);
+    background-color: rgb(221, 243, 201);
     display: inline-block;
     padding: 0.1rem 0.3rem;
     min-width: 2rem;
@@ -83,14 +91,8 @@ h1.intro {
     }
 
 @keyframes text-shad {
-        40% {text-shadow: -8px 0px 0px rgba(168, 6, 101, 0.336);}
+        40% {text-shadow: -8px 0px 0px rgba(168, 6, 101, 0.336)}
     }
-
-/* h2 span, p.index {
-    text-align: justify;
-    padding-left: 0.9rem ;
-    border-left: 0.8rem solid var(--blue);
-} */
 
 /* DOT + animation................................ */
 
@@ -177,7 +179,7 @@ ul.main-nav {
     box-shadow: 1px 5px 30px rgba(2, 21, 71, 0.651);
 }
 
-li.mn-but {display: inline-block;}
+li.mn-but {display: inline-block}
 
 li.mn-but a {
     display: inline-block;
@@ -191,7 +193,7 @@ li.mn-but a, li.mn-but a:hover, li.mn-but a:visited {
     color: rgb(255, 235, 205);
 }
 
-li.mn-but a:hover, a.material-icons:hover  {
+li.mn-but a:hover, a.material-icons:hover, .mn-but2:hover   {
     background: var(--hover);
     background: linear-gradient(180deg, rgba(8,42,94,1) 30%, rgba(0,0,0,1) 80%, rgba(243,243,243,1) 243%);
 }
@@ -208,12 +210,84 @@ li.mn-but a:hover, a.material-icons:hover  {
 
 li.mn-but a:focus {background-color: var(--focus);}
 
-.active {color:rgb(153, 173, 241) !important;}
+.active {color: var(--active) !important;}
 
 .active:hover {
     background: black !important;
     cursor: default;
 }
+
+
+/* USFUL SH : dropdown menu............ */
+
+.dropdown-us {
+    position: relative;
+    display: inline-block;
+}
+
+.mn-but2 {
+    padding: 1rem 1.8rem;
+}
+
+.dropdown-holder-us {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 2.2rem;
+    left: 1.3rem;
+
+    box-shadow: 1px 5px 30px rgba(2, 21, 71, 0.651);
+}
+
+.d-content-us {
+    display: block;
+    color: var(--d-cont-color);
+    background-color: rgb(58, 58, 58);
+    padding: .5rem 1.2rem;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.d-content-us-shad {
+    display: block;
+    color: rgb(139, 139, 139);
+    background-color: rgb(58, 58, 58);
+    padding: .5rem 1.2rem;
+    text-decoration: none;
+    font-size: .8rem;
+    background: rgb(23,23,23);
+    background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(58,58,58,1) 60%, rgba(58,58,58,1) 100%, rgba(243,243,243,1) 243%);
+}
+
+a.d-content-us:hover  {
+    background: rgb(75, 75, 75);
+    color: blanchedalmond;
+    border-radius: 0;
+}
+
+a.d-content-us-shad:hover {
+    background: rgb(23,23,23);
+    background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(68,68,68,1) 22%, rgba(75,75,75,1) 100%, rgba(243,243,243,1) 243%);
+    color: blanchedalmond;
+    border-radius: 0;
+}
+
+.dropdown-us:hover .dropdown-holder-us {
+    display: block;
+    cursor: default;
+}
+
+.us-active {
+    color: var(--active)
+}
+
+a.us-active:hover {
+    color: var(--active);
+    cursor: default;
+    background-color: rgb(58, 58, 58);
+}
+
+.mn-but2:hover {cursor: default;}
 
 /* info button */
 
@@ -235,6 +309,22 @@ a span.material-icons:hover {color: var(--hover);}
     margin-bottom: 0.4rem;
 }
 
+.marg-bot {
+    margin-bottom: 2rem;
+}
+
+.head-notes {
+    background-color: rgb(146, 146, 146);
+    color: rgb(255, 255, 255);
+    padding: .8rem .4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.head-notes::after {content: none;}
+
 /* FOOTER.................................. */
 
 footer {
@@ -255,6 +345,8 @@ footer {
         position: fixed;
         right: 10px;
         top: 10px;
+        z-index: 10;
+        color: rgb(153,171,234);
     }
 
     a.material-icons {text-decoration: none;}
@@ -263,17 +355,32 @@ footer {
   }
 
 @media only screen and (max-width: 470px) {
-    li.mn-but a {padding: 0.4rem 1rem;}
+    li.mn-but a, li.dropdown-us a {padding: 0.4rem 1rem;}
     .sec-main {padding: 1rem;}
     h1.intro {letter-spacing: .1rem;}
-  }
 
-@media only screen and (max-width: 360px) {
-    h1.intro {letter-spacing: 0;}
-    li.mn-but a {
+    .dropdown-holder-us {
+        top: 1.6rem;
+        left: .9rem;
+  }
+}
+
+
+@media only screen and (max-width: 390px) {
+    h1.intro {
+        font-size: 1.3rem;
+        letter-spacing: 0;
+    }
+    li.mn-but a, li.dropdown-us a {
         font-size: .9rem;
-        padding: 0.3rem .7rem;
+        padding: 0.5rem .7rem;
     }
 
+    ul.main-nav div.dropdown-holder-us {
+        top: 1.6rem;
+        left: .9rem;
+    }
+
+    .dropdown-holder-us a.d-content-us, .dropdown-holder-us a.d-content-us-shad {font-size: .7rem;}
 
   }

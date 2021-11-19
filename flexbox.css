@@ -12,6 +12,9 @@ html {
 
 .bb {border: black solid 0.01rem;}
 
+ul.main-nav a {color: blanchedalmond}
+div.dropdown-holder-us a {color: var(--d-cont-color);}
+
 h1 {
     display: inline-block;
     font-family: 'Pacifico', cursive;

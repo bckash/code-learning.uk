@@ -1,0 +1,166 @@
+
+:root {
+    --cont1: rgba(247, 227, 224, 0.548);
+    --cont2:  rgba(212, 241, 243, 0.616);
+    --c1-dark: rgba(129, 91, 86, 0.699);
+    --c2-dark: rgba(62, 115, 119, 0.815);
+}
+
+
+p.bridge {
+    border: .3rem solid black;
+    margin-bottom: 2rem;
+
+}
+
+section {
+    margin: 0 auto;
+}
+
+main.position p.notes {
+    padding: 0.5rem;
+    width: 60%;
+    max-width: 20rem;
+    display: inline-block;
+    background-color: white;
+    border: 1px dotted black;
+    margin-bottom: 3rem;
+}
+
+
+main.position section {
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+} 
+
+main.position .no-border {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+main.position .margin-up {margin-top: 1rem;}
+
+main.position div {display: inline-block;}
+main.position div.p-holder, main.position div.p-holder2 {display: block;}
+
+div.p-holder span, div.p-holder2 span{
+    display: inline-block;
+    padding: .5rem .8rem;
+}
+
+div.p-holder span {background-color: var(--cont1);}
+div.p-holder2 span {background-color: var(--cont2);}
+
+.cont1, .cont2 {vertical-align: middle;}
+.cont1 {background-color: var(--cont1)}
+
+.cont2 {
+    height: 326px;
+    background-color: var(--cont2)
+}
+
+.cont2-fix {height: 312px;}
+
+div.cont1 .head-notes, div.cont2 .head-notes {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+div.cont1 .head-notes {background-color: var(--c1-dark) }
+div.cont2 .head-notes {background-color: var(--c2-dark)}
+
+div.cont1 p {background-color: rgba(243, 220, 217, 0.548);}
+div.cont2 p {background-color: rgba(196, 230, 233, 0.616);}
+
+.cont1 .hn, .cont2 .hn {
+    padding: .5rem;
+    color: white;
+
+    display: block;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.cont1 .hn {background-color: var(--c1-dark);}
+.cont2 .hn {background-color: var(--c2-dark);}
+
+/* PARENT RECTANGLE............................ */
+
+div.parent {
+
+    margin-top: 10rem;
+    margin: 2rem;
+    border: blueviolet solid 2px;
+    position: relative;
+    height: 10rem;
+    width: 20rem;
+}
+
+/* CHILD RECTANGLE............................. */
+
+.child1, .child2, .child3, .child4, .child5, .child6, .child7, .child8, .child9, .child10 {
+    background-color: rgb(247, 209, 151);
+    height: 5rem;
+    width: 10rem;
+}
+
+.child1, .child3, .child5, .child7, .child9 {
+    position: relative;
+    background-color: var(--c1-dark);
+}
+
+.child2, .child4, .child6, .child8, .child10 {
+    position: absolute;
+    background-color: var(--c2-dark);
+}
+
+/* top */
+
+.child3 {top: 10%;}
+.child4 {top: 10%;}
+
+/* bottom*/
+
+.child5 {bottom: 10%;}
+.child6 {bottom: 10%;}
+
+/* right */
+
+.child7 {right: 10%;}
+.child8 {right: 10%;}
+
+/* left */
+
+.child9 {left: 10%;}
+.child10 {left: 10%;}
+
+
+/* media Q................................. */
+
+@media only screen and (max-width: 797px) {
+    p.bridge {
+        margin: 0 auto;
+        max-width: 388px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    div.parent {
+
+        margin-top: 10rem;
+        margin: 2rem;
+        height: 7rem;
+        width: 14rem;
+    }
+
+    .child1, .child2, .child3, .child4, .child5, .child6, .child7, .child8, .child9, .child10 {
+        height: 2.5rem;
+        width: 5rem;
+    }
+
+    
+}

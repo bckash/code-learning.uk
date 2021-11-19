@@ -43,7 +43,7 @@ main.va {position: relative;}
     padding: 0 .2rem;
     background-color: black;
     color: white;
-    top: -3rem;
+    top: -2.9rem;
     right:0;
     position: absolute;
     display: inline-block;
@@ -57,6 +57,7 @@ article.inline {
 }
 
 article.inline .notes {
+    font-size: .9rem;
     background-color: white;
     border: 1px dotted black;
 }
@@ -122,7 +123,7 @@ table {
     border-bottom: none;
 }
 
-td, .notes {font-size: 1rem;}
+td, .notes {font-size: .9rem;}
 
 td {
     padding-bottom: .7rem;
@@ -185,11 +186,15 @@ td {
 
 /* media Q....................................... */
 
+/* 690 */
+
 @media only screen and (max-width: 690px) {
     .lb-mq span {font-size: 1.4rem}
     .line-ex {top: 2.5rem}
     .line-ex2 {top: 2.5rem}
   }
+
+/* 620 */
 
 @media only screen and (max-width: 620px) {
     .lb-mq span {font-size: 1.2rem}
@@ -207,6 +212,8 @@ td {
     }
   }
 
+/* 550 */
+
 @media only screen and (max-width: 550px) {
     .lb-mq span {font-size: 1rem}
     .line-ex {top: 1.8rem}
@@ -214,7 +221,9 @@ td {
     h3 {font-size: 1.5rem;}
     figcaption {font-size: .6rem;}
     
-  }
+}
+
+/* 500 */
 
 @media only screen and (max-width: 500px) {
     div.box-ex {
@@ -227,7 +236,7 @@ td {
 
     div.baseline2 {
         border-bottom: 1px blue solid;
-        bottom: 2.8rem;
+        bottom: 2.7rem;
     }
 
     .lb-mq span {font-size: .8rem}
@@ -236,6 +245,8 @@ td {
     h3 {font-size: 1.3rem;}
 
 }
+
+/* 420 */
 
 @media only screen and (max-width: 420px) {
     div.box-ex {
@@ -250,6 +261,8 @@ td {
 
     figcaption.fig3-fix {max-width: 15rem;}
 
+    figure.s-example span {padding: .4rem;}
+
     table tr, table td {font-size: .7rem;}
 
     table {
@@ -261,10 +274,17 @@ td {
         width: .9rem;
     }
 
-    span::after {
-        content: none;
-    } 
+    span::after {content: none;} 
+
+    div.baseline2 {bottom: 2rem;}
+
+    table code {
+        font-size: .7rem;
+        padding: .01rem;
+    }
 }
+
+/* 340 */
 
 @media only screen and (max-width: 340px) {
 
@@ -272,6 +292,8 @@ td {
         margin:0rem;
 
     }
+
+    figure.s-example span {padding: .5rem;}
 
     figcaption {max-width: 20rem;}
     
@@ -284,9 +306,6 @@ td {
         width: .7rem;
     }
 
-    article.inline p.notes {
-
-        margin: 1rem auto;
-    }
+    article.inline p.notes {margin: 1rem auto;}
 
 }

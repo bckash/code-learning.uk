@@ -17,6 +17,7 @@ article.timing span.head-notes {
 }
 
 article.timing div.marg-bot span.hn-fix {
+    border: 1px dotted solid;
     display: inline-block;
     width: 60px;
 }
@@ -27,6 +28,7 @@ article.timing div {
 }
 
 .stamp {
+    z-index: 10;
     opacity: 0.5;
     position: absolute;
     width: 120px;

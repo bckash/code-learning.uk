@@ -57,11 +57,11 @@ div.p-holder2 span {background-color: var(--cont2);}
 .cont1 {background-color: var(--cont1)}
 
 .cont2 {
-    height: 326px;
+    height: 294.14px;
     background-color: var(--cont2)
 }
 
-.cont2-fix {height: 312px;}
+.cont2-fix {height: 280.77px;}
 
 div.cont1 .head-notes, div.cont2 .head-notes {
     font-weight: bold;

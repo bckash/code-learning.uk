@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200&display=swap');
 
 :root {
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
     --hover: rgb(8, 42, 94);
     --focus: rgb(11, 36, 73);
@@ -31,40 +31,12 @@ HTML {
 
 body {
     max-width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-header {
-    border-bottom: 1px black solid;
-    height: 6rem;
-    overflow: hidden;
-}
+/* NAVI................................. */
 
-main {font-family: 'Montserrat', sans-serif;}
-
-h2 {font-weight: normal;}
-
-code {
-    border-bottom: .1rem solid white;
-    background-color: rgb(221, 243, 201);
-    display: inline-block;
-    padding: 0.1rem 0.3rem;
-    min-width: 2rem;
-}
-
-p.index {
-    font-family: 'Orbitron', sans-serif;
-    margin-left: 1rem;
-    vertical-align: middle;
-    text-align: left;
-    display: inline-block;
-    font-size: .9rem;
-    max-width:26rem;
-
-}
-
-/* LOGO animation....................... */
+/* learning curve logo */
 
 h1.intro {
 
@@ -94,73 +66,6 @@ h1.intro {
         40% {text-shadow: -8px 0px 0px rgba(168, 6, 101, 0.336)}
     }
 
-/* DOT + animation................................ */
-
-.dot {
-    color: var(--blue);
-    vertical-align: baseline;
-    font-size: 1.5rem;
-
-    animation-name: dot;
-    animation-delay: 2s;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-span.dot::after {content: none;}
-
-@keyframes dot {
-    0% {opacity: 0;}
-    15% {opacity: 1;}
-    100% {opacity: 1;}
-}
-
-/* INFO FIELD + animation..................... */
-
-/* BLUE SQUARE */
-
-span.blue-rec {
-    position: relative;
-    vertical-align: middle;
-    display: inline-block;
-    background-color: var(--blue);
-    width:1rem;
-    height: 2rem;
-
-    animation-name: blue-rec;
-    animation-duration: .15s;
-    animation-direction:alternate;
-    animation-timing-function: ease-in;
-}
-
-@keyframes blue-rec {
-    from {right:0; background-color: white; }
-    to {right:10rem; background-color: var(--blue);}
-}
-
-/* TEXT FIELD */
-
-.blue-rec-h2 {
-    font-family: 'Orbitron', sans-serif;
-    margin-left: 1rem;
-    vertical-align: middle;
-    display: inline-block;
-    visibility: hidden;
-
-    animation-name: text-move;
-    animation-duration: 2s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes text-move {
-    from {visibility:visible; }
-    to {visibility: visible; }
-}
-
-
-/* NAVIGATION.............................. */
-
 /* big buttons */
 
 nav {font-family: 'Source Sans Pro', sans-serif;}
@@ -179,12 +84,8 @@ ul.main-nav {
     box-shadow: 1px 5px 30px rgba(2, 21, 71, 0.651);
 }
 
-li.mn-but {display: inline-block}
-
-li.mn-but a {
-    display: inline-block;
-    padding: 1rem 1.8rem;
-}
+li.mn-but, li.mn-but a {display: inline-block}
+li.mn-but a {padding: 1rem 1.8rem;}
 
 /* hovers for buttons */
 
@@ -218,7 +119,7 @@ li.mn-but a:focus {background-color: var(--focus);}
 }
 
 
-/* USFUL SH : dropdown menu............ */
+/* dropdown menu for USFUL STUFF  */
 
 .dropdown-us {
     position: relative;
@@ -233,7 +134,7 @@ li.mn-but a:focus {background-color: var(--focus);}
     display: none;
     position: absolute;
     z-index: 1;
-    top: 2.2rem;
+    top: 2.15rem;
     left: 1.3rem;
 
     box-shadow: 1px 5px 30px rgba(2, 21, 71, 0.651);
@@ -259,13 +160,13 @@ li.mn-but a:focus {background-color: var(--focus);}
     background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(58,58,58,1) 60%, rgba(58,58,58,1) 100%, rgba(243,243,243,1) 243%);
 }
 
-a.d-content-us:hover  {
+a.d-content-us:hover, a.d-content-us:focus {
     background: rgb(75, 75, 75);
     color: blanchedalmond;
     border-radius: 0;
 }
 
-a.d-content-us-shad:hover {
+a.d-content-us-shad:hover, a.d-content-us-shad:focus {
     background: rgb(23,23,23);
     background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(68,68,68,1) 22%, rgba(75,75,75,1) 100%, rgba(243,243,243,1) 243%);
     color: blanchedalmond;
@@ -281,10 +182,15 @@ a.d-content-us-shad:hover {
     color: var(--active)
 }
 
-a.us-active:hover {
+a.us-active:hover, a.us-active:focus {
     color: var(--active);
     cursor: default;
     background-color: rgb(58, 58, 58);
+}
+
+ul.main-nav li.dropdown-us, a.mn-but2.active, .mn-but2:hover {
+    position: relative;
+    z-index: 10 !important;
 }
 
 .mn-but2:hover {cursor: default;}
@@ -300,6 +206,103 @@ a.us-active:hover {
 a span.material-icons {color: black;}
 a span.material-icons:hover {color: var(--hover);}
 
+/* INFO FIELD + animation..................... */
+
+/* animated text field */
+
+.blue-rec-h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+    visibility: hidden;
+
+    animation-name: text-move;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-move {
+    from {visibility:visible; }
+    to {visibility: visible; }
+}
+
+
+/* blue square moving  */
+
+span.blue-rec {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: var(--blue);
+    width:1rem;
+    height: 2rem;
+
+    animation-name: blue-rec;
+    animation-duration: .15s;
+    animation-direction:alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes blue-rec {
+    from {right:0; background-color: white; }
+    to {right:10rem; background-color: var(--blue);}
+}
+
+/* underscore _ colon : animated */
+
+.dot {
+    color: var(--blue);
+    vertical-align: baseline;
+    font-size: 1.5rem;
+
+    animation-name: dot;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+span.dot::after {content: none;}
+
+@keyframes dot {
+    0% {opacity: 0;}
+    15% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+/*  */
+
+
+header {
+    border-bottom: 1px black solid;
+    height: 6rem;
+    overflow: hidden;
+}
+
+main {font-family: 'Montserrat', sans-serif;}
+
+h2 {font-weight: normal;}
+
+code {
+    font-size: .8rem;
+    border-bottom: .1rem solid white;
+    background-color: rgb(221, 243, 201);
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    min-width: 2rem;
+}
+
+p.index {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 1rem;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    font-size: .9rem;
+    max-width:26rem;
+
+}
 
 /* MAIN................................... */
 
@@ -329,7 +332,7 @@ a span.material-icons:hover {color: var(--hover);}
 
 footer {
     color:rgb(216, 216, 216) ;
-    margin-top: 4rem;
+    margin: 2rem;
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
 }
@@ -339,6 +342,7 @@ footer {
 
 /* media q.................................... */
 
+/* 540 */
 
 @media only screen and (max-width: 540px) {
     a span.material-icons {
@@ -354,10 +358,14 @@ footer {
     h1.intro {letter-spacing: .2rem;}
   }
 
+/* 470 */
+
 @media only screen and (max-width: 470px) {
-    li.mn-but a, li.dropdown-us a {padding: 0.4rem 1rem;}
+    li.mn-but a, li.dropdown-us a {padding: 0.5rem 1rem;}
     .sec-main {padding: 1rem;}
     h1.intro {letter-spacing: .1rem;}
+
+    .d-content-us, .d-content-us-shad {font-size: .7rem;}
 
     .dropdown-holder-us {
         top: 1.6rem;
@@ -365,6 +373,7 @@ footer {
   }
 }
 
+/* 390 */
 
 @media only screen and (max-width: 390px) {
     h1.intro {
@@ -377,10 +386,10 @@ footer {
     }
 
     ul.main-nav div.dropdown-holder-us {
-        top: 1.6rem;
+        top: 1.7rem;
         left: .9rem;
     }
 
-    .dropdown-holder-us a.d-content-us, .dropdown-holder-us a.d-content-us-shad {font-size: .7rem;}
+    .dropdown-holder-us a.d-content-us, .dropdown-holder-us a.d-content-us-shad {font-size: .6rem;}
 
   }

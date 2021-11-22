@@ -1,64 +1,83 @@
 
+
 html {
     background: none;
-    height: 100%;
 }
-
-body {height: 90%;}
 
 main {
     overflow: hidden;
     position: relative;
-    height: 55%;
 }
 
 
+/* PHOTO PART STYLE.................... */
 
-/* MASK*/
-
-.blue-rec-h2-mask {
-    position: relative;
-    bottom:  4.5rem;
-    left: 22rem;
-    background-color: rgb(255, 255, 255);
-    width:8rem;
-    height: 2rem;
-
-    animation-name: mask-move;
-    animation-delay: .2s;
-    animation-duration: .15s;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes mask-move {
-    from{left: 23rem;}
-    to{left:40rem; }
-}
-
-/* photo part....................... */
-
-.kasha {
-    display: inline-block;
-    border: white 0.7rem solid;
-    border-radius: 50%;
-    width: 22rem;
+.intro-index:hover .card-text {
+    opacity: 1;
 }
 
 .intro-index {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    width: 22rem;
+    height: 22rem;
+}
+
+.intro-index::before {
+
+    content: '';
     position: absolute;
-    left: 50%;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    transform: scale(0, 1);
+    transition: transform ease-in-out .1s;
+
+    border-radius: 50%;
+    /* background: rgb(20, 13, 92); */
+    border-right: rgb(255, 255, 255) .8rem solid;
+    border-left: rgb(255, 255, 255) .8rem solid;
+    opacity: .5;
+}
+
+.intro-index:hover::before {
+    transform: scale(1, 1);
+}
+
+.kasha {
+    box-sizing: border-box;
+    display: inline-block;
+    border: white .8rem solid;
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+}
+
+.card-text {
+    position: absolute;
     top: 50%;
+    left:50%;
     transform: translate(-50%, -50%);
+    color: rgb(194, 194, 194);
+    opacity: 0;
+    transition: opacity ease-out .1s;
+}
+
+p.card-body {
+    font-family: 'Orbitron', sans-serif;
+    width: 14rem;
+}
+
+.aristo {
+    font-size: .8rem;
+    text-align: right;
+    font-style: italic;
 }
 
 .pad-top-bot {
-    padding: 15% 0;
-    background-clip: content-box;
-    box-sizing: border-box;
-
+    padding: 5% 0;
 }
 
 /* small info button.................... */
@@ -77,10 +96,8 @@ a span.index-hov, a span.index-hov:hover {
 
 /* media Q ...................................... */
 
-@media only screen and (max-width: 470px) {
-    .kasha {width: 100%;}
-    .pad-top-bot {padding: 0;}
-}
+
+/* 400 */
 
 @media only screen and (max-width: 400px) {
     h2.blue-rec-h2 {font-size: 1.2rem;}

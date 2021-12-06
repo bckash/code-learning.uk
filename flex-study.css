@@ -1,0 +1,454 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --head-big: rgb(89, 114, 114);
+    --head-big-dark: rgb(18, 37, 37);
+    --head-small: rgb(134, 163, 163);
+    --par: rgb(217, 238, 238);
+    --code-col: rgb(253, 234, 211);
+    --code-head: rgb(236, 198, 152);
+    --code-txt: rgb(63, 35, 9);
+    --cont: rgb(238, 202, 219);
+    --cont-light: rgba(238, 202, 219, 0.281);
+    --cont-txt: rgb(73, 15, 42);
+}
+
+*, *::before, *::after {box-sizing: border-box}
+
+html {font-size: 0.8rem;}
+
+h2, h3 {text-align: center;}
+
+/* side navigation................ */
+
+.side-nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    margin-right: 2em;
+}
+
+.side-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.side-nav li {
+    height: 2rem;
+    width: 10rem;
+    font-size: .8em;
+    color: white;
+    background-color: rgb(192, 192, 192);
+    padding: .5em;
+    margin: .2em;
+}
+
+.side-nav li a, .side-nav li a:focus {
+    text-decoration: none;
+    color: var(--head-big);
+}
+
+.side-nav li:hover, .side-nav li:focus {
+    background: white;
+}
+
+.side-nav li:hover a, .side-nav li:focus a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.grad {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(217,238,238,1) 50%, rgba(255,255,255,1) 100%, rgba(243,243,243,1) 243%);
+}
+
+/* .................................... */
+
+.intros-c {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.intros, .intros2 {
+    display: inline-block;
+    background-color: var(--head-small);
+    color: white;
+    margin-bottom: 0;
+    padding: .4em 1em;
+}
+
+.intros2 {
+    margin-bottom: 2rem;
+}
+
+h3, .seperate {
+    font-family: 'Lobster', cursive;
+    font-size: 1.6em;
+    display: inline-block;
+    padding: .2em .8em;
+    background-color: white;
+    border: 1px solid var(--head-small);
+    color: var(--head-big);
+    box-shadow: 0 0 0.5em rgba(14, 139, 87, 0.432);
+}
+
+.seperate, .seperate-nb {font-weight: bold;}
+
+.seperate-nb {
+    font-size: 1.5em;
+    color: var(--head-big);
+}
+
+h3, .sum {
+    position: absolute;
+    top: -3.2rem;
+    transform: translateX(-50%);
+}
+
+.sum {
+    display: inline-block;
+    top: -1.6em;
+}
+
+.hb {border: 1px dotted rgb(209, 209, 209);}
+
+/* section containers...................... */
+
+.big-c, .big-c2 {
+    text-align: center;
+    border: 1px dotted rgb(202, 202, 202);
+    margin: 2em auto;
+    margin-bottom: 4em;
+}
+
+.big-c {width: 90%;}
+
+section.big-c2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    padding-top: 3rem;
+    position: relative;
+    max-width: 100%;
+    background-color: rgba(245, 245, 245, 0.459);
+    border-top: var(--head-small) dashed 1px;
+}
+
+.flex-c {
+    display: inline-block;
+    /* border: 1px dotted rgb(133, 133, 133); */
+    margin: 2rem auto;
+    max-width: 22rem;
+}
+
+.vert-alig {vertical-align: middle;}
+
+.flex-notes, .flex-notes2 {
+    font-size: 1.1em;
+    background-color: var(--par);
+    color: var(--head-big-dark);
+    padding: .5em;
+    max-width: 30em;
+}
+
+.flex-notes {margin: 2em auto;}
+.flex-notes2 {
+    margin: .5em auto;
+    margin-bottom: 2em;
+}
+
+section.big-c2 code {
+    font-size: 1em;
+    padding: 0 .5em;
+    background-color: var(--code-col);
+    color: var(--code-txt);
+    border-bottom: none;
+}
+
+
+/* FLEX SETUP........................... */
+
+.container, .c1 {
+    margin: 0 auto;
+    background-color: var(--cont);
+    padding: .5em;
+    height: 20rem;
+    width: 20rem;
+}
+
+.c1, .c2  {display: flex;}
+
+.prop-but-ch {
+    display: inline-block;
+    padding: .2em 1em;
+    /* border: 1px dotted rgb(122, 122, 122); */
+    border-radius: 1em;
+    background-color: var(--code-col);
+}
+
+.prop-but-ch-a {
+    margin: 0 auto;
+    padding: .2em 0;
+    background-color: var(--code-col);
+    color: var(--code-txt);
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+.prop-but-ch, .prop-but-ch-a {
+    border: rgb(224, 164, 121) 1px dotted;
+}
+
+
+/* flex children  */
+
+.item {
+    text-transform: uppercase;
+    background-color: rgb(230, 119, 215);
+    color: rgb(240, 206, 234);
+    margin: 0.4em;
+    padding: 0.3em;
+}
+
+/* FLEX DIRECTION........................... */
+
+.c11 {flex-direction: row}
+.c12 {flex-direction: row-reverse }
+
+.mq-break2 {display: none;}
+
+/* FLEX WRAP.......................... */
+
+.c21 {flex-wrap: wrap;}
+.c22 {flex-wrap: wrap-reverse ;}
+
+/* FLEX BASIS.......................... */
+
+
+.c2 > * {
+    flex-basis: 100%;
+    border: var(--cont) 4px solid;
+    color: var(--cont-txt);
+    background-color: var(--cont-light);
+    padding: 1em;
+    margin: .5em;
+}
+
+.fatty {
+    font-weight: bold;
+    color: var(--cont-txt);
+}
+
+/* FLEX SHRINK / GROW.................. */
+
+.c4 {
+    display: flex;
+    animation-name: shrinking;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+}
+
+.c4 > * {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    background-color: var(--cont-light);
+    color: var(--cont-txt);
+    flex-basis: 100%;
+    padding: 1em;
+    margin: .3em;
+    border: var(--cont) 4px solid;
+
+}
+
+.fl-shrink-1 {flex-shrink: 1;}
+.fl-shrink-2 {flex-shrink: 2;}
+.fl-shrink-3 {flex-shrink: 3;}
+
+
+@keyframes shrinking {
+    from {width: 50rem;} 
+    to {width: 20rem;} 
+} 
+
+/* align self.................. */
+
+.mq-break {display: none;}
+
+
+/* FLEX LAYAOUT.......................... */
+
+/* flex + wrap */
+
+.c3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c3 > * {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin: .2em;
+    padding: 1em;
+    color: ivory;
+    background-color: indianred;
+    flex: 1 1 30%;
+}
+
+/* flex.......................... */
+
+.c5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c5 > * {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin: .2em;
+    padding: 1em;
+    color: ivory;
+    background-color: indianred;
+}
+
+.c51, .c54 {
+    flex: 1 100%;
+}
+
+.c52 {flex: 2}
+.c53 {flex: 1}
+
+
+/* media q.................................. */
+
+/* 1120 */
+
+@media only screen and (max-width: 1120px) {
+    nav.side-nav {
+        display: none;
+    }
+}
+
+/* 800 */
+
+@media only screen and (max-width: 800px) {
+    .c4 > * {
+        font-size: 2em;
+        padding: .5em;
+        margin: .1em;
+    }
+
+    @keyframes shrinking {
+        from {width: 40rem;} 
+        to {width: 10rem;} 
+    }
+}
+
+/* 657 */
+
+@media only screen and (max-width: 657px) {
+    .flex-c {
+        margin: .2rem auto;
+    }
+
+    .prop-but-container {
+        margin-bottom: 1rem;
+    }
+}
+
+/* 620 */
+
+@media only screen and (max-width: 620px) {
+    .mq-break {
+        margin: .3rem;
+        display: block;
+    }
+}
+
+/* 600 */
+
+@media only screen and (max-width: 600px) {
+    .c4 > * {
+        font-size: 1.5em;
+    }
+
+    @keyframes shrinking {
+        from {width: 30rem;} 
+        to {width: 10rem;} 
+    }
+}
+
+/* 460 */
+
+@media only screen and (max-width: 460px) {
+    .mq-break2 {
+        display: block;
+        margin: .3rem;
+    }
+
+    .c2 > * {
+        border: var(--cont) 2px solid;
+        font-size: .8rem;
+        padding: .3em;
+        margin: .2em;
+    }
+
+    .c4 > * {
+        animation-duration: 2s;
+        font-size: 1.2em;
+    }
+
+    @keyframes shrinking {
+        from {width: 25rem;} 
+        to {width: 5rem;} 
+    }
+
+    .sum {width: 100%;}
+
+    h2.intros, h2.intros2 {
+        font-size: 1.2em;
+    }
+
+    .container, .c1 {
+        padding: .2em;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .prop-but-ch-a {
+        margin-top: 1rem;
+        width: 15rem;
+    }
+
+    .item {
+        margin: 0.25em;
+        padding: 0.3em;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+    .c4 > * {
+        animation-duration: 1s;
+        font-size: 1.1em;
+    }
+
+    @keyframes shrinking {
+        from {width: 20rem;} 
+        to {width: 5rem;} 
+    }
+
+    h3, .seperate {
+        top: -2.4rem;
+        font-size: 1.3em;
+    }
+
+    .c3 > *, .c5 > * {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5rem;
+        margin: .1em;
+        padding: .5em;
+    }
+
+    h2.blue-rec-h2 {font-size: 1.2em;}
+}

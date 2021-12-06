@@ -87,7 +87,7 @@ ul.main-nav {
 li.mn-but, li.mn-but a {display: inline-block}
 li.mn-but a {padding: 1rem 1.8rem;}
 
-/* hovers for buttons */
+/* hovers for big buttons */
 
 li.mn-but a, li.mn-but a:hover, li.mn-but a:visited {
     text-decoration: none;

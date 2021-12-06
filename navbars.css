@@ -1,6 +1,9 @@
 :root {
     text-align: center;
     --m-back: rgb(243, 243, 243);
+    --hover-nav: rgb(230, 204, 103);
+    --pink-nav:  rgb(206, 52, 198);
+    --navi-light: rgb(218, 228, 248);
 }
 
 /*  INFO FIELD animation........................ */
@@ -75,6 +78,8 @@ ul.nav-style a {
     padding: 1rem 0.8rem;
 }
 
+ul.nav-style li {cursor: pointer;}
+
 /* text format */
 
 ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
@@ -98,7 +103,7 @@ li.h1:hover {
 
 li.h2 a:hover {
     background-color: cornflowerblue;
-    color: rgb(230, 204, 103);
+    color: var(--hover-nav);
 }
 
 /* DROPDOWN */
@@ -115,7 +120,7 @@ div.dropdown-content:first-child {
 }
 
 .dropdown-bt, .dropdown-content {
-    background-color: rgb(206, 52, 198);
+    background-color: var(--pink-nav);
     padding: 0.8rem 1rem;
     border: none;
 }
@@ -143,6 +148,99 @@ div.dropdown-content a {
 }
 
 div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;}
+
+/* flex navi.............................. */
+
+
+.flex-navi {
+    background-color: rgb(218, 228, 248);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-navi ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 2.4rem;
+
+}
+
+.bor-rad, .flex-navi li {border-radius: 5px;}
+
+.flex-navi li {
+    font-family: 'Montserrat', sans-serif;
+    list-style-position: inside;
+    background-color: cornflowerblue;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    padding: .3em .5em;
+    margin: .3em;
+}
+
+.flex-navi li:hover {
+    color: var(--hover-nav);
+    cursor: pointer;
+}
+
+ul.fn-2 li::before, ul.fnr-1 li::before {content: "item "}
+.ninja {width: 150px;}
+
+/* components */
+
+/* 1 */
+
+.fn-1, .fn-2, .fn-3 {
+    margin: 0 .3em;
+    justify-content: center;
+}
+
+.fn-1 {flex-basis: 20%;}
+.fn-2 {flex-basis: 60%;}
+
+.fn-3 {flex-basis: 20%;}
+
+.fn-3 li {padding: .2rem .5rem;}
+
+.flex-navi ul.fn-3, .flex-navi ul.fnr-2 {
+    font-size: .8em;
+    height: 1.8rem;
+}
+
+/* 2 */
+
+.fn-next-logo {
+    flex-basis: 20%;
+}
+
+.fn-next-rest {
+    height: 2.7rem;
+    background-color: var(--navi-light);
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    align-items: center;
+}
+
+.fnr-1 {
+    flex-basis: 75%;
+    justify-content: center;
+}
+
+.fnr-2 {
+    flex-basis: 25%;
+    justify-content: center;
+}
+
+div.fn-next-rest ul.fnr-2 li {
+    padding: .15rem .5rem;
+}
+
+nav.fn-bc {
+    background-color: unset;
+}
 
 /* media Q ............................... */
 

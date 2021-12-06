@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arr.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="flex-study.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>flex dive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>    
+</head>
+
+<body>
+    
+        <!-- NAVI...................... -->
+    <nav>
+        <h1 class="intro">learning curve</h1>
+        <ul class="main-nav">
+
+            <!-- dropdown menu-->
+            <li class="dropdown-us hover-left">
+                <a class="mn-but2">usful st</a>
+                <div class="dropdown-holder-us">
+                    <a href="inline.html" class="d-content-us-shad">v align</a>
+                    <a class="d-content-us us-active">flexbox</a>
+                    <a href="centre-study.html" class="d-content-us">centre</a>
+                    <a href="position.html" class="d-content-us">rel / abs</a>
+                    <a href="animation.html" class="d-content-us">animation</a>
+                    <a href="us.html" class="d-content-us">chunks</a>
+                </div>
+            </li>
+
+            <!-- rest of NAVI -->
+            <li class="mn-but">
+                <a href="navbars.html">nav bars</a>
+            </li>
+            <li class="mn-but hover-right">
+                <a href="flexbox.html">flexbox</a>
+            </li>
+        </ul>
+
+        <!-- info icon -->
+        <a href="index.html">
+            <span class="material-icons">info</span>
+        </a>
+    </nav>
+
+    <!-- INFO FIELD .......................-->
+    <header class="">
+        <span class="blue-rec"></span>
+        <h2 class="blue-rec-h2">flexbox deep dive 
+            <span class="dot">_</span>
+        </h2>
+
+        <!-- <p class="index">this here is a basic sum up, of what resulted from my codind experience so far. </p> -->
+
+    </header>
+
+    <!-- side navigation -->
+    <nav class="side-nav">
+        <ul class="">
+            <li class="grad"><a href="#default">no flex</a></li>
+            <li class="grad"><a href="#direction">flex-direction</a></li>
+            <li class="grad"><a href="#wrap">flex-wrap</a></li>
+            <li class="grad"><a href="#basis">flex-basis</a></li>
+            <li class="grad"><a href="#shrink">shrink/grow</a></li>
+            <li class="grad"><a href="#flex">flex: ;</a></li>
+            <li class="grad"><a href="#align">align-self</a></li>
+            <li class="grad"><a href="#l1">flex + wrap</a></li>
+        </ul>
+    </nav>
+
+    <section id="default" class="intros-c">
+        <h2 class="intros">display: default</h2>
+    </section>
+
+    <!-- default -->
+    <section class="big-c2">
+        <section class="flex-c">
+            <div class="container">
+                <div class="item">f1</div>
+                <div class="item">f2</div>
+                <div class="item">f3</div>
+                <div class="item">f4</div>
+                <div class="item">f5</div>
+            </div>
+        </section>
+    </section>
+    
+    <section id="direction" class="intros-c">
+        <h2 class="intros2">display: flex</h2>
+    </section>
+
+    <!-- FLEX DIRECTION:....................... -->
+    <section class="big-c2">
+        <h3>flex-direction:</h3>
+        <section class="prop-but-container">
+            <div class="prop-but-ch"><code>row</code></div>
+            <div class="prop-but-ch"><code>row-rewerse</code></div>
+            <div class="mq-break2"></div>
+            <div class="prop-but-ch"><code>column</code></div>
+            <div class="prop-but-ch"><code>column-rewerse</code></div>
+        </section>
+
+        <!-- row -->
+        <section class="flex-c">
+            <div class="prop-but-ch-a">row</div>
+            <div class="c1 c11">
+                <div class="item">f1</div>
+                <div class="item">f2</div>
+                <div class="item">f3</div>
+                <div class="item">f4</div>
+                <div class="item">f5</div>
+            </div>
+        </section>
+    
+        <!-- row-rewerse -->
+        <section class="flex-c">
+            <div class="prop-but-ch-a">row-rewerse</div>
+            <div class="c1 c12">
+                <div class="item">f1</div>
+                <div class="item">f2</div>
+                <div class="item">f3</div>
+                <div class="item">f4</div>
+                <div class="item">f5</div>
+            </div>
+        </section>
+        <div id="wrap"></div>
+    </section>
+
+    <!-- FLEX WRAP........................... -->
+    <section class="big-c2">
+        <h3>flex-wrap:</h3>
+        <section class="prop-but-container">
+            <div class="prop-but-ch"><code>no-wrap</code></div>
+            <div class="prop-but-ch"><code>wrap</code></div>
+            <div class="prop-but-ch"><code>wrap-rewerse</code></div>
+        </section>
+
+        <!-- row -->
+        <section class="flex-c vert-alig">
+            <div class="prop-but-ch-a">wrap</div>
+            <div class="c1 c21">
+                <div class="item">f1</div>
+                <div class="item">f2</div>
+                <div class="item">f3</div>
+                <div class="item">f4</div>
+                <div class="item">f5</div>
+                <div class="item">f6</div>
+                <div class="item">f7</div>
+                <div class="item">f8</div>
+                <div class="item">f9</div>
+                <div class="item">f10</div>
+            </div>
+        </section>
+    
+        <!-- row-rewerse -->
+        <section class="flex-c vert-alig">
+            <div class="prop-but-ch-a">wrap-rewerse</div>
+            <div class="c1 c22">
+                <div class="item">f1</div>
+                <div class="item">f2</div>
+                <div class="item">f3</div>
+                <div class="item">f4</div>
+                <div class="item">f5</div>
+                <div class="item">f6</div>
+                <div class="item">f7</div>
+                <div class="item">f8</div>
+                <div class="item">f9</div>
+                <div class="item">f10</div>
+            </div>
+        </section>
+
+        <section>
+            <h5>note</h5>
+            <p class="flex-notes">when <code>flex-wrap: no-wrap</code>, items are squized to the smallest possible, to fit the container. if they overflow, items size is disregarded .</p>
+        </section> 
+        <div id="basis"></div>
+    </section>
+
+    <!-- FLEX BASIS....................... -->
+    <section class="big-c2">
+        <h3>flex-basis:</h3>
+        <p class="flex-notes2">Item initial length.<br>Set on <code>100%</code> gives a nice even size to all the <span class="fatty">columns (children).</span></p>
+
+        <div class="c2">
+            <div>
+                <h5>number</h5>
+                <p>A length unit, or percentage, specifying the initial length of the flexible item</p>
+            </div>
+            <div>
+                <h5>auto</h5>
+                <p>Default value. The length is equal to the length of the flexible item.</p>
+            </div>
+            <div>
+                <h5>initial</h5>
+                <p>Sets this property to its default value</p>
+            </div>
+            <div>
+                <h5>inherit</h5>
+                <p">Inherits this property from its parent element.</p>
+            </div>
+        </div>
+        <div id="shrink"></div>
+    </section>
+
+    <!-- SHRINK / GROW.................-->
+    <section class="big-c2">
+        <h3>flex-shrink/grow:</h3>
+        <p class="flex-notes2">The "grow / shrink factor". In example below: <br><code>flex-shrink:</code><span class="fatty"> [1] = 1, [2] = 2, [3] = 3. </span></p>
+        <div class="c4">
+            <div class="fl-shrink-1">[1]</div>
+            <div class="fl-shrink-2">[2]</div>
+            <div class="fl-shrink-3">[3]</div>
+        </div>
+        <div id="flex"></div>
+    </section>
+
+    <!-- flex: :....... -->
+    <section class="big-c2">
+        <h3>flex: ;</h3>
+        <p class="flex-notes2">
+            <code>flex-grow</code> + <code>flex-shrink</code> + <code>flex-basis</code>
+        </p>
+        <div id="align"></div>
+    </section>
+
+    <!-- align-self....... -->
+    <section class="big-c2">
+        <h3>align-self</h3>
+        <section class="prop-but-container">
+            <div class="prop-but-ch"><code>auto</code></div>
+            <div class="prop-but-ch"><code>flex-start</code></div>
+            <div class="prop-but-ch"><code>flex-end</code></div>
+            <div class="mq-break"></div>
+            <div class="prop-but-ch"><code>center</code></div>
+            <div class="prop-but-ch"><code>baseline</code></div>
+            <div class="prop-but-ch"><code>stretch</code></div>
+        </section>
+        <p class="flex-notes2">
+            Alignment for individual flex items.
+        </p>
+    </section>
+
+    <!-- FLEX LAYAOUTZ.................. -->
+    <section class="intros-c">
+        <h2 class="intros2">flex layoutz</h2>
+    </section>
+    
+    <!-- flex + flex:wrap -->
+    <div id="l1"></div>
+    <section class="big-c2">
+        <div class="sum">
+            <span class="seperate">flex: ;</span>
+            <span class="seperate-nb"> + </span>
+            <span class="seperate">flex-wrap</span>
+        </div>
+        <p class="flex-notes2"><code>flex: 1 1 33%</code> with 5 <code>divs</code> inside <code>flex-wrapped</code> container </p>
+        <div class="c3">
+            <div class="c31">1</div>
+            <div class="c31">2</div>
+            <div class="c31">3</div>
+            <div class="c31">4</div>
+            <div class="c31">5</div>
+        </div>
+    </section>
+
+    <!-- flex -->
+    <section class="big-c2">
+        <div class="sum">
+            <span class="seperate">flex: ;</span><span class="seperate-nb"> + </span><span class="seperate">flex-wrap</span>
+        </div>
+        <p class="flex-notes2"><span class="fatty"> [1], [4] = <code>flex: 1 100%</code>, [2] = <code>flex: 2</code>, [3] = <code>flex: 1</code> </span> </p>
+        <div class="c5">
+            <div class="c51">1</div>
+            <div class="c52">2</div>
+            <div class="c53">3</div>
+            <div class="c54">4</div>
+        </div>
+
+    </section>
+
+
+
+    
+</body>
+</html>

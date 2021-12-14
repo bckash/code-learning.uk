@@ -1,0 +1,497 @@
+
+:root {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --code-name: #f5d67b;
+    --code-prop: rgb(156,220,254);
+    --code-val-txt: #fcd863;
+    --code-val-nr: rgb(181,206,168);
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+*, *::before, *::after {box-sizing: border box}
+
+.grid-study {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main.grid-study h3 {
+    display: inline-block;
+    border: 1px solid black;
+    padding: .2em .5em;
+    background-color: rgb(252, 247, 240);
+}
+
+.br {border: 1px dotted black;}
+
+
+/* <code> ....................................... */
+
+
+code {
+    font-size: .8rem;
+    background-color:honeydew;
+    padding: .2em .4em;
+}
+
+.code-property, .code-value, .i31, .i32, .i33, .i34, .i35, .code-neutral {
+    font-size: .8em;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+}
+
+.code-property {color: var(--code-prop);}
+.code-value {color: var(--code-val-nr);}
+
+.grid-ex-descr2, .grid-ex-descr3, .grid-ex-descr3-mq {
+    padding-bottom: .5em;
+    background-color: rgb(30,30,30);
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+.grid-ex-descr, .grid-ex-descr-mq5, .grid-ex-descr-mq15, .grid-ex-descr-mq25, .grid-ex-descr3, .grid-ex-descr3-mq {display: inline-block;}
+
+
+
+/* main containers properties....................... */
+
+/* all containers with "-mq" prefix are for media queries control, starting with the same properties as OG but changing in certain point with screen size  */
+
+.cont-c-d-all {
+    margin: 0 auto;
+}
+
+.cont-c-d {
+    display: block;
+    padding: .2em;
+    width: 98%;
+}
+
+.container-code, .container-descr, .container-descr-mq, .container-descr-mq1, .container-descr-mq10, .container-descr-mq15, .container-descr-mq20 {
+    display: inline-block;
+}
+
+.container-code, .container-descr, .grid-ex-descr-mq5, .grid-ex-descr-mq15, .grid-ex-descr, .grid-ex-descr3, .container-descr-mq, .grid-ex-descr3-mq, .container-descr-mq1, .container-descr-mq10, .container-descr-mq15, .container-descr-mq20, .grid-ex-descr-mq25 {
+    vertical-align: middle;
+    padding-top: .3em;
+    margin: .5em;
+    width: 40%;
+}
+
+.container-descr p, .container-descr-mq p, .container-descr-mq1 p {
+    text-align: left;
+    margin: 0;
+}
+
+.container-descr, .container-descr-mq, .container-descr-mq1, .container-descr-mq10,  .container-descr-mq15, .container-descr-mq20 {
+    padding-left: 1rem;
+    border-left: black 2px dotted;
+}
+
+figcaption.grid-example1, figcaption.grid-example2 {
+    color: rgb(172, 172, 172);
+    font-size: .8em;
+    text-align: center;
+    font-style: italic;
+;
+}
+
+figcaption.grid-example1 {padding: 1em}
+figcaption.grid-example2 {margin-bottom: 1em;}
+
+.container-code {
+    position: relative;
+    text-align: right;
+}
+
+div.container-descr-mq20 p {text-align: left;}
+
+.descr-example {
+    font-size: .8em;
+    background-color: rgb(207, 243, 243);
+}
+
+.ft-bold {
+    font-weight: bold;
+}
+
+.c-e2 {
+    display: inline-block;
+    width: 15rem;
+    text-align: left;
+}
+
+.c-e2-inner {
+    display: inline-block;
+    margin-left: 1.8em;
+}
+
+
+/* grid example 1..........................*/
+
+
+.grid-ex-cont, .grid-ex-cont2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.grid-ex-cont > * {
+    background-color: darkcyan;
+    margin: .2em;
+    padding: 1em;
+    color: white;
+}
+
+.grid-item2 {position: relative;}
+
+span.gi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+/* grid example monster.......................... */
+
+
+div.br-right {border-right:  solid 2px darkcyan;}
+div.br-left {border-left:  solid 2px darkcyan;}
+div.br-top {border-top:  solid 2px darkcyan;}
+div.br-bot {border-bottom:  solid 2px darkcyan;}
+
+
+.numbers-bc, .numbers-bc2 {
+    font-size: .8rem;
+    padding: .2em;
+    color: white;
+    background-color: darkcyan;
+} 
+
+.numbers-bc2 {margin-right: .3em;}
+
+.gm-line {
+    display: block;
+    margin-top: .5em;
+}
+
+#grid-monster-cont {
+    margin: 1rem;
+    height: 17rem;
+}
+
+#grid-example2-cont {display: none;}
+
+.grid-ex-monster {
+    display: grid;
+
+    grid-template-columns: repeat(21,fr);
+    grid-template-rows: repeat(16,fr);
+    grid-template-areas:
+    "ia	ia	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+    "ia	ia	 i1	i1	i1	i2	i2	i2	i2	i2	i2	i3	i3	i3	i4	i4	i4	i4	i4	i4	."
+    ".	.	i1	i1	i1	i2	i2	i2	i2	i2	i2	i3	i3	i3	i4	i4	i4	i4	i4	i4	."
+    "ib	ib	i1	i1	i1	i2	i2	i2	i2	i2	i2	i3	i3	i3	i4	i4	i4	i4	i4	i4	."
+    "ib	ib	i5	i5	i5	i6	i6	i6	i6	i6	i6	i7	i7	i7	i8	i8	i8	i8	i8	i8	."
+    ".	.	i5	i5	i5	i6	i6	i6	i6	i6	i6	i7	i7	i7	i8	i8	i8	i8	i8	i8	."
+    ".	.	i5	i5	i5	i6	i6	i6	i6	i6	i6	i7	i7	i7	i8	i8	i8	i8	i8	i8	."
+    ".	.	i5	i5	i5	i6	i6	i6	i6	i6	i6	i7	i7	i7	i8	i8	i8	i8	i8	i8	."
+    ".	.	i5	i5	i5	i6	i6	i6	i6	i6	i6	i7	i7	i7	i8	i8	i8	i8	i8	i8	."
+    "ic	ic	i5	i5	i5	i6	i6	i6	i6	i6	i6	i7	i7	i7	i8	i8	i8	i8	i8	i8	."
+    "ic	ic	i9	i9	i9	i10	i10	i10	i10	i10	i10	i11	i11	i11	i12	i12	i12	i12	i12	i12	."
+    ".	.	i9	i9	i9	i10	i10	i10	i10	i10	i10	i11	i11	i11	i12	i12	i12	i12	i12	i12	."
+    "id	id	i9	i9	i9	i10	i10	i10	i10	i10	i10	i11	i11	i11	i12	i12	i12	i12	i12	i12	."
+    "id	id	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	."
+    ".	ie	ie	.	if	if	.	.	.	.	ig	ig	.	ih	ih	.	.	.	.	ii	ii"
+    ".	ie	ie	.	if	if	.	.	.	.	ig	ig	.	ih	ih	.	.	.	.	ii	ii"
+    ;
+}
+
+/* 1-12 */
+.item-1 {grid-area: i1}
+.item-2 {grid-area: i2}
+.item-3 {grid-area: i3}
+.item-4 {grid-area: i4}
+.item-5 {grid-area: i5}
+.item-6 {grid-area: i6}
+.item-7 {grid-area: i7}
+.item-8 {grid-area: i8}
+.item-9 {grid-area: i9}
+.item-10 {grid-area: i10}
+.item-11 {grid-area: i11}
+.item-12 {grid-area: i12}
+/* a-b */
+.item-a {grid-area: ia}
+.item-b {grid-area: ib}
+.item-c {grid-area: ic}
+.item-d {grid-area: id}
+.item-e {grid-area: ie}
+.item-f {grid-area: if}
+.item-g {grid-area: ig}
+.item-h {grid-area: ih}
+.item-i {grid-area: ii}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10, .item-11, .item-12 {
+    border: solid 1px darkcyan;
+    padding: 2rem;
+}
+
+.item-a, .item-b, .item-c, .item-d, .item-e, .item-f, .item-g, .item-h, .item-i {
+    align-self: center;
+    font-size: 0.7rem;
+}
+
+.item-a, .item-b, .item-c, .item-d {
+    margin: .5em;
+}
+
+.item-e, .item-f, .item-g, .item-h, .item-i {
+    margin-top: 1em;
+}
+
+
+/* column/row - start/end............. */
+
+
+.grid-ex-3 {
+    display: grid;
+    grid-template-columns:
+    [c1] 1fr [c2] 2fr [c3] 1fr [c4] 2fr [c5];
+    grid-template-rows:
+    [r1] 1fr [r2] 2fr [r3] 1fr [r4];
+}
+
+.grid-ex-3 > * {
+    margin: .2em;
+    padding: 2em;
+}
+
+.item-example3-1 {
+    background-color: blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.i31 {color: blueviolet;}
+
+.item-example3-2 {
+    background-color: rgb(68, 110, 25);
+    grid-column-start: c2;
+    grid-column-end: c5;
+    grid-row-start: r3;
+    grid-row-end: r4;
+}
+
+.i32 {color: rgb(68, 110, 25);}
+
+.item-example3-3 {
+    background-color: rgb(58, 131, 190);
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.i33 {color: rgb(58, 131, 190);}
+
+.item-example3-4 {
+    background-color: darkorange;
+    grid-column: c3 / span 2;
+    grid-row: r1 / span 1;
+}
+
+.i34 {color: darkorange;}
+
+.item-example3-5 {
+    background-color:rgb(197, 25, 25);
+    grid-column: c3 / span c5; 
+    grid-row: r2 / span 1;
+}
+
+.item-example3-1, .item-example3-2, .item-example3-3, .item-example3-4, .item-example3-5 {
+    color: white;
+}
+
+.i35 {color: rgb(197, 25, 25);}
+
+.code-neutral {color: var(--code-val-txt);}
+
+
+/* grid template aeas............. */
+
+
+/* column/row - start/end............. */
+
+
+.grid-ex-4 {
+    display: grid;
+    grid-template-columns:
+    [c1] 1fr [c2] 2fr [c3] 1fr [c4] 2fr [c5];
+    grid-template-rows:
+    [r1] 1fr [r2] 2fr [r3] 1fr [r4];
+
+    grid-template-areas: 
+    " i1 i3 . i4 "
+    " i1 i3 i5 . "
+    " i1 i2 i2 i2";
+}
+
+.grid-ex-4 > * {
+    margin: .2em;
+    padding: 2em;
+}
+
+.item-example4-1 {
+    background-color: blueviolet;
+    grid-area: i1;
+}
+
+.item-example4-2 {
+    background-color: rgb(68, 110, 25);
+    grid-area: i2;
+}
+
+.item-example4-3 {
+    background-color: rgb(58, 131, 190);
+    grid-area: i3;
+}
+
+.item-example4-4 {
+    background-color: darkorange;
+    grid-area: i4;
+}
+
+.item-example4-5 {
+    background-color:rgb(197, 25, 25);
+    grid-area: i5;
+}
+
+.item-example4-1, .item-example4-2, .item-example4-3, .item-example4-4, .item-example4-5 {
+    color: white;
+}
+
+
+/* media queries................... */
+
+/* 1020 */
+
+@media only screen and (max-width: 1020px) {
+    .container-descr-mq {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border: none;
+    }
+
+    figure.container-descr-mq {
+        padding-left: 0;
+    }
+
+    .grid-ex-descr3-mq, .grid-ex-descr-mq5 {
+        min-width: 60%;
+    }
+
+    .container-descr-mq p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .container-descr-mq1 {
+        display: none;
+    }
+
+}
+
+/* 960 */
+
+@media only screen and (max-width: 960px) {
+    .container-descr-mq10, .container-descr-mq15 {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        padding-left: 0;
+    }
+
+    .grid-ex-descr-mq15 {
+        width: 60%;
+    }
+}
+
+/* 740 */
+
+@media only screen and (max-width: 740px) {
+    .container-descr-mq20 {
+        display: none;
+    }
+
+    .grid-ex-descr-mq25 {
+        width: 60%;
+    }
+}
+
+/* 700 */
+
+@media only screen and (max-width: 700px) {
+    .container-descr-mq, .grid-ex-descr3-mq, .grid-ex-descr-mq5, .container-descr-mq10, .grid-ex-descr-mq15, .grid-ex-descr-mq25, .container-descr-mq15 {
+        width: 95%;
+    }
+
+    .container-descr-mq10 {
+        padding-left: 0;
+    }
+}
+
+/* 600 */
+
+@media only screen and (max-width: 600px) {
+    .grid-study {width: 100%;}
+}
+
+/* 480 */
+
+@media only screen and (max-width: 480px) {
+
+    #grid-monster-cont {
+        height: 17rem;
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10, .item-11, .item-12 {
+        padding: 1rem;
+    }
+
+    #grid-monster-cont {
+        height: 11rem;
+    }
+
+    .grid-ex-cont > * {
+        padding: .5em;
+        margin: .1em;
+    }
+
+    html {font-size: .9rem;}
+    code {padding: .2rem .5rem;}
+
+    .grid-ex-3 > *, .grid-ex-4 > * {
+        margin: .1em;
+        padding: 1em;
+    }
+
+}
+
+/* 345 */
+
+@media only screen and (max-width: 345px) {
+    .code-property, .code-value, .i31, .i32, .i33, .i34, .i35, .code-neutral {font-size: .7rem;}
+}

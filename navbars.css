@@ -6,9 +6,11 @@
     --navi-light: rgb(218, 228, 248);
 }
 
+
+
 /*  INFO FIELD animation........................ */
 
-.blue-rec-h2 {
+/* .blue-rec-h2 {
     font-family: 'Orbitron', sans-serif;
     margin-left: 1rem;
     vertical-align: middle;
@@ -46,11 +48,11 @@
 @keyframes mask-move {
     from{left: 23rem;}
     to{left:40rem; }
-}
+} */
 
 /* MAIN...................................... */
 
-code {background-color: rgb(245, 222, 214);}
+section.sec-main code {border-bottom: none;}
 
 p.description {
     font-size: 0.8rem;
@@ -149,7 +151,7 @@ div.dropdown-content a {
 
 div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;}
 
-/* flex navi.............................. */
+/* FLEX NAVI............................... */
 
 
 .flex-navi {
@@ -185,7 +187,7 @@ div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;}
     cursor: pointer;
 }
 
-ul.fn-2 li::before, ul.fnr-1 li::before {content: "item "}
+ul.fn-2 li::before, ul.fnr-1 li::before {content: "i "}
 .ninja {width: 150px;}
 
 /* components */
@@ -202,7 +204,10 @@ ul.fn-2 li::before, ul.fnr-1 li::before {content: "item "}
 
 .fn-3 {flex-basis: 20%;}
 
-.fn-3 li {padding: .2rem .5rem;}
+.fn-3 li {
+    padding: .2rem .5rem;
+    width: 25px;
+}
 
 .flex-navi ul.fn-3, .flex-navi ul.fnr-2 {
     font-size: .8em;
@@ -236,6 +241,7 @@ ul.fn-2 li::before, ul.fnr-1 li::before {content: "item "}
 
 div.fn-next-rest ul.fnr-2 li {
     padding: .15rem .5rem;
+    width: 25px;
 }
 
 nav.fn-bc {
@@ -244,17 +250,41 @@ nav.fn-bc {
 
 /* media Q ............................... */
 
+
+
+/* 570 */
+
+@media only screen and (max-width: 570px) {
+    .ninja {width: 100px;}
+}
+
+/* 500 */
+
 @media only screen and (max-width: 500px) {
-    p.blue-rec-h2 {
-        width: 200px;
-    }
+    p.blue-rec-h2 {width: 200px;}
+    .ninja {width: 70px;}
   }
+
+/* 420 */
 
 @media only screen and (max-width: 420px) {
     ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
         font-size: 0.8rem;
     }
+
+    .flex-navi ul.fn-3, .flex-navi ul.fnr-2 {
+        font-size: .7em;
+        height: 1.7rem;
+    }
+
+    div.fn-next-rest ul.fnr-2 li, .fn-3 li {
+        width: 20px;
+    }
+
+    .fnr-1, .fn-2 {font-size: .9rem}
 }
+
+/* 360 */
 
 @media only screen and (max-width: 360px) {
     ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
@@ -262,4 +292,19 @@ nav.fn-bc {
     }
 
     section ul.nav-style a {padding: 0.6rem;}
+
+    .fnr-1 li, .fn-2 li {
+        margin: .1rem;
+    }
+
+    .fn-2 li {
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+    }
+
+    ul.fnr-1 li {
+        padding-top: .4rem;
+
+    }
+
 }

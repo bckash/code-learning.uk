@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arr.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid-study.css">
+    <title>Grid study</title>
+</head>
+<body>
+
+        <!-- NAVI...................... -->
+        <nav>
+            <h1 class="intro">learning curve</h1>
+            <ul class="main-nav">
+    
+                <!-- dropdown menu-->
+                <li class="dropdown-us hover-left">
+                    <a class="mn-but2">usful st</a>
+                    <div class="dropdown-holder-us">
+                        <a href="inline.html" class="d-content-us-shad">v align</a>
+                        <a href="flex-study.html" class="d-content-us">flexbox</a>
+                        <a class="d-content-us us-active">grid</a>
+                        <a href="centre-study.html" class="d-content-us">centre</a>
+                        <a href="position.html" class="d-content-us">rel / abs</a>
+                        <a href="animation.html" class="d-content-us">animation</a>
+                        <a href="us.html" class="d-content-us">chunks</a>
+                    </div>
+                </li>
+    
+                <!-- rest of NAVI -->
+                <li class="mn-but">
+                    <a href="navbars.html">nav bars</a>
+                </li>
+                <li class="mn-but hover-right">
+                    <a href="flexbox.html">flexbox</a>
+                </li>
+            </ul>
+    
+            <!-- info icon -->
+            <a href="index.html">
+                <span class="material-icons">info</span>
+            </a>
+        </nav>
+    
+        <!-- INFO FIELD .......................-->
+        <header class="">
+            <span class="blue-rec"></span>
+            <h2 class="blue-rec-h2">grid study
+                <span class="dot">_</span>
+            </h2>
+    
+            <!-- <p class="index">this here is a basic sum up, of what resulted from my codind experience so far. </p> -->
+    
+        </header>
+
+    <main class="grid-study">
+        <section>
+            <h2>display: grid;</h2>
+
+            <!--  defining.................... -->
+            <h3>defining a grid</h3>
+            <section class="br">
+    
+                <section class="cont-c-d">
+
+                    <div class="grid-ex-descr3-mq">
+                        <span class="code-property">grid-template-columns:</span> <span class="code-value">1fr 2fr 1fr 2fr;</span><br>
+                        <span class="code-property">grid-template-rows:</span> <span class="code-value">1fr 2fr 1fr;</span>
+                    </div>
+
+                    <figure class="container-descr-mq">
+                        <section class="grid-ex-cont">
+                            <div class="grid-item1">1</div>
+                            <div class="grid-item1">2</div>
+                            <div class="grid-item1">3</div>
+                            <div class="grid-item1">4</div>
+                            <div class="grid-item2"><span class="gi">5</span></div>
+                            <div class="grid-item2"><span class="gi">6</span></div>
+                            <div class="grid-item2"><span class="gi">7</span>
+                            </div>
+                            <div class="grid-item2"><span class="gi">8</span>
+                            </div>
+                            <div class="grid-item1">9</div>
+                            <div class="grid-item1">10</div>
+                            <div class="grid-item1">11</div>
+                            <div class="grid-item1">12</div>
+                        </section>
+                        <figcaption class="grid-example1">picture1. Grid example (1)</figcaption>
+                    </figure>
+
+                </section>
+            </section>
+
+            <!-- units....................... -->
+            <h3>units</h3>
+            <section class="cont-c-d-all br">
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">fr</span></code>
+                    </div>
+                    <div class="container-descr">
+                        <p>allows you to set the size of a track as a fraction of the free space of the grid container.</p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">grid-template-columns:</span></code><br>
+                            <code>1fr 50px 1fr 1fr;</code>
+                            
+                            <br> </code>
+                    </div>
+                    <div class="container-descr">
+                        <p><span class="descr-example">example.</span> total amount of free space available to the <code>fr</code> units doesn’t include the <code>50px</code>.</p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">repeat(x,y)</span></code>
+                    </div>
+                    <div class="container-descr">
+                        <p>shorthand for repeating values. repeat(number of columns/rows, the column width we want);</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- naming....................... -->
+            <h3>naming</h3>
+            <section class="cont-c-d-all br">
+                <section class="cont-c-d">
+
+                    <div class="container-code"></div>
+
+                    <div class="container-descr">
+                        <p>Grid lines are automatically assigned positive <span class="numbers-bc">numbers</span> ...</p>
+                    </div>
+
+                    <!--  monster grid... -->
+                    <figure id="grid-example2-cont">
+                        <img id="mons-grid-png" src="img/mons_grid.png" alt="">
+                    </figure>
+                    <figure id="grid-monster-cont">
+                        <div class="grid-ex-monster">
+
+                            <!-- vert -->
+                            <div class="item-1 br-left br-top"></div>
+                            <div class="item-2 br-top"></div>
+                            <div class="item-3 br-top"></div>
+                            <div class="item-4 br-right br-top"></div>
+                            <div class="item-5 br-left"></div>
+                            <div class="item-6"></div>
+                            <div class="item-7"></div>
+                            <div class="item-8 br-right"></div>
+                            <div class="item-9 br-left br-bot"></div>
+                            <div class="item-10 br-bot"></div>
+                            <div class="item-11 br-bot"></div>
+                            <div class="item-12 br-right br-bot"></div>
+
+                            <!-- horiz -->
+                            <div class="item-a"><span class="numbers-bc2">1</span>[r1]</div>
+                            <div class="item-b"><span class="numbers-bc2">2</span>[r2]</div>
+                            <div class="item-c"><span class="numbers-bc2">3</span>[r3]</div>
+                            <div class="item-d"><span class="numbers-bc2">4</span>[r4]</div>
+                            <div class="item-e">
+                                <span class="numbers-bc">1</span>
+                                <span class="gm-line">[c1]</span>
+                            </div>
+                            <div class="item-f">
+                                <span class="numbers-bc">2</span>
+                                <span class="gm-line">[c2]</span>
+                            </div>
+                            <div class="item-g">
+                                <span class="numbers-bc">3</span>
+                                <span class="gm-line">[c3]</span>
+                            </div>
+                            <div class="item-h">
+                                <span class="numbers-bc">4</span>
+                                <span class="gm-line">[c4]</span>
+                            </div>
+                            <div class="item-i">
+                                <span class="numbers-bc">5</span>
+                                <span class="gm-line">[c5]</span>
+                            </div>
+                        </div>
+                    </figure>
+                    <figcaption class="grid-example2">
+                        picture2. Lines names for Grid example (1)
+                    </figcaption>
+
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+
+                    <div class="grid-ex-descr3-mq">
+                        <span class="code-property">grid-template-columns:</span><br> <span class="code-value">[c1] 1fr [c2] 2fr [c3] 1fr [c4] 2fr [c5];</span><br>
+
+                        <span class="code-property">grid-template-rows: <br> </span> <span class="code-value">[r1] 1fr [r2] 2fr [r3] 1fr [r4];</span>
+                    </div>
+
+                    <div class="container-descr-mq">
+                        <p>...but they can be named also.</p>
+                    </div>
+
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <!-- <code>grid-column-start:<br> col-start 2;</code> -->
+                    </div>
+                    <div class="container-descr">
+                        <p>lines can be referenced by their name and count simultaneously</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- column/row - start/end........  -->
+            <h3>column/row - start/end</h3>
+            <section class="cont-c-d-all br">
+
+                <!-- picture3 -->
+                <section class="cont-c-d">
+
+                    <div class="grid-ex-descr-mq15">
+                            <!-- i1 -->
+                            <div class="grid-ex-descr2">
+                                
+                                <span class="i31">item-1 { <br></span>
+
+                                <span class="code-property">grid-row-start:</span><span class="code-value"> 1;</span><br>
+        
+                                <span class="code-property">grid-row-end:</span> <span class="code-value"> 4;</span><br>
+
+                                <span class="code-property">grid-column-start:</span><span class="code-value"> 1;</span><br>
+        
+                                <span class="code-property">grid-column-end:</span><span class="code-value"> 2;</span>
+        
+                                <span class="i31">}<br></span>
+                            </div>
+                            <!-- i2 -->
+                            <div class="grid-ex-descr2">
+
+                                <span class="i32">item-2 { <br></span>
+
+                                <span class="code-property">grid-row-start:</span><span class="code-value"> r3;</span><br>
+
+                                <span class="code-property">grid-row-end:</span> <span class="code-value"> r4;</span><br>
+
+                                <span class="code-property">grid-column-start:</span><span class="code-value"> c2;</span><br>
+
+                                <span class="code-property">grid-column-end:</span><span class="code-value"> c4;</span>
+
+                                <span class="i32">}<br></span>
+                            </div>
+                    </div>
+            
+                    <figure class="container-descr-mq15">
+                        <section class="grid-ex-3">
+                                <div class="item-example3-1">1</div>
+                                <div class="item-example3-2">2</div>
+                                <div class="item-example3-3">3</div>
+                                <div class="item-example3-4">4</div>
+                                <div class="item-example3-5">5</div>
+                        </section>
+                        <figcaption class="grid-example1">
+                                picture3. Items on Grid example (1)
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <!-- shorthand -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">grid-row: </span>start line / end line (or span value)
+                        </code><br><br>
+                        <code>
+                            <span class="ft-bold">grid-column: </span>start line / end line (or span value)
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>shorthand</p>
+                    </div>
+                </section>
+
+                <!-- example -->
+                <section class="cont-c-d">
+                    <div class="grid-ex-descr-mq25">
+
+                        <!-- i1 -->
+                        <div class="grid-ex-descr2">
+                            
+                            <span class="i33">item-3 { <br></span>
+
+                            <span class="code-property">grid-row:</span><span class="code-value"> 1 / 3;</span><br>
+    
+                            <span class="code-property">grid-column:</span><span class="code-value"> 2 / 3;</span>
+    
+                            <span class="i33">}<br></span>
+                        </div>
+
+                        <!-- i2 -->
+                        <div class="grid-ex-descr2">
+
+                            <span class="i34">item-4 { <br></span>
+
+                            <span class="code-property">grid-row:</span><span class="code-value"> r1 / span 1;</span><br>
+
+                            <span class="code-property">grid-column:</span><span class="code-value"> c3 / span 2;</span>
+
+                            <span class="i34">}<br></span>
+                        </div>
+                    </div>
+
+                    <!-- ex -->
+                    <div class="container-descr-mq20">
+                        <p>
+                            <span class="descr-example">example.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- span 1 -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">span [number] </span>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>the item will span across the provided number of grid tracks</p>
+                    </div>
+                </section>
+
+                <!-- span 2 -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">span [name] </span>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>span across the next line with the provided name</p>
+                    </div>
+                </section>
+
+                <!-- example -->
+                <section class="cont-c-d">
+
+                    <div class="grid-ex-descr-mq25">
+                            <!-- i1 -->
+                            <div class="grid-ex-descr2">
+                                
+                                <span class="i35">item-5 { <br></span>
+
+                                <span class="code-property">grid-row:</span><span class="code-value"> r2 / span 1;</span><br>
+        
+                                <span class="code-property">grid-column:</span> <span class="code-value"> c3 / span c5; </span>
+        
+                                <span class="i35">}<br></span>
+                            </div>
+                    </div>
+            
+                    <div class="container-descr-mq20">
+                        <p>
+                            <span class="descr-example">example.</span>
+                        </p>
+                    </div>
+
+                </section>
+
+            </section>
+
+            <!-- grid-area................. -->
+            <h3>grid-area</h3>
+            <section class="cont-c-d-all br">
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">grid-area</span>: <br> grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname;
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>specifies a grid item's size and location. can also be used to assign a name to a grid item.</p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="grid-ex-descr-mq5">
+
+                        <!-- i3 -->
+                        <div class="grid-ex-descr2">
+                            
+                            <span class="i33">item-3 { <br></span>
+
+                            <span class="code-property">grid-area:</span><span class="code-value"> 1 r1;</span><span class="i33"> / </span><span class="code-value"> 2 c2;</span><span class="i33"> / </span><span class="code-value"> 3 r3;</span><span class="i33"> / </span><span class="code-value"> 3 c3</span>
+    
+                            <span class="i33">}<br></span>
+                        </div>
+
+                        <!-- i4 -->
+                        <div class="grid-ex-descr2">
+
+                            <span class="i34">item-4 { <br></span>
+
+                            <span class="code-property">grid-area:</span><span class="code-value"> 1 r1;</span><span class="i33"> / </span><span class="code-value"> 4 c4;</span><span class="i33"> / </span><span class="code-value"> 2 r2;</span><span class="i33"> / </span><span class="code-value"> 5 c5;</span>
+
+                            <span class="i34">}<br></span>
+                        </div>
+                        
+                        <!-- i5 -->
+                        <div class="grid-ex-descr2">
+
+                            <span class="i35">item-5 { <br></span>
+
+                            <span class="code-property">grid-area:</span><span class="code-value"> 2 r2;</span><span class="i33"> / </span><span class="code-value"> 3 c3;</span><span class="i33"> / </span><span class="code-value"> 3 r3;</span><span class="i33"> / </span><span class="code-value"> 4 c4;</span>
+
+                            <span class="i35">}<br></span>
+                        </div>
+                    </div>
+                    
+                    <div class="container-descr-mq1"></div>
+                </section>
+            </section>
+
+            <!-- grid-template-area........... -->
+            <h3>grid-template-area</h3>
+            <section class="cont-c-d-all br">
+                <section class="cont-c-d">
+
+                    <div class="container-code">
+                        <code><span class="ft-bold">grid-template-areas:</span><br>
+                            "/grid-area-name/ | . | none "
+                        </code><br><br>
+                    </div>
+
+                    <div class="container-descr">
+                        <p>Defines a grid template by referencing the names of the grid areas. Repeating the name of a grid area causes the content to span those cells.<br><br> "." – a period signifies an empty grid cell<br> "none" – no grid areas are defined</p>
+                    </div>
+
+                </section>
+
+                <!--  -->
+
+                <section class="cont-c-d">
+                    <div class="grid-ex-descr-mq15">
+
+                        <!-- items -->
+                        <div class="grid-ex-descr2">
+                            
+                            <span class="i31">item-1 {</span>
+                            <span class="code-property">grid area:</span> <span class="code-value">i1</span><span class="i31"> }</span><br>
+    
+                            <span class="i32">item-2 {</span>
+                            <span class="code-property">grid area:</span> <span class="code-value">i2</span><span class="i32"> }</span><br>
+
+                            <span class="i33">item-3 {</span>
+                            <span class="code-property">grid area:</span> <span class="code-value">i3</span><span class="i33"> }</span><br>
+        
+                            <span class="i34">item-4 {</span>
+                            <span class="code-property">grid area:</span> <span class="code-value">i4</span><span class="i34"> }</span><br>
+
+                            <span class="i35">item-5 {</span>
+                            <span class="code-property">grid area:</span> <span class="code-value">i5</span><span class="i35"> }</span><br>
+
+                        </div>
+
+                        <!-- cont -->
+                        <div class="grid-ex-descr2">
+                            <span class="code-neutral">.container {</span><br><span class="code-property">grid-template-areas: </span><br>
+                            <span class="code-value">" i1 i3 . i4 "</span><br>
+                            <span class="code-value">" i1 i3 i5 . "</span><br>
+                            <span class="code-value">" i1 i2 i2 i2 "</span><br>
+                            <span class="code-neutral">}</span><br>
+                        </div>
+
+                    </div>
+                    
+                    <figure class="container-descr-mq10">
+                        <section class="grid-ex-4">
+                            <div class="item-example4-1">i1</div>
+                            <div class="item-example4-2">i2</div>
+                            <div class="item-example4-3">i3</div>
+                            <div class="item-example4-4">i4</div>
+                            <div class="item-example4-5">i5</div>
+                        </section>
+                        <figcaption class="grid-example1">
+                            picture4. Items on Grid example (1) - using grid-template-areas
+                        </figcaption>
+                    </figure>
+                </section>
+
+            </section>
+
+            <!-- grid - gap ..................-->
+            <h3>gap</h3>
+            <section class="cont-c-d-all br">
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">column-gap: | row-gap:</span> <br>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>size of the grid lines (width of the gutters between the columns/rows) </p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">gap:</span></code><code>row-gap / column-gap</code>
+                    </div>
+                    <div class="container-descr">
+                        <p>shorthand. one value is row-gap = column-gap</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- aligning  all  items ............-->
+            <h3>aligning items inside the container</h3>
+            <section class="cont-c-d-all br">
+                <p><code><span class="ft-bold"> start / end / center / stretch; </span></code></p>
+                <!--  -->
+                <h4>along the inline (row) axis </h4>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">justify-items:</span>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>all the items</p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">justify-self:</span>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>specific item</p>
+                    </div>
+                </section>
+                <!--  -->
+                <h4>along the block (column) axis</h4>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">align-items:</span>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>all the items</p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code>
+                            <span class="ft-bold">align-self:</span>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>specific item</p>
+                    </div>
+                </section>
+                <!--  -->
+                <h4>shorthand for both axis</h4>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">place-self:</span><code> align-self / justify-self; </code><br>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>all items. (no support - edge)</p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">place-items:</span><code> align-items / justify-items; </code><br>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>specific item. (no support - edge)</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- implicit tracks................ -->
+            <h3>implicit tracks</h3>
+            <section class="cont-c-d-all br">
+                <section class="cont-c-d">
+                    <div class="container-code">
+                        <code><span class="ft-bold">grid-auto-columns: | grid-auto-rows:</span> <br>
+                        </code>
+                    </div>
+                    <div class="container-descr">
+                        <p>Implicit tracks get created when there are more grid items than cells in the grid, or when a grid item is placed outside of the explicit grid.</p>
+                    </div>
+                </section>
+                <!--  -->
+
+            </section>
+
+    </main>
+</body>
+</html>

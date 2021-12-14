@@ -8,6 +8,11 @@
     --code-val-nr: rgb(181,206,168);
 }
 
+html {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
 body {
     max-width: 100%;
     margin: 0 auto;

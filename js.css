@@ -1,0 +1,104 @@
+
+
+
+.js-main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.js-main code {
+    background-color: rgb(255, 255, 255);
+}
+
+/* H2 style................................. */
+
+.js-main h2 {
+    position: relative;
+    background-color: rgb(218, 222, 247);
+    margin-bottom: 0;
+    padding: 0.1em;
+    border: 1px rgb(179, 183, 209) solid;
+}
+
+.js-main h2:hover {
+    cursor: pointer;
+}
+
+.minus::after, .plus::after {
+    position: absolute;
+    right: 0;
+    padding-right: 0.5em;
+    color: rgb(149, 129, 238);
+}
+
+.minus::after {content: " - ";}
+.plus::after {content: " + ";}
+
+
+/* main sections style............................ */
+
+section.active {display: none;}
+
+.code-cont {
+    display: flex;
+    flex-direction: column;
+    border: 1px black dotted;
+    border-top: 0;
+    background-color: var(--m-back);
+}
+
+.code-cont > * {padding: .5rem;}
+
+.code-title, .code-one-position {
+    display: flex;
+    flex-direction: row;
+}
+
+.code-title > *, .code-one-position > * {
+    margin: 0.1em 0.5em;
+}
+
+.code-name, .code-code, .code-descr, .code-title > * {
+    width: 33%;
+}
+
+.code-descr {font-size: 0.8rem;}
+
+
+/* other......................................... */
+
+.bold {font-weight: bold;}
+.value {color: rgb(20, 170, 45);}
+
+
+/* MQ................. */
+
+/* 400 */
+
+@media only screen and (max-width: 400px) {
+
+    .js-main h2 {
+        font-size: 1.3rem;
+    }
+
+  }
+
+/* 350 */
+
+@media only screen and (max-width: 350px) {
+
+    .js-main code {
+        font-size: 0.7rem;
+    }
+
+  }
+
+/* 340 */
+
+@media only screen and (max-width: 340px) {
+
+    .js-main h2 {
+        font-size: 1.2rem;
+    }
+
+  }

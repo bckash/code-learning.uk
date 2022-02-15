@@ -23,7 +23,7 @@ Page itself isn't focused on design, I'm tryna keep it clean and minimalistic he
 
 ## preview
 
-![image](https://skdoosh.uk/preview.png)
+![image](https://skdoosh.uk/preview1.png)
 
 
 

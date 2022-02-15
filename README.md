@@ -15,8 +15,7 @@ Page itself isn't focused on design, I'm tryna keep it clean and minimalistic he
 * vertical align
 * animation
 * position: relative / absolute
-* js 
-
+* JS 
 
 
 & more....

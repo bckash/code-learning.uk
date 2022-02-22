@@ -328,16 +328,34 @@ p.index {
 
 .head-notes::after {content: none;}
 
+
 /* FOOTER.................................. */
 
+
 footer {
-    color:rgb(216, 216, 216) ;
-    margin: 2rem;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.9rem;
+    width: 10rem;
+    margin: 2rem auto;
+    border-top: 1px dotted rgb(187, 224, 224);
+    color:  rgba(172, 201, 201, 0.781);
 }
 
-.hb {border: 1px solid black;}
+footer img {
+    display: block;
+    width: 150px;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+#github {
+    width: 30px;
+}
+
+#github__cont {
+    margin-top: 1rem;
+}
 
 
 /* media q.................................... */

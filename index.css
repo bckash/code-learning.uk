@@ -94,6 +94,43 @@ a span.index-hov, a span.index-hov:hover {
     to {color: var(--blue)}
   }
 
+
+/* LINKS................... */
+
+.check {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.check h3, .check h5 {
+    color: rgb(68, 92, 92);
+    font-weight: normal;
+}
+
+.check div {
+    margin: 0 .6rem;
+}
+
+.sites-list a {
+    text-decoration: none;
+    color:  rgba(176, 197, 197, 0.781);
+}
+
+.sites-list a:hover {
+    color: var(--sect-back);
+}
+
+#zar {
+    font-family: 'Bakbak One', cursive;
+    font-size: 2.5rem;
+}
+
+#skadoosh {
+    font-family: 'Chewy', cursive;
+    font-size: 2.3rem;
+}
+
+
+
 /* media Q ...................................... */
 
 

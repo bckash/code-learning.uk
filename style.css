@@ -333,6 +333,8 @@ p.index {
 
 
 footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
     width: 10rem;
     margin: 2rem auto;
     border-top: 1px dotted rgb(187, 224, 224);

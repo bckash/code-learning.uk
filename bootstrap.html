@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap clean</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+
+    <main id="top" class="">
+
+      <nav class="c-main container-fluid">
+        <h1 class="display-6">boostrap dive</h1>
+        <select id="select1" class="form-select p-2 w-50 mx-auto" aria-label="Default select example">
+          <option value="0" selected> menu</option>
+        </select>
+      </nav>
+
+        <!-- GRID -->
+        <section id="start" class="c-main container-fluid border">
+            <h2>grid</h2>
+
+            <!-- raws column -->
+            <h5>rows & columns</h5>
+            <p class="my-4">
+                bootstrap grid is defined by declaring a <code>row</code> which can hold columns (<code> col </code>):
+            </p>
+
+            <div class="container-fluid my-2">
+                <div class="container">
+                    <div class="row border">
+                      <div class="col m-3 border">
+                        Column
+                      </div>
+                      <div class="col m-3 border">
+                        Column
+                      </div>
+                      <div class="col m-3 border">
+                        Column
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <p class="my-4">
+                each column has 12 widths:
+            </p>
+
+            <div class="container-fluid my-2">
+                <div class="container">
+                    <div class="row d-flex justify-content-evenly border">
+                      <div class="col-2 m-1 border">
+                        <code>col-1</code>
+                      </div>
+                      <div class="col-3 m-1 border">
+                        <code>col-3</code>
+                      </div>
+                      <div class="col-6 m-1 border">
+                        <code>col-6</code>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <h5>vertical aligment</h5>
+            <p class="my-4">
+                <code>align-items-</code><br> 
+                <code>align-self-</code><br>
+                with either <code>start</code>, <code>center</code> or <code>end.</code>
+            </p>
+
+            <h5>horizontal aligment</h5>
+            <p class="my-4">
+                <code>justify-content-</code><br> 
+                with either <code>start</code>, <code>center</code> <code>end</code>, <code>around</code>, <code>between</code> or <code>evenly</code>
+            </p>
+
+            <!-- gutters -->
+            <h5>gutters</h5>
+            <p class="gutter-p my-4">
+                are horizontal padding for columns. <code>g-</code> is for total, <code>gx-</code> and <code>gy-</code> are for horizonatl and vertical. <i>"This padding is then counteracted on the rows with negative margins"</i>
+            </p>
+
+            <!-- changing ordr -->
+            <h5>changing order</h5>
+            <p class="my-4">
+              <code>order-</code> is the <code>1-5</code> index of order. The higher, the closer the column to start. Also, there is <code>order-first</code> and <code>order-last</code>.
+            </p>
+
+            <!-- offsetting column -->
+            <h5>offsetting columns</h5>
+            <p class="my-4">
+              Move columns to the right using <code>offset-md-</code> (left margin increased <code>x</code> -times). <i>Margin utilities</i> can be used to force sibling columns away from each other: <code>me-auto</code>
+            </p>
+
+        </section>
+
+        <!-- PADDING MARGIN -->
+        <section id="pad" class="c-main container-fluid border">
+            <h2>padding &amp; margin</h2>
+            <ul>
+                <li class=""><code>m</code> - margin</li>
+                <li><code>p</code> - padding</li>
+                <li><code>mx-auto</code> - horizontal centering</li>
+            </ul>
+            <p></p>
+        </section>
+
+        <!-- DISPLAY HEADINGS -->
+        <section id="disp" class="c-main container-fluid border">
+            <h2>display heading</h2>
+            <p class="my-4">
+              <code>display-</code> for headings <code>1-6</code> to make the heading 2x bigger
+            </p>
+        </section>
+
+        <!-- PARAGRAPH -->
+        <section id="par" class="c-main container-fluid border">
+            <h2>paragraph</h2>
+            <p class="lead border my-4">
+                This is a <code>lead</code> paragraph. It stands out from regular paragraphs.
+            </p>
+            <p class="border p-standard">
+                this is a regular paragraph
+            </p>
+        </section>
+
+        <!-- BLOCKQUOTE STYLE -->
+        <section id="black" class="c-main container-fluid border">
+            <h2>blockquote</h2>
+            <p class="my-4">
+              with <code>text-center</code> and <code>text-end</code> in <code>figure</code> container.
+            </p>
+            <figure class="border">
+              <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+        </section>
+
+        <!-- LISTS -->
+        <section id="lists" class="c-main container-fluid border">
+          <h2>lists</h2>
+            <ul>
+              <li>
+                <code>list-unstyled</code> removes all the styling;</li>
+              <li>
+                <code>list-inline</code> - display inline;
+              </li>
+              <li>
+                <code>list-inline-items</code> - adds padding;
+              </li>
+            </ul>
+            <!-- description lists -->
+            <div>
+              <h5>
+                description lists
+              </h5>
+              <p class="my-4">
+                <a href="https://getbootstrap.com/docs/5.1/content/typography/#description-list-alignment" target="_blank">description list</a>  is perfect for defining terms.
+              </p>
+            </div>
+
+        </section>
+
+        <!-- IMAGES -->
+        <section id="imgages" class="c-main container-fluid border">
+          <h2>images</h2>
+          <p class="my-4">
+            responsive with <code>img-fluid</code>
+          </p>
+          <div>
+            <h5>thumbnail</h5>
+            <p><code>img-thumbnail</code></p>
+            <div class="my-4">
+              <img class="img-thumbnail" src="img/spray_paint2.png" alt="">
+            </div>
+          </div>
+          <div>
+            <h5>aligning images</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/content/images/#aligning-images" target="_blank" >link</a>
+            </p>
+          </div>
+        </section>
+
+        <!-- TABLES -->
+        <section id="tables" class="c-main container-fluid border">
+          <h2>tables</h2>
+
+          <p class="my-4">
+            <code>table</code>
+          </p>
+
+          <ul>
+            <li><code>table-striped</code></li>
+            <li><code>table-dark</code></li>
+            <li><code>table-hover</code></li>
+            <li><code>table-active</code></li>
+            <li><a href="https://getbootstrap.com/docs/5.1/content/tables/#table-borders" target="_blank">other</a></li>
+          </ul>
+
+          <table class="table my-4 border">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+        <!-- FIGURE -->
+        <section id="figure" class="c-main container-fluid border">
+          <h2>figure</h2>
+          <ul>
+              <li><code>figure</code></li>
+              <li><code>figure-img</code></li>
+              <li><code>figure-caption</code></li>
+              <li><code>figure-caption text-end</code></li>
+          </ul>
+          <figure class="figure fig-2">
+            <img src="img/spray_paint2.png" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          </figure>
+        </section>
+        
+        <!-- FORMS -->
+        <section id="forms" class="c-main container-fluid border">
+          <h2>forms</h2>
+          <p class="my-4">
+            <code>form-control</code> for <code>&ltinput&gt</code> and <code>&lttext-area&gt</code>
+          </p>
+
+          <ul class="mb-4">
+            <li><code>-lg</code>, <code>-sm</code> : sizing</li>
+          </ul>
+
+          <!-- form control -->
+          <div class="w-50 mx-auto"> 
+            <div class="mb-3 form-example p-2">
+              <label for="exampleFormControlInput1" class="">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            
+            <div class="mb-3 form-example p-2">
+              <label for="exampleFormControlTextarea1" class="">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          
+          <!-- disabled -->
+          <div class="border p-2 m-2">
+            <h5>disabled / readonly</h5>
+            <p class="my-4">
+              Add the <code>disabled</code> boolean attribute on an <code>&ltinput&gt</code> to give it a grayed out appearance and remove pointer events. Add the <code>readonly</code> boolean attribute on an <code>&ltinput&gt</code> to prevent modification of the input’s value.
+            </p>
+
+            <div class="form-example p-2 w-50 mx-auto">
+              <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+              <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+            </div>   
+
+          </div>
+
+          <!-- file input -->
+          <div class="border my-2 p-2 d-inline-block">
+            <h5>file input</h5>
+            <a href="https://getbootstrap.com/docs/5.1/forms/form-control/#file-input" target="_blank">link</a>
+          </div>
+
+          <!-- color -->
+          <div class="border my-2 p-2 d-inline-block">
+            <h5>color</h5>
+            <a href="https://getbootstrap.com/docs/5.1/forms/form-control/#color" target="_blank">link</a>
+          </div>
+
+          <!-- select -->
+          <div class="border m-2 p-2">
+            <h5>select</h5>
+            <p class="my-4">
+              custom <code>&ltselect&gt</code> with <code>form-select</code>. pick from: <code>form-select-lg</code> and <code>form-select-sm</code> for sizing.
+            </p>
+
+            <select class="form-select p-2 form-example w-50 mx-auto" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="#start">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>     
+          </div>
+
+          <!-- checks, radios & switches-->
+          <div class="border m-2 p-2">
+            <h5>checks</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#checks" target="_blank">link</a>
+            </p>
+            	
+            <div class="border form-example text-start w-50 mx-auto p-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+              </div>  
+            </div>
+          </div>
+            
+          <!--  radios -->  
+          <div class="border m-2 p-2">
+            <h5>Radios</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#radios" target="_blank">link</a>
+            </p>   
+            
+            <div class="form-example my-2 p-2 w-50 mx-auto border text-start">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+              </div>            
+            </div>
+          </div>
+
+          <!--  switches -->
+          <div class="border m-2 p-2">
+            <h5>switches</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">link</a>
+            </p>
+            <div class="w-50 form-example mx-auto p-2 border input-group">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- toggle buttons-->
+          <div class="border m-2 p-2">
+            <h5>toggle buttons</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#toggle-buttons" target="_blank">link</a>
+            </p>
+          </div>
+
+          <!-- range -->
+          <div class="border m-2 p-2">
+            <h5>range</h5>
+            <p class="my-4">
+              custom <code>&ltinput type="range"&gt</code> using <code>form-range</code>.  specify new values using the <code>min</code> and the <code>max</code> attributes (<code>0 - 100</code>).  you can specify a step value to change the snap from integer to fe <code>step="0.5"</code>.
+            </p>
+            <div class="w-75 mx-auto">
+              <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" class="form-range" id="customRange1">
+            </div>
+            
+          </div>
+
+          <!-- input group-->
+          <div class="border m-2 p-2">
+            <h5>input group</h5>
+            <p class="my-4">
+              wrap <code>&ltinputs&gt</code> into <code>input-groups</code>. Input groups wrap by default. Remember to place <code>&ltlabels&gt</code> outside the input group.
+            </p>
+            <p>
+              <a href="https://getbootstrap.com/docs/5.1/forms/input-group/#basic-example" target="_blank">more</a>
+            </p>
+          </div>
+
+          <!-- buttons with dropdown-->
+          <div class="border m-2 p-2">
+            <h5>buttons wih dropdowns</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/input-group/#buttons-with-dropdowns" target="blank">more</a>
+            </p>
+            <h5>segmented buttons</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/input-group/#segmented-buttons" target="_blank">more</a>
+            </p>
+          </div>
+
+          <!-- floating labels-->
+          <div class="border m-2 p-2">
+            <h5>floating labels</h5>
+            <p class="my-4">
+              Wrap a pair of <code>&ltinput class="form-control"&gt</code> and <code>&ltlabel&gt</code> in <code>form-floating</code> to enable floating labels. A <code>placeholder</code> is required on each <code>&ltinput&gt</code> as our method of CSS-only floating labels uses the <code>:placeholder-shown</code> pseudo-element. Also note that the <code>&ltinput&gt</code> must come first so we can utilize a sibling selector (e.g., ~).
+            </p>
+            <div class="w-50 mx-auto form-example p-2">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+            </div>
+            <h5>floating textares</h5>
+            <p class="my-4">
+              works also also <code>&lttextarea&gt</code>. To set a custom height do not use the <code>rows</code> attribute. Instead, set an explicit <code>height</code> (either inline or via custom CSS).
+            </p>
+          </div>
+
+                    <!-- floating labels-->
+          <div class="border m-2 p-2">
+            <h5>tips for layout</h5>
+            <p class="my-4">
+              <a href="https://getbootstrap.com/docs/5.1/forms/layout/#forms" target="_blank">more</a>
+            </p>
+
+          </div>
+        </section>
+    </main>
+
+    <nav id="bottom-nav" class="opa-0">
+      <a href="#top">
+        <span class="material-icons">
+          arrow_circle_left
+        </span>
+      </a>
+      
+    </nav>
+    
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="bootstrap.js"></script>
+</body>
+</html>

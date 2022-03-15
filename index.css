@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 html {
     background: none;
@@ -129,7 +131,10 @@ a span.index-hov, a span.index-hov:hover {
     font-size: 2.3rem;
 }
 
-
+#design {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+}
 
 /* media Q ...................................... */
 

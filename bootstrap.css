@@ -1,0 +1,90 @@
+
+:root {
+    --yel-dark:rgb(253, 243, 230);
+    --yel-light: rgb(252, 249, 245);
+}
+
+main {
+    width: 90%;
+    max-width: 50rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    /* border: 1px dotted black */
+}
+
+h5 {
+    margin: 1rem;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.c-main {
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.c-main p, .c-main ul {
+    margin: .5rem auto;
+}
+
+.c-main p {
+    width: 70%;
+}
+
+.c-main ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.gutter-p code::after {
+    color: black;
+}
+
+.row {
+    background-color: var(--yel-dark);
+}
+
+.row > *  {
+    background-color: var(--yel-light)
+}
+
+figure, p.lead, .form-example {
+    background-color: var(--yel-dark);
+}
+
+.p-standard {
+    background-color: var(--yel-light);
+}
+
+.img-thumbnail, .fig-2 img {
+    width: 300px;
+}
+
+.fig-2 {
+    display: block;
+    background-color: white;
+}
+
+#bottom-nav {
+    transition: .5s;
+}
+
+nav span.material-icons {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+    font-size: 3rem;
+    transform: rotate(90deg);
+}
+
+.opa-1 {
+    opacity: 1;
+}
+
+.opa-0 {
+    opacity: 0;
+}

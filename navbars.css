@@ -7,52 +7,104 @@
 }
 
 
-
-/*  INFO FIELD animation........................ */
-
-/* .blue-rec-h2 {
-    font-family: 'Orbitron', sans-serif;
-    margin-left: 1rem;
-    vertical-align: middle;
-    display: inline-block;
-    visibility: hidden;
-
-    animation-name: text-move;
-    animation-duration: 2s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes text-move {
-    from {visibility:visible; }
-    to {visibility: visible; }
-}
-
-.blue-rec-h2-mask {
-    position: relative;
-    bottom: 4.5rem;
-    left: 16rem;
-    background-color: rgb(255, 255, 255);
-    width:21rem;
-    height: 3rem;
-
-    animation-name: mask-move;
-    animation-delay: .2s;
-    animation-duration: .10s;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes mask-move {
-    from{left: 23rem;}
-    to{left:40rem; }
-} */
-
 /* MAIN...................................... */
 
-section.sec-main code {border-bottom: none;}
+.www-style {
+    margin: 1rem;
+}
+
+
+.example-container {
+    color: grey;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 30px;
+    margin-bottom: .5rem;
+}
+
+.example-container:hover {
+    color: black;
+    outline: 5px solid var(--blue-border);
+    background-color: rgba(216, 229, 255, 0.178);
+    cursor:default;
+}
+
+.example {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+.example-logo, .example-descr, .example-link__container {
+    margin: 1rem;
+}
+
+.example-logo, .example-link__container {
+    width: 25%;
+}
+
+.example-descr {
+    width: 50%;
+}
+
+.example-logo img {
+    width: 60%;
+}
+
+.example-link__container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.example-link__container div a:first-child span {
+    margin-right: .7rem;
+}
+
+.example-link {
+    margin: 0 .4rem;
+}
+
+.github-logo {
+    width: 20px;
+}
+
+.skadoosh {
+    width: 10px;
+}
+
+
+/* react logo */
+
+
+.App-logo {
+    pointer-events: none;
+    color: var(--nav-back);
+    width: 40px;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+/* OLD SYLE.................................. */
+/* .......................................... */
+
+
+/* section.sec-main code {border-bottom: none;}
 
 p.description {
     font-size: 0.8rem;
@@ -80,11 +132,11 @@ ul.nav-style a {
     padding: 1rem 0.8rem;
 }
 
-ul.nav-style li {cursor: pointer;}
+ul.nav-style li {cursor: pointer;} */
 
 /* text format */
 
-ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
+/* ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
     font-size: 1rem;
     text-transform: uppercase;
     color: rgb(240, 236, 230);
@@ -93,25 +145,25 @@ ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
 }
 
 .left {float: left;}
-.right {float: right;}
+.right {float: right;} */
 
 /* V1 STYLE NAVBAR */
 
-li.h1:hover {
+/* li.h1:hover {
     background-color: rgb(90, 132, 209);
-}
+} */
 
 /* V2 STYLE NAVBAR */
 
-li.h2 a:hover {
+/* li.h2 a:hover {
     background-color: cornflowerblue;
     color: var(--hover-nav);
-}
+} */
 
 /* DROPDOWN */
 /* hovering the main container for button  */
 
-.dropdown {
+/* .dropdown {
     display: inline-block;
     position: relative;
 }
@@ -149,12 +201,12 @@ div.dropdown-content a {
     font-size: 0.8rem;
 }
 
-div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;}
+div.dropdown-content a:hover {background-color: rgb(153, 33, 147) ;} */
 
 /* FLEX NAVI............................... */
 
 
-.flex-navi {
+/* .flex-navi {
     background-color: rgb(218, 228, 248);
     display: flex;
     flex-direction: row;
@@ -194,7 +246,7 @@ ul.fn-2 li::before, ul.fnr-1 li::before {content: "i "}
 
 /* 1 */
 
-.fn-1, .fn-2, .fn-3 {
+/* .fn-1, .fn-2, .fn-3 {
     margin: 0 .3em;
     justify-content: center;
 }
@@ -212,11 +264,11 @@ ul.fn-2 li::before, ul.fnr-1 li::before {content: "i "}
 .flex-navi ul.fn-3, .flex-navi ul.fnr-2 {
     font-size: .8em;
     height: 1.8rem;
-}
+} */ 
 
 /* 2 */
 
-.fn-next-logo {
+/* .fn-next-logo {
     flex-basis: 20%;
 }
 
@@ -246,7 +298,7 @@ div.fn-next-rest ul.fnr-2 li {
 
 nav.fn-bc {
     background-color: unset;
-}
+} */
 
 /* media Q ............................... */
 
@@ -254,20 +306,20 @@ nav.fn-bc {
 
 /* 570 */
 
-@media only screen and (max-width: 570px) {
+/* @media only screen and (max-width: 570px) {
     .ninja {width: 100px;}
-}
+} */
 
 /* 500 */
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     p.blue-rec-h2 {width: 200px;}
     .ninja {width: 70px;}
-  }
+  } */
 
 /* 420 */
 
-@media only screen and (max-width: 420px) {
+/* @media only screen and (max-width: 420px) {
     ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
         font-size: 0.8rem;
     }
@@ -282,11 +334,11 @@ nav.fn-bc {
     }
 
     .fnr-1, .fn-2 {font-size: .9rem}
-}
+} */
 
 /* 360 */
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
     ul.nav-style a, .dropdown-bt, .dropdown-content, div.dropdown-content a {
         font-size: 0.7rem;
     }
@@ -307,4 +359,4 @@ nav.fn-bc {
 
     }
 
-}
+} */

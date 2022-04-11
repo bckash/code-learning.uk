@@ -335,6 +335,7 @@ p.index {
 
 
 footer {
+    position: relative;
     font-family: 'Orbitron', sans-serif;
     font-size: .8rem;
     width: 10rem;
@@ -343,10 +344,21 @@ footer {
     color: var(--footer);
 }
 
+.p22 {
+    position: absolute;
+    top: -1rem;
+    left: 3.5rem;
+    display: inline-block;
+    border: 1px solid black;
+    padding: .5rem .8rem;
+    border-radius: 15px;
+    background-color: black;
+}
+
 footer img {
     display: block;
     width: 150px;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 footer p {

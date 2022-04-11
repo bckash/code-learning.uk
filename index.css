@@ -12,18 +12,86 @@ main {
 }
 
 
+br {
+    border: 1px grey solid;
+}
+
 /* PHOTO PART STYLE.................... */
+
+.flex-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.flex-main__icon, .flex-main__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.flex-main__nav ul {
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-main__nav-text {
+    width: 80%;
+}
+
+.flex-main__nav-icon {
+    width: 40%;
+}
+
+.flex-main__nav-icon span {
+    font-size: 5rem;
+}
+
+.flex-main__nav-icon:hover span {
+    cursor: pointer;
+}
+
+.flex-main__content {
+    width: 40%;
+}
+
+.flex-main__content-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 50%;
+    height: 10rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+/*                             */
+/* kash im................... */
+/*                           */
+
 
 .intro-index:hover .card-text {
     opacity: 1;
 }
 
 .intro-index {
+    width: 21rem;
+    height: 21rem;
+    border-radius: 50%;
+
     margin: 0 auto;
     position: relative;
-    border-radius: 50%;
-    width: 22rem;
-    height: 22rem;
 }
 
 .intro-index::before {
@@ -51,11 +119,13 @@ main {
 .kasha {
     box-sizing: border-box;
     display: inline-block;
-    border: white .8rem solid;
+    border: var(--blue-border) .8rem solid;
     border-radius: 50%;
     height: 100%;
     width: auto;
 }
+
+/* text............... */
 
 .card-text {
     position: absolute;
@@ -78,9 +148,7 @@ p.card-body {
     font-style: italic;
 }
 
-.pad-top-bot {
-    padding: 5% 0;
-}
+
 
 /* small info button.................... */
 

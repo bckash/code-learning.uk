@@ -16,65 +16,23 @@ br {
     border: 1px grey solid;
 }
 
-/* PHOTO PART STYLE.................... */
-
-.flex-main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+code {
+    background-color: var(--blue-border);
 }
 
-.flex-main__icon, .flex-main__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    margin: 0.5rem;
-    margin-bottom: 2rem;
+/* small info button.................... */
+
+a span.index-hov, a span.index-hov:hover {
+    color: var(--blue);
+    animation-name: fade;
+    animation-duration: 2s;
+    cursor: default;
 }
 
-
-.flex-main__nav ul {
-    text-align: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.flex-main__nav-text {
-    width: 80%;
-}
-
-.flex-main__nav-icon {
-    width: 40%;
-}
-
-.flex-main__nav-icon span {
-    font-size: 5rem;
-}
-
-.flex-main__nav-icon:hover span {
-    cursor: pointer;
-}
-
-.flex-main__content {
-    width: 40%;
-}
-
-.flex-main__content-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    width: 50%;
-    height: 10rem;
-    margin: auto;
-    margin-top: 2rem;
-}
-
+@keyframes fade {
+    from {color: rgb(0, 0, 0);}
+    to {color: var(--blue)}
+  }
 
 /*                             */
 /* kash im................... */
@@ -149,25 +107,129 @@ p.card-body {
 }
 
 
+/* PHOTO PART STYLE.................... */
 
-/* small info button.................... */
-
-a span.index-hov, a span.index-hov:hover {
-    color: var(--blue);
-    animation-name: fade;
-    animation-duration: 2s;
-    cursor: default;
+.flex-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-@keyframes fade {
-    from {color: rgb(0, 0, 0);}
-    to {color: var(--blue)}
-  }
+.flex-main__icon, .flex-main__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.flex-main__nav ul {
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-main__nav-text {
+    width: 80%;
+}
+
+.flex-main__nav-icon {
+    width: 40%;
+}
+
+.flex-main__nav-icon span {
+    font-size: 5rem;
+}
+
+.flex-main__nav-icon:hover span {
+    cursor: pointer;
+}
+
+.flex-main__content {
+    width: 40%;
+}
+
+.flex-main__content-text {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+
+
+
+/* table presntation .......... */
+
+.content-toggle {
+    display: none;
+}
+
+.table-presentation {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.table-presentation__logo-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+}
+
+
+.table-presentation__logo, .table-presentation__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.table-presentation__title {
+    font-weight: bold;
+}
+
+.table-presentation__logo {
+    border-right: 2px solid black;
+}
+
+.table-presentation__logo-title-2 {
+    padding-bottom: 1rem;
+}
+
+.table-presentation__content {
+    text-align: justify;
+}
+
+.table-presentation__logo img, .table-presentation__logo-2 img {
+    width: 40px;
+    padding: 0 .2rem;
+}
+
+/* #html-logo {
+    width: 38px;
+}
+
+#css-logo {
+    width: 28px;
+} */
+
 
 
 /* LINKS................... */
 
-.check {
+/* .check {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -202,7 +264,7 @@ a span.index-hov, a span.index-hov:hover {
 #design {
     font-family: 'Caveat', cursive;
     font-size: 3rem;
-}
+} */
 
 /* media Q ...................................... */
 

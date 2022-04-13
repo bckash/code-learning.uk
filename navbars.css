@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chewy&display=swap');
+
+
 :root {
     text-align: center;
     --m-back: rgb(243, 243, 243);
@@ -23,9 +28,43 @@
 
 .example-container:hover {
     color: black;
-    outline: 5px solid var(--blue-border);
+    outline: 5px solid rgba(46, 58, 221, 0.568);
     background-color: rgba(216, 229, 255, 0.178);
     cursor:default;
+}
+
+.example-container:hover .example-link a span.material-icons {
+    color: black;
+}
+
+.example-container:hover #www-logo-ska {
+    font-size: 1.5rem;
+    color: rgb(138,32,32);
+}
+
+.example-container:hover #www-logo-zar {
+    font-size: 3rem;
+    background: #992877;
+    background: -webkit-linear-gradient(to right, #992877 24%, #008080 50%, #413480 100%);
+    background: -moz-linear-gradient(to right, #992877 24%, #008080 50%, #413480 100%);
+    background: linear-gradient(to right, #992877 24%, #008080 50%, #413480 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.example-container:hover #www-logo-demo {
+    color: rgb(161,72,56);
+    font-size: 2.7rem;
+}
+
+.example-container:hover #www-logo-comp {
+    font-size: 2rem;
+    background: #99ADF1;
+    background: -webkit-linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
+    background: -moz-linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
+    background: linear-gradient(to right, #99ADF1 22%, #FFEBCD 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .example {
@@ -66,6 +105,10 @@
     margin: 0 .4rem;
 }
 
+.example-link a span.material-icons {
+    color: grey;
+}
+
 .github-logo {
     width: 20px;
 }
@@ -74,6 +117,25 @@
     width: 10px;
 }
 
+#www-logo-zar {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 2rem;
+}
+
+#www-logo-demo {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}
+
+#www-logo-ska {
+    font-family: 'Chewy', cursive;
+    font-size: 1.2rem;
+}
+
+#www-logo-comp {
+    font-size: 1.4rem;
+    font-family: 'Bungee Inline', cursive;;
+}
 
 /* react logo */
 

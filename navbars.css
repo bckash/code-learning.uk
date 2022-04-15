@@ -67,6 +67,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.example-container:hover .example-descr {
+
+}
+
 .example {
     display: flex;
     flex-direction: row;

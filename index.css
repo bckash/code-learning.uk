@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Chewy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chewy&family=Manrope&family=Oxygen&family=Shadows+Into+Light&display=swap');
 
 html {
     background: none;
@@ -20,6 +20,14 @@ code {
     background-color: var(--blue-border);
 }
 
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    cursor: default;
+}
+
 /* small info button.................... */
 
 a span.index-hov, a span.index-hov:hover {
@@ -34,9 +42,13 @@ a span.index-hov, a span.index-hov:hover {
     to {color: var(--blue)}
   }
 
+
+
+
 /*                             */
 /* kash im................... */
 /*                           */
+
 
 
 .intro-index:hover .card-text {
@@ -129,6 +141,10 @@ p.card-body {
 
 
 .flex-main__nav ul {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.7rem;
+    color: rgb(117, 97, 29);
+
     text-align: right;
     list-style: none;
     margin: 0;
@@ -155,31 +171,144 @@ p.card-body {
     width: 40%;
 }
 
+.flex-main__content-text, .table-presentation__content {
+    font-family: 'Oxygen', sans-serif;
+    color: rgb(71, 71, 71);
+}
+
 .flex-main__content-text {
     font-size: 1.2rem;
     display: flex;
     align-items: top;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     width: 50%;
     margin: auto;
     margin-top: 3rem;
 }
 
 
-
-
 /* table presntation .......... */
+
+/*  for synchro, the math is calculated (100% animation frames = 10s. delay). 33% and 66% is when the slides are perfectly in the middle of movement - so 3.3s and 6.6 is the delay start between animations   */
+
+.animation-OFF-start {
+    animation-name: slideOFF-start;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.animation-OFF {
+    animation-name: slideOFF;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+.animation-OFF2 {
+    animation-name: slideOFF;
+    animation-fill-mode: forwards;
+    animation-delay: 6.66s;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+.animation-OFF3 {
+    animation-name: slideOFF;
+    animation-fill-mode: forwards;
+    animation-delay: 13.32s;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes slideOFF {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    32% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    34% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    65% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    67% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOFF-start {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    32% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    34% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    65% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    67% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
+
+
+.table-presentation-window {
+    position: relative;
+    /* border: 1px solid rgb(189, 189, 189); */
+    overflow: hidden;
+    margin: auto;
+    height: 21rem;
+}
 
 .content-toggle {
     display: none;
 }
 
-.table-presentation {
+.table-presentation, .table-presentation-first {
+    position: absolute;
+    left: 180px;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    width: 350px
+}
+
+.table-presentation-design {
+    display: inline-block;
     font-size: 1.2rem;
     margin: 1rem auto;
     margin-top: 3rem;
     width: 50%;
+}
+
+.table-presentation {
+    opacity: 0;
 }
 
 .table-presentation__logo-title {
@@ -196,12 +325,14 @@ p.card-body {
     width: 50%;
 }
 
-.table-presentation__title {
+.table-presentation__title, .ct-junior {
+    font-family: 'Manrope', sans-serif;
     font-weight: bold;
+    color: rgb(37, 37, 37);
 }
 
 .table-presentation__logo {
-    border-right: 2px solid black;
+    border-right: 1px solid rgb(201, 201, 201);
 }
 
 .table-presentation__logo-title-2 {
@@ -217,60 +348,84 @@ p.card-body {
     padding: 0 .2rem;
 }
 
-/* #html-logo {
-    width: 38px;
+.attention-grab {
+    color: blue;
 }
 
-#css-logo {
-    width: 28px;
-} */
+/* graph design nav......................... */
 
-
-
-/* LINKS................... */
-
-/* .check {
-    font-family: 'Orbitron', sans-serif;
+#graph-design-nav {
+    position: absolute;
+    top: 260px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: auto;
+    padding: .1rem;
 }
 
-.check h3, .check h5 {
-    color: rgb(68, 92, 92);
-    font-weight: normal;
+.graph-design-nav__empty, .graph-design-dots, .graph-design-nav__buttons {
+    width: 33%;
 }
 
-.check div {
-    margin: 0 .6rem;
+.graph-design-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.sites-list a {
-    text-decoration: none;
-    color:  rgba(176, 197, 197, 0.781);
+.graph-design-dots span {
+    font-size: .7rem;
+    color: lightgray;
+    margin: .1rem;
 }
 
-.sites-list a:hover {
-    color: var(--sect-back);
+.graph-design-nav__buttons span {
+    color: lightgrey;
+    margin: 0;
 }
 
-#zar {
-    font-family: 'Bakbak One', cursive;
-    font-size: 2.5rem;
+.animtaion-dot-1 {
+    animation-name: dotAnimation;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
-#skadoosh {
-    font-family: 'Chewy', cursive;
-    font-size: 2.3rem;
+.animtaion-dot-2 {
+    animation-name: dotAnimation;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-delay: 6.66s;
+    animation-iteration-count: infinite;
 }
 
-#design {
-    font-family: 'Caveat', cursive;
-    font-size: 3rem;
-} */
+.animtaion-dot-3 {
+    animation-name: dotAnimation;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-delay: 13.32s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dotAnimation {
+    0% {color: grey;}
+    32% {color: grey;}
+    34% {color: lightgray;}
+    100% {color: lightgray;}
+}
+
+#pause-but:hover {
+    cursor: pointer;
+}
+
 
 /* media Q ...................................... */
 
 
 /* 400 */
 
-@media only screen and (max-width: 400px) {
+ @media only screen and (max-width: 400px) {
     h2.blue-rec-h2 {font-size: 1.2rem;}
 }

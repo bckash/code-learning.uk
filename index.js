@@ -28,7 +28,7 @@ const contentAll = document.getElementsByClassName("content-toggle")
 const indexNavi = [
     {
         id:"page",
-        txt: "this . page",
+        txt: "this. page",
         quote: "The roots of education are bitter, but the fruit is sweet",
         author: "Aristotle",
         nr: 0
@@ -64,6 +64,10 @@ const indexNavi = [
     },
 ]
 
+//pause button
+const pauseBut = document.getElementById("pause-but");
+const stopButAll = document.getElementsByClassName("stop-ani")
+const stopButAllArray = Array.from(stopButAll);
 
 //
 // [START VALUES] 
@@ -86,7 +90,7 @@ fillAuthor.innerText = indexNavi[0].author
 //.............
 
 butNav.addEventListener("click", goNext)
-
+pauseBut.addEventListener("click", pauseAnimation)
 
 //
 //   () =>
@@ -132,3 +136,33 @@ function next(ev) {
 
 
 }
+
+let click = 0;
+
+console.log(stopButAllArray)
+
+// PAUSE ANIMATION
+function pauseAnimation () {
+    click += 1
+    if (click === 1) {
+        stopButAllArray.forEach(item => {
+            item.style.animationPlayState = "paused";
+        })
+
+        pauseBut.innerText = "play_circle";
+       
+    } else {
+        stopButAllArray.forEach(item => {
+            item.style.animationPlayState = "running";
+        })
+        pauseBut.innerText = "pause_circle";
+        click = 0;
+    }
+}
+
+
+
+
+
+
+

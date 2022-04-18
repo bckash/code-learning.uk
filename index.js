@@ -14,12 +14,12 @@
 // "black chevron"
 const butNav = document.getElementById("chevron")
 
-
 // dynamic fields
 const fillLi = document.getElementById("fill-li");
 const fillTxt = document.getElementById("tbc");
 const fillQuote = document.getElementById("fill-quote");
 const fillAuthor = document.getElementById("fill-author");
+const fillIcon = document.getElementById("nav-big-icon");
 
 // txt content
 const contentAll = document.getElementsByClassName("content-toggle")
@@ -31,6 +31,7 @@ const indexNavi = [
         txt: "this. page",
         quote: "The roots of education are bitter, but the fruit is sweet",
         author: "Aristotle",
+        span: `<img class="animation-icon" src="img/fa_info.svg" alt="info icon">`,
         nr: 0
     },
     {
@@ -45,6 +46,7 @@ const indexNavi = [
         txt: "IT Skills",
         author: "Confucius",
         quote: "If a craftsman wants to do good work, he must first sharpen his tools",
+        span: `<span class="material-icons animation-icon">code</span>`,
         nr: 2
     },
     {
@@ -52,6 +54,7 @@ const indexNavi = [
         txt: "design",
         author: "Albert Einstein",
         quote: "Creativity is inteligence having fun",
+        span: `<span class="material-icons animation-icon">architecture</span>`,
         nr: 3
     },
     {
@@ -60,6 +63,7 @@ const indexNavi = [
         content: "exmaple context 6",
         author: "",
         quote: "best iz yet 2 come",
+        span: `<span class="material-icons animation-icon"></span>`,
         nr: 4
     },
 ]
@@ -96,7 +100,7 @@ pauseBut.addEventListener("click", pauseAnimation)
 //   () =>
 //..............
 
-
+console.log(fillIcon.firstElementChild)
 
 // CHEVRON BUTTON: add index
 function goNext (e) {
@@ -108,6 +112,10 @@ function goNext (e) {
 
 // CHEVRON BUTTON: change menu items
 function next(ev) {
+
+    fillLi.classList.remove("animation-chevron")
+    void fillLi.offsetWidth;
+    fillLi.classList.add("animation-chevron")
 
     //reset the index when  
     if (gNextindex === indexNavi.length) {
@@ -130,6 +138,20 @@ function next(ev) {
                 fillAuthor.innerText = indexNavi[i].author
             }
         }
+    }
+
+    if (gNextindex === 0 && fillIcon.firstElementChild !== "img" ) {
+        fillIcon.removeChild(fillIcon.firstElementChild)
+        fillIcon.innerHTML = indexNavi[0].span
+    } else if (gNextindex === 2) {
+        fillIcon.removeChild(fillIcon.firstElementChild)
+        fillIcon.innerHTML = indexNavi[2].span
+    } else if (gNextindex === 3) {
+        fillIcon.removeChild(fillIcon.firstElementChild)
+        fillIcon.innerHTML = indexNavi[3].span
+    } else if (gNextindex === 4) {
+        fillIcon.removeChild(fillIcon.firstElementChild)
+        fillIcon.innerHTML = indexNavi[4].span
     }
 
     

@@ -1,9 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Chewy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chewy&family=Manrope&family=Oxygen&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Chewy&family=Manrope&family=Oxygen&family=Shadows+Into+Light&display=swap');
 
 html {
-    background: none;
+    background: url(img/back.svg) no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
 }
 
 main {
@@ -18,6 +20,7 @@ br {
 
 code {
     background-color: var(--blue-border);
+    border: none;
 }
 
 abbr {
@@ -28,7 +31,9 @@ abbr:hover {
     cursor: default;
 }
 
-/* small info button.................... */
+/* NAVI : small info button.................... */
+/*                                             */
+
 
 a span.index-hov, a span.index-hov:hover {
     color: var(--blue);
@@ -44,11 +49,11 @@ a span.index-hov, a span.index-hov:hover {
 
 
 
+/* MAIN............................. */
+/*                                  */
 
-/*                             */
-/* kash im................... */
-/*                           */
 
+/* ROUND PICURE................... */
 
 
 .intro-index:hover .card-text {
@@ -119,7 +124,27 @@ p.card-body {
 }
 
 
-/* PHOTO PART STYLE.................... */
+/* ROUND PICTURE NAVI.................... */
+
+
+/* icon */
+
+
+.animation-icon {
+    animation-name: icon;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes icon {
+    from {opacity: 0;}
+    to {opacity: 0.8;}
+}
+
+
+/* navi chevron */
+
 
 .flex-main {
     display: flex;
@@ -139,6 +164,10 @@ p.card-body {
     margin-bottom: 2rem;
 }
 
+.flex-main__icon span {
+    font-size: 5rem;
+    color: var(--blue-border);
+}
 
 .flex-main__nav ul {
     font-family: 'Shadows Into Light', cursive;
@@ -179,16 +208,146 @@ p.card-body {
 .flex-main__content-text {
     font-size: 1.2rem;
     display: flex;
+    flex-direction: column;
     align-items: top;
     justify-content: center;
-    text-align: center;
-    width: 50%;
+    text-align: left;
+    width: 55%;
     margin: auto;
     margin-top: 3rem;
+
+}
+
+.flex-main__content-text p {
+    border-left: 14px solid var(--blue-border);
+    padding-left: 2rem;
+    margin: 0;
+}
+
+p.ct-junior__container {
+    border: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+.animation-chevron {
+    animation-name: slide;
+    animation-duration: 0.1s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: .5;
+        transform: translateX(0);
+    }
+    35% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 
-/* table presntation .......... */
+/* NAV sections */
+
+
+.table-presentation-window {
+    position: relative;
+    /* border: 1px solid rgb(189, 189, 189); */
+    overflow: hidden;
+    margin: auto;
+    height: 22rem;
+}
+
+.content-toggle {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.table-presentation, .table-presentation-first {
+    position: absolute;
+    left: 180px;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    width: 350px
+}
+
+.table-presentation-design {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    width: 55%;
+}
+
+.table-presentation {
+    opacity: 0;
+}
+
+.table-presentation__logo-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+}
+
+
+.table-presentation__logo, .table-presentation__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.table-presentation__title, .ct-junior {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: rgb(50, 50, 92);
+}
+
+.table-presentation__logo {
+    border-right: 1px solid rgb(201, 201, 201);
+}
+
+.table-presentation__logo-title-2 {
+    padding-bottom: 1rem;
+}
+
+.table-presentation__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    color: rgb(68, 70, 78);
+
+}
+
+.text {
+    text-align: left;
+    border-left: 14px solid var(--blue-border);
+    padding-left: 2rem;
+}
+
+.table-presentation__logo img, .table-presentation__logo-2 img {
+    width: 40px;
+    padding: 0 .2rem;
+}
+
+.attention-grab {
+    color: blue;
+}
+
+
+
+
+/* IT SKILLLS - slide show .......... */
+
+/* animations */
 
 /*  for synchro, the math is calculated (100% animation frames = 10s. delay). 33% and 66% is when the slides are perfectly in the middle of movement - so 3.3s and 6.6 is the delay start between animations   */
 
@@ -277,82 +436,9 @@ p.card-body {
 }
 
 
-.table-presentation-window {
-    position: relative;
-    /* border: 1px solid rgb(189, 189, 189); */
-    overflow: hidden;
-    margin: auto;
-    height: 21rem;
-}
 
-.content-toggle {
-    display: none;
-}
+/* slides NAV */
 
-.table-presentation, .table-presentation-first {
-    position: absolute;
-    left: 180px;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 1rem auto;
-    margin-top: 3rem;
-    width: 350px
-}
-
-.table-presentation-design {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 1rem auto;
-    margin-top: 3rem;
-    width: 50%;
-}
-
-.table-presentation {
-    opacity: 0;
-}
-
-.table-presentation__logo-title {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1.2rem;
-}
-
-
-.table-presentation__logo, .table-presentation__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.table-presentation__title, .ct-junior {
-    font-family: 'Manrope', sans-serif;
-    font-weight: bold;
-    color: rgb(37, 37, 37);
-}
-
-.table-presentation__logo {
-    border-right: 1px solid rgb(201, 201, 201);
-}
-
-.table-presentation__logo-title-2 {
-    padding-bottom: 1rem;
-}
-
-.table-presentation__content {
-    text-align: justify;
-}
-
-.table-presentation__logo img, .table-presentation__logo-2 img {
-    width: 40px;
-    padding: 0 .2rem;
-}
-
-.attention-grab {
-    color: blue;
-}
-
-/* graph design nav......................... */
 
 #graph-design-nav {
     position: absolute;
@@ -363,6 +449,8 @@ p.card-body {
     width: 45%;
     margin: auto;
     padding: .1rem;
+    background-color: rgba(255, 255, 255, 0.432);
+    border: 1px solid rgb(226, 226, 226);
 }
 
 .graph-design-nav__empty, .graph-design-dots, .graph-design-nav__buttons {
@@ -375,14 +463,17 @@ p.card-body {
     justify-content: center;
 }
 
+.graph-design-dots, .graph-design-nav__buttons span {
+    color: rgb(228, 228, 228);
+}
+
 .graph-design-dots span {
     font-size: .7rem;
-    color: lightgray;
     margin: .1rem;
 }
 
 .graph-design-nav__buttons span {
-    color: lightgrey;
+    color: rgb(212, 212, 212);
     margin: 0;
 }
 
@@ -420,12 +511,123 @@ p.card-body {
     cursor: pointer;
 }
 
+.tp-tag__container {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.tp-tag {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: .3rem;
+    padding: .2rem .8rem;
+    background-color: rgba(240, 239, 239, 0.301);
+    box-shadow: 1px 1px 7px rgba(145, 145, 145, 0.658);
+    color: rgb(129, 133, 143);
+    border-radius: 10px;
+}
 
 /* media Q ...................................... */
 
+/* 740 */
+
+@media only screen and (max-width: 740px) {
+    #nav-big-icon {
+        display: none;
+    }
+
+    .flex-main__nav {
+        width: 40%;
+    }
+
+    .table-presentation-window {
+        width: 70%;
+    }
+
+    .table-presentation, .table-presentation-first {
+        left: 0;
+        width: 100%;
+    }
+
+    #graph-design-nav {
+        left: 0;
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    .flex-main__content, .flex-main__nav {
+        width: 40%;
+    }
+
+    .table-presentation-window {
+        overflow: visible;
+        height: 22rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .flex-main {
+        display: block;
+        margin: auto;
+    }
+
+    .flex-main__content, .flex-main__nav {
+        width: 100%;
+    }
+
+    .flex-main__content {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .flex-main__nav {
+        width: 50%;
+        margin: auto;
+    }
+
+    .table-presentation-design, .flex-main__content-text {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .table-presentation-design, .flex-main__content-text {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .tp-tag__container {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .table-presentation-window {
+        width: 100%;
+    }
+
+    .table-presentation-design, .flex-main__content-text {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .flex-main__nav {
+        width: 60%;
+    }
+}
 
 /* 400 */
 
- @media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
     h2.blue-rec-h2 {font-size: 1.2rem;}
-}
+} */

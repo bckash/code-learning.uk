@@ -1,5 +1,5 @@
 :root {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
     --head-big: rgb(89, 114, 114);
     --head-big-dark: rgb(18, 37, 37);
     --head-small: rgb(134, 163, 163);
@@ -21,7 +21,7 @@ h2, h3 {text-align: center;}
 /* side navigation................ */
 
 .side-nav {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     position: fixed;
     right: 0;
@@ -72,10 +72,11 @@ h2, h3 {text-align: center;}
 
 .intros, .intros2 {
     display: inline-block;
-    background-color: var(--head-small);
+    background-color: rgb(0,139,139);
     color: white;
     margin-bottom: 0;
     padding: .4em 1em;
+    border-radius: 10px;
 }
 
 .intros2 {
@@ -125,7 +126,7 @@ h3, .sum {
 .big-c {width: 90%;}
 
 section.big-c2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     padding-top: 3rem;
     position: relative;

@@ -53,9 +53,12 @@ header {height: 6rem;}
 /* MAIN................................ */
 
 span.head-notes {
-    background-color: rgb(255, 255, 255);
+    font-size: .9rem;
+    background-color: rgb(250, 248, 236);
     color: black;
-    border: 1px solid black;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 12px;
+    padding: .3rem .6rem;
 }
 
 div.marg-bot {
@@ -148,10 +151,7 @@ figcaption img {
 
 /* FOOTER...................................... */
 
-body footer {  
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+
 
 /* media q.................................... */
 

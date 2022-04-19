@@ -53,23 +53,16 @@
         <h2 class="blue-rec-h2">animation
             <span class="dot">_</span>
         </h2>
-
-        <!-- <p class="index">this here is a basic sum up, of what resulted from my codind experience so far. </p> -->
-
     </header>
 
     <main>
     <!-- CODE.................... -->
     <article class="timing">
 
-        <img src="img/stamp.png" alt="" class="stamp">
-
         <div class="marg-bot">
-            <span class="head-notes hn-fix"></span>
-        </div>
+            <span class="head-notes">basics</span>
+        </div><br>
         
-        <p class="timing-opis">basics</p><br>
-
         <code>animation-name: ;</code><br>
         <code>animation-duration: ;</code><br>
         <code>animation-delay: ;</code><br>
@@ -254,10 +247,12 @@
     </main>
 
     <!-- FOOTER............................ -->
-    <footer class="">
-        <img src="img/kasz-tag-blue.png" alt="">
-        <p>2022</p>
+    <footer id="ex" class="">
     </footer>
+    <script type="module">
+        import foot from "./footer.js"
+        document.getElementById("ex").innerHTML = foot;
+    </script>
 
 </body>
 </html>

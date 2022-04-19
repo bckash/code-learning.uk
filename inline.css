@@ -39,7 +39,7 @@ li div.dropdown-holder-us a.d-content-us-shad:hover {
 main.va {position: relative;}
 
 .source-link {
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 0 .2rem;
     background-color: black;
     color: white;
@@ -53,13 +53,14 @@ main.va {position: relative;}
 
 article.inline {
     font-size: 1.6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 article.inline .notes {
-    font-size: .9rem;
+    font-size: 1rem;
     background-color: white;
-    border: 1px dotted black;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
 }
 
 .atr-start {
@@ -116,11 +117,10 @@ span::after {
 /* table format & notes......................... */
 
 table {
-    border: 1px dotted black;   
+    border: 1px solid rgb(199, 199, 199);   
     background-color: white;
     width: 25rem;
     margin: 1rem auto;
-    border-bottom: none;
 }
 
 td, .notes {font-size: .9rem;}
@@ -129,10 +129,8 @@ td {
     padding-bottom: .7rem;
     text-align: left;
     width: 1.5rem;
-    border-bottom: 1px dotted black;
 }
 
-.border-bot {border-bottom: 1px dotted blaCK}
 
 .head-cell {
     text-align: center;
@@ -151,7 +149,7 @@ td {
 
 .s-example {
     display:inline-block;
-    background-color: var(--sect-back)
+    background-color: rgba(0, 139, 139, 0.192);
 }
 
 .box-ex {

@@ -197,10 +197,12 @@
     </main>
 
     <!-- FOOTER............................ -->
-    <footer class="">
-        <img class="tag" src="img/kasz_tag_grey2.png" alt="">
-        <p class="p22" > | 22</p>
+    <footer id="ex" class="">
     </footer>
+    <script type="module">
+        import foot from "./footer.js"
+        document.getElementById("ex").innerHTML = foot;
+    </script>
 
     <script src="navbars.js"></script>
 

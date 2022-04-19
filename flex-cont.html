@@ -170,10 +170,12 @@
     </div>
 
     <!-- FOOTER............................ -->
-    <footer class="">
-        <img src="img/kasz-tag-blue.png" alt="">
-        <p>2022</p>
+    <footer id="ex" class="">
     </footer>
+    <script type="module">
+        import foot from "./footer.js"
+        document.getElementById("ex").innerHTML = foot;
+    </script>
 
     <script src="app_cont.js"></script>
 

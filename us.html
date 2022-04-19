@@ -44,9 +44,11 @@
     </nav>
 
     <!-- INFO FIELD .......................-->
-    <header>
+    <header class="">
         <span class="blue-rec"></span>
-        <p class="blue-rec-h2">this section contains some useful sh <span class="dot">_</span></p>
+        <h2 class="blue-rec-h2">some useful stuff
+            <span class="dot">_</span>
+        </h2>
     </header>
 
     <main>
@@ -194,11 +196,12 @@
     </main>
             
     <!-- FOOTER............................ -->
-    <footer class="">
-
-        <img src="img/kasz-tag-blue.png" alt="">
-        <p>2022</p>
+    <footer id="ex" class="">
     </footer>
+    <script type="module">
+        import foot from "./footer.js"
+        document.getElementById("ex").innerHTML = foot;
+    </script>
 
 </body>
 </html>

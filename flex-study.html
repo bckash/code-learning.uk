@@ -58,15 +58,11 @@
         <h2 class="blue-rec-h2">flexbox deep dive 
             <span class="dot">_</span>
         </h2>
-
-        <!-- <p class="index">this here is a basic sum up, of what resulted from my codind experience so far. </p> -->
-
     </header>
 
     <!-- side navigation -->
     <nav class="side-nav">
         <ul class="">
-            <li class="grad"><a href="#default">no flex</a></li>
             <li class="grad"><a href="#direction">flex-direction</a></li>
             <li class="grad"><a href="#wrap">flex-wrap</a></li>
             <li class="grad"><a href="#basis">flex-basis</a></li>
@@ -76,24 +72,8 @@
             <li class="grad"><a href="#l1">flex + wrap</a></li>
         </ul>
     </nav>
-
-    <section id="default" class="intros-c">
-        <h2 class="intros">display: default</h2>
-    </section>
-
-    <!-- default -->
-    <section class="big-c2">
-        <section class="flex-c">
-            <div class="container">
-                <div class="item">f1</div>
-                <div class="item">f2</div>
-                <div class="item">f3</div>
-                <div class="item">f4</div>
-                <div class="item">f5</div>
-            </div>
-        </section>
-    </section>
     
+    <!-- disp: flex -->
     <section id="direction" class="intros-c">
         <h2 class="intros2">display: flex</h2>
     </section>
@@ -288,10 +268,12 @@
     </section>
 
     <!-- FOOTER............................ -->
-    <footer class="">
-        <img src="img/kasz-tag-blue.png" alt="">
-        <p>2022</p>
+    <footer id="ex" class="">
     </footer>
+    <script type="module">
+        import foot from "./footer.js"
+        document.getElementById("ex").innerHTML = foot;
+    </script>
 
     
 </body>

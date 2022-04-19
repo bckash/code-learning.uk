@@ -12,8 +12,8 @@
 </head>
 <body>
 
-        <!-- NAVI...................... -->
-        <nav>
+    <!-- NAVI...................... -->
+    <nav>
             <h1 class="intro">learning curve</h1>
             <ul class="main-nav">
     
@@ -45,16 +45,16 @@
             <a href="index.html">
                 <span class="material-icons">info</span>
             </a>
-        </nav>
+    </nav>
     
-        <!-- INFO FIELD .......................-->
-        <header class="">
+     <!-- INFO FIELD .......................-->
+    <header class="">
             <span class="blue-rec"></span>
             <h2 class="blue-rec-h2">vertical align
                 <span class="dot">_</span>
             </h2>
    
-        </header>
+    </header>
 
     <!-- MAIN .......................-->
     <main class="va">
@@ -170,10 +170,12 @@
     </main>
 
     <!-- FOOTER............................ -->
-    <footer class="">
-        <img src="img/kasz-tag-blue.png" alt="">
-        <p>2022</p>
+    <footer id="ex" class="">
     </footer>
+    <script type="module">
+        import foot from "./footer.js"
+        document.getElementById("ex").innerHTML = foot;
+    </script>
 
 </body>
 </html>

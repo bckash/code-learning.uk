@@ -1,10 +1,8 @@
 
-
 //
 // "BLACK CHEVRON" after-click 
 //
 //___________________________
-
 
 //
 // [CONST]
@@ -88,7 +86,6 @@ fillQuote.innerText = indexNavi[0].quote
 fillAuthor.innerText = indexNavi[0].author
 
 
-
 //
 //   [EL]
 //.............
@@ -153,15 +150,9 @@ function next(ev) {
         fillIcon.removeChild(fillIcon.firstElementChild)
         fillIcon.innerHTML = indexNavi[4].span
     }
-
-    
-
-
 }
 
 let click = 0;
-
-console.log(stopButAllArray)
 
 // PAUSE ANIMATION
 function pauseAnimation () {
@@ -181,10 +172,3 @@ function pauseAnimation () {
         click = 0;
     }
 }
-
-
-
-
-
-
-

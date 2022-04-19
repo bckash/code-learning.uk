@@ -3,12 +3,12 @@
     --cont1: rgba(247, 227, 224, 0.548);
     --cont2:  rgba(212, 241, 243, 0.616);
     --c1-dark: rgba(129, 91, 86, 0.699);
-    --c2-dark: rgba(62, 115, 119, 0.815);
+    --c2-dark: rgb(0,139,139);
 }
 
 
 p.bridge {
-    border: .3rem solid black;
+    border-bottom: .2rem solid rgb(201, 201, 201);
     margin-bottom: 2rem;
 
 }
@@ -23,14 +23,15 @@ main.position p.notes {
     max-width: 20rem;
     display: inline-block;
     background-color: white;
-    border: 1px dotted black;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
     margin-bottom: 3rem;
 }
 
 
 main.position section {
     display: inline-block;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px solid rgb(216, 216, 216);
     margin-bottom: 1rem;
     padding-bottom: 2rem;
 } 

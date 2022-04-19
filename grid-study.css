@@ -1,7 +1,7 @@
 
 :root {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
     --code-name: #f5d67b;
     --code-prop: rgb(156,220,254);
     --code-val-txt: #fcd863;
@@ -31,10 +31,13 @@ header {
 }
 
 main.grid-study h3 {
+    font-size: 1rem;
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid rgb(136, 136, 136);
     padding: .2em .5em;
     background-color: rgb(252, 247, 240);
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .br {border: 1px dotted black;}

@@ -31,8 +31,8 @@ abbr:hover {
     cursor: default;
 }
 
-/* NAVI : small info button.................... */
-/*                                             */
+/* NAVI : small info button */
+/* -------------------------------- */
 
 
 a span.index-hov, a span.index-hov:hover {
@@ -49,8 +49,8 @@ a span.index-hov, a span.index-hov:hover {
 
 
 
-/* MAIN............................. */
-/*                                  */
+/* MAIN  */
+/*------------*/
 
 
 /* ROUND PICURE................... */
@@ -251,7 +251,7 @@ p.ct-junior__container {
 }
 
 
-/* NAV sections */
+/* NAV sections................. */
 
 
 .table-presentation-window {
@@ -266,6 +266,17 @@ p.ct-junior__container {
     display: none;
     margin-bottom: 2rem;
 }
+
+.animation__cont-toggle {
+    animation-name: cont-toggle;
+    animation-duration: .2s;
+}
+
+@keyframes cont-toggle {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
 
 .table-presentation, .table-presentation-first {
     position: absolute;
